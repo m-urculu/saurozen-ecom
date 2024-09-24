@@ -1,27 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+    font-family: 'Designer';
+    src: url('/src/app/assets/fonts/Designer.otf') format('opentype');
+    font-weight: regular; /* Adjust if you have different weights */
+    font-style: normal; /* Adjust if you have different styles */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.promo-banner {
+    @apply h-[34px] md:h-[37px] w-screen bg-Limerick text-Cetacean-Blue font-orbitron text-[10px] md:text-[12px] flex items-center justify-center;
+}
+.promo-button {
+    @apply ml-1 underline text-Cetacean-Blue;
+}
+.nav-bar {
+    @apply h-[62px] md:h-[75px] w-screen bg-Ateneo-Blue flex
+}
+.menu-button {
+    @apply ml-[16px] h-fit self-center block lg:hidden
+}
+.logo {
+    @apply font-designer text-[20px] md:text-[32px] text-Bright-Gray text-shadow-custom ml-[19px] md:ml-[40px] mb-[5px] md:mb-[0px] self-center
+}
+.nav-links {
+    @apply hidden lg:flex ml-auto w-[30vw] font-orbitron text-Bright-Gray text-[12px] flex self-center justify-between nav-text
+}
+.nav-text {
+    font-size: clamp(10px, 1.1vw, 16px);
+}
+.search-btn {
+    @apply block md:hidden
+}
+.icon {
+    @apply w-[20px] h-[20px]
+}
+.search-bar {
+    @apply hidden md:flex ml-auto self-center
+}
+.input-bar {
+    @apply flex w-[50vw] lg:w-[30vw] h-[37px] bg-Bright-Gray bg-opacity-50 rounded-[50px]
+}
+.search-light {
+    @apply self-center ml-[10px]
+}
+.input {
+    @apply ml-[10px] w-full bg-Bright-Gray bg-opacity-0
+}
+.right-buttons {
+    @apply w-[86px] mr-[16px] md:mr-[20px] md:ml-[20px] ml-auto self-center justify-end flex justify-between md:w-[60px] 
 }
