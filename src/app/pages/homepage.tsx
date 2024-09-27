@@ -1,21 +1,22 @@
 'use client'
 import * as Icons from '@/app/assets/icons'
+import * as Images from '@/app/assets/images'
 
 export default function Home() {
   return (
-    <div>
+    <div aria-label="homepage" className="homepage">
       <div aria-label="promo-banner" className="promo-banner">
         Sign up and get 20% off your first order.
         <button aria-label="promo-button" className="promo-button">
           Sign Up Now
         </button>
       </div>
-      <div aria-label="nav-bar" className="nav-bar">
-        <button aria-label="menu-button" className="menu-button">
+      <nav aria-label="nav-bar" className="nav-bar">
+        <button aria-label="menu-button">
           <img 
-            src={Icons.hamburgerMenu.src} 
-            alt="Hamburger Menu Icon" 
-            className="w-[18px] h-[14.02px]" 
+            src={Icons.hamburgerMenu.src}
+            alt="Hamburger Menu Icon"
+            className="menu-button"
           />
         </button>
         <div aria-label="logo" className="logo">SAUROZEN</div>
@@ -45,27 +46,51 @@ export default function Home() {
           </div>
         </div>
         <div className="right-buttons">
-          <button aria-label="search-button" className="search-btn">
+          <button aria-label="search-button">
             <img
               src={Icons.search.src}
               alt="Search Icon"
+              className="search-icon"
             />
           </button>
           <button aria-label="cart-button">
             <img
               src={Icons.cart.src}
               alt="Cart Icon"
-              className="icon"
+              className="cart-icon"
             />
           </button>
           <button aria-label="user-button">
             <img
               src={Icons.user.src}
               alt="User Icon"
-              className="icon"
+              className="user-icon"
             />
           </button>
         </div>
+      </nav>
+      <div aria-label="main-section" className="main-section">
+        <div aria-label="img-view" className="img-view">
+          <img
+            src={Images.landingImgM.src}
+            alt="Landing Image"
+            className="landing-img-m"
+          />
+          <img
+            src={Images.landingImg.src}
+            alt="Landing Image"
+            className="landing-img"
+          />
+        </div>
+        <h1 aria-label="header" className="header">
+          Sunglasses Radically Crafted from Ghost Nets
+        </h1>
+        <p aria-label="paragraph1" className="p1">
+          Explore our future with sunglasses made from reclaimed ocean fishing lines. Blending Y2K vibes with cutting-edge eco-innovation. Step into a future where fashion meets sustainability.
+        </p>
+        <button arial-label="shop-button" className="shop-button">
+          Shop Now
+        </button>
       </div>
     </div>
     );

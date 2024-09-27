@@ -10,22 +10,28 @@
     font-style: normal; /* Adjust if you have different styles */
 }
 
+/* homepage */
+/* .homepage {
+    @apply overflow-hidden
+} */
 
-
+/* promo banner */
 .promo-banner {
     @apply h-[34px] md:h-[37px] w-screen bg-Limerick text-Cetacean-Blue font-orbitron text-[10px] md:text-[12px] flex items-center justify-center;
 }
 .promo-button {
     @apply ml-1 underline text-Cetacean-Blue;
 }
+
+/* nav bar */
 .nav-bar {
     @apply h-[62px] md:h-[75px] w-screen bg-Ateneo-Blue flex
 }
 .menu-button {
-    @apply ml-[16px] h-fit self-center block lg:hidden
+    @apply block lg:hidden ml-[16px] self-center
 }
 .logo {
-    @apply font-designer text-[20px] md:text-[32px] text-Bright-Gray text-shadow-custom ml-[19px] md:ml-[40px] mb-[5px] md:mb-[0px] self-center
+    @apply font-designer text-[20px] md:text-[32px] text-Bright-Gray text-shadow-custom ml-[19px] md:ml-[40px] md:mb-[0px] self-center
 }
 .nav-links {
     @apply hidden lg:flex ml-auto w-[30vw] font-orbitron text-Bright-Gray text-[12px] flex self-center justify-between nav-text
@@ -33,11 +39,14 @@
 .nav-text {
     font-size: clamp(10px, 1.1vw, 16px);
 }
-.search-btn {
-    @apply block md:hidden
+.search-icon {
+    @apply block md:hidden w-[18px] h-[18px]
 }
-.icon {
-    @apply w-[20px] h-[20px]
+.cart-icon {
+    @apply w-[20px] h-[20px] md:w-[23px] md:h-[23px]
+}
+.user-icon {
+    @apply mt-[1px] w-[21px] h-[20px] md:w-[26px] md:h-[24px]
 }
 .search-bar {
     @apply hidden md:flex ml-auto self-center
@@ -54,3 +63,29 @@
 .right-buttons {
     @apply w-[86px] mr-[16px] md:mr-[20px] md:ml-[20px] ml-auto self-center justify-end flex justify-between md:w-[60px] 
 }
+
+/* main landing */
+.main-section {
+    @apply flex flex-col
+}
+.img-view {
+    @apply w-screen overflow-hidden
+}
+.landing-img-m {
+    @apply absolute top-0 left-0 object-cover z-[-100] mobile-breakpoint:hidden
+}
+.landing-img {
+    @apply hidden mobile-breakpoint:block absolute  scale-[1.2] z-[-101] /* Set fixed dimensions */
+}
+.header {
+    @apply flex items-center font-designer text-Bright-Gray ml-[18px] w-[281px] h-[190px] text-[28px] leading-[110%] tracking-[3%] text-left text-shadow-custom2
+}
+.p1 {
+    @apply flex items-center font-orbitron text-Bright-Gray ml-[18px] w-[40vw] h-auto text-[12px] font-bold leading-[160%] tracking-[5%] text-left text-shadow-custom2
+}
+.shop-button {
+    @apply mt-[14vw] w-[205px] h-[40px] rounded-[120px] bg-Limerick inner-shadow self-center font-orbitron font-medium text-[20px]
+}
+    .inner-shadow {
+        box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 1);
+    }
