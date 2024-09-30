@@ -12,7 +12,7 @@
 
 /* homepage */
 /* .homepage {
-    @apply overflow-hidden
+    @apply 
 } */
 
 /* promo banner */
@@ -31,14 +31,14 @@
     @apply block lg:hidden ml-[16px] self-center
 }
 .logo {
-    @apply font-designer text-[20px] md:text-[32px] text-Bright-Gray text-shadow-custom ml-[19px] md:ml-[40px] md:mb-[0px] self-center
+    @apply font-designer text-[20px] md:text-[32px] text-Bright-Gray text-shadow-custom ml-[19px] mr-[20px] md:ml-[40px] md:mb-[0px] self-center
 }
 .nav-links {
-    @apply hidden lg:flex ml-auto w-[30vw] font-orbitron text-Bright-Gray text-[12px] flex self-center justify-between nav-text
+    @apply hidden lg:flex ml-auto mr-auto w-[30vw] font-orbitron text-Bright-Gray text-[12px] flex self-center justify-between nav-text
 }
-.nav-text {
-    font-size: clamp(10px, 1.1vw, 16px);
-}
+    .nav-text {
+        font-size: clamp(10px, 1.1vw, 16px);
+    }
 .search-icon {
     @apply block md:hidden w-[18px] h-[18px]
 }
@@ -66,16 +66,18 @@
 
 /* main landing */
 .main-section {
-    @apply flex flex-col
-}
-.img-view {
-    @apply w-screen overflow-hidden
+    @apply flex flex-col relative h-screen overflow-hidden
 }
 .landing-img-m {
     @apply absolute top-0 left-0 object-cover z-[-100] mobile-breakpoint:hidden
 }
 .landing-img {
-    @apply hidden mobile-breakpoint:block absolute  scale-[1.2] z-[-101] /* Set fixed dimensions */
+    @apply hidden mobile-breakpoint:block absolute z-[-101]/* Tailwind utilities */
+}
+@layer utilities {
+    .reverse-scaling {
+        transform: scale(max(1.2, calc(2 - (100vw / 500))));
+    }
 }
 .header {
     @apply flex items-center font-designer text-Bright-Gray ml-[18px] w-[281px] h-[190px] text-[28px] leading-[110%] tracking-[3%] text-left text-shadow-custom2

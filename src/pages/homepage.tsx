@@ -1,8 +1,10 @@
 'use client'
-import * as Icons from '@/app/assets/icons'
-import * as Images from '@/app/assets/images'
+import * as Icons from '../../public/icons'
+import * as Images from '../../public/images'
+
 
 export default function Home() {
+
   return (
     <div aria-label="homepage" className="homepage">
       <div aria-label="promo-banner" className="promo-banner">
@@ -70,7 +72,6 @@ export default function Home() {
         </div>
       </nav>
       <div aria-label="main-section" className="main-section">
-        <div aria-label="img-view" className="img-view">
           <img
             src={Images.landingImgM.src}
             alt="Landing Image"
@@ -79,9 +80,8 @@ export default function Home() {
           <img
             src={Images.landingImg.src}
             alt="Landing Image"
-            className="landing-img"
+            className="landing-img reverse-scaling"
           />
-        </div>
         <h1 aria-label="header" className="header">
           Sunglasses Radically Crafted from Ghost Nets
         </h1>

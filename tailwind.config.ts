@@ -9,6 +9,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      // backgroundImage: {
+      //   'landing-img-m': "url('/img/landing-img-m.webp')",
+      //   'landing-img': "url('/img/landing-img.webp')",
+      // },
       screens: {
         'mobile-breakpoint': '393px', // Custom breakpoint for 393px
       },
