@@ -72,17 +72,8 @@ export default function Home() {
         </div>
       </nav>
       <div aria-label="main-section" className="main-section">
-          <img
-            src={Images.landingImgM.src}
-            alt="Landing Image"
-            className="landing-img-m"
-          />
-          <img
-            src={Images.landingImg.src}
-            alt="Landing Image"
-            className="landing-img"
-          />
-        <div className="main-text-container">
+          <img src={Images.landingImgM.src} alt="Landing Image" className="landing-img-m" />
+          <img src={Images.landingImg.src} alt="Landing Image" className="landing-img" />
           <h1 aria-label="header" className="header">
             Sunglasses Radically Crafted from Ghost Nets
           </h1>
@@ -92,8 +83,18 @@ export default function Home() {
           <button arial-label="shop-button" className="shop-button">
             Shop Now
           </button>
+      </div>
+      <div aria-label="products" className="products">
+        <div aria-label="new-arrivals" className="new-arrivals">
+          <div className="arrivals-sep">
+            <p>NEW ARRIVALS</p>
+          </div>
+        </div>
+        <div aria-label="top-selling" className="top-selling">
         </div>
       </div>
+      <img src={Images.backgroundImgM.src} alt="Background Image" className='background-img-m'/>
+      <img src={Images.backgroundImg.src} alt="Background Image" className='background-img'/>
     </div>
     );
   }

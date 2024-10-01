@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        'mobile-breakpoint': '393px', // Custom breakpoint for 393px
+        'm-br': '393px', // Custom breakpoint for 393px
       },
       fontFamily: {
         orbitron: ['Orbitron', 'sans-serif'],
@@ -25,7 +25,8 @@ const config: Config = {
         'Cetacean-Blue': '#160233',
         'Bright-Gray': '#EEEDF7',
         'Ateneo-Blue': '#0A4164',
-        'Limerick': '#9DC913'
+        'Limerick': '#9DC913',
+        'Bittersweet-Shimmer': '#C05459',
       },
     },
   },
