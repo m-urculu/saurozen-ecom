@@ -80,17 +80,19 @@ export default function Home() {
           <img
             src={Images.landingImg.src}
             alt="Landing Image"
-            className="landing-img reverse-scaling"
+            className="landing-img"
           />
-        <h1 aria-label="header" className="header">
-          Sunglasses Radically Crafted from Ghost Nets
-        </h1>
-        <p aria-label="paragraph1" className="p1">
-          Explore our future with sunglasses made from reclaimed ocean fishing lines. Blending Y2K vibes with cutting-edge eco-innovation. Step into a future where fashion meets sustainability.
-        </p>
-        <button arial-label="shop-button" className="shop-button">
-          Shop Now
-        </button>
+        <div className="main-text-container">
+          <h1 aria-label="header" className="header">
+            Sunglasses Radically Crafted from Ghost Nets
+          </h1>
+          <p aria-label="paragraph1" className="p1">
+            Explore our future with sunglasses made from reclaimed ocean fishing lines. Blending Y2K vibes with cutting-edge eco-innovation. Step into a future where fashion meets sustainability.
+          </p>
+          <button arial-label="shop-button" className="shop-button">
+            Shop Now
+          </button>
+        </div>
       </div>
     </div>
     );

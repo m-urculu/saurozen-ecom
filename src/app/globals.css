@@ -11,9 +11,9 @@
 }
 
 /* homepage */
-/* .homepage {
-    @apply 
-} */
+.homepage {
+    @apply relative h-screen w-screen overflow-hidden;
+}
 
 /* promo banner */
 .promo-banner {
@@ -25,69 +25,81 @@
 
 /* nav bar */
 .nav-bar {
-    @apply h-[62px] md:h-[75px] w-screen bg-Ateneo-Blue flex
+    @apply h-[62px] md:h-[75px] w-screen bg-Ateneo-Blue flex;
 }
 .menu-button {
-    @apply block lg:hidden ml-[16px] self-center
+    @apply block lg:hidden ml-[16px] self-center;
 }
 .logo {
-    @apply font-designer text-[20px] md:text-[32px] text-Bright-Gray text-shadow-custom ml-[19px] mr-[20px] md:ml-[40px] md:mb-[0px] self-center
+    @apply font-designer text-[20px] md:text-[32px] text-Bright-Gray text-shadow-custom ml-[19px] md:ml-[40px] mr-[20px] self-center;
 }
 .nav-links {
-    @apply hidden lg:flex ml-auto mr-auto w-[30vw] font-orbitron text-Bright-Gray text-[12px] flex self-center justify-between nav-text
+    @apply hidden lg:flex mx-auto w-[30vw] font-orbitron text-Bright-Gray text-[12px] justify-between;
 }
-    .nav-text {
-        font-size: clamp(10px, 1.1vw, 16px);
-    }
+.nav-text {
+    font-size: clamp(10px, 1.1vw, 16px);
+}
 .search-icon {
-    @apply block md:hidden w-[18px] h-[18px]
+    @apply block md:hidden w-[18px] h-[18px];
 }
 .cart-icon {
-    @apply w-[20px] h-[20px] md:w-[23px] md:h-[23px]
+    @apply w-[20px] h-[20px] md:w-[23px] md:h-[23px];
 }
 .user-icon {
-    @apply mt-[1px] w-[21px] h-[20px] md:w-[26px] md:h-[24px]
+    @apply mt-[1px] w-[21px] h-[20px] md:w-[26px] md:h-[24px];
 }
 .search-bar {
-    @apply hidden md:flex ml-auto self-center
+    @apply hidden md:flex ml-auto self-center;
 }
 .input-bar {
-    @apply flex w-[50vw] lg:w-[30vw] h-[37px] bg-Bright-Gray bg-opacity-50 rounded-[50px]
+    @apply flex w-[50vw] lg:w-[30vw] h-[37px] bg-Bright-Gray bg-opacity-50 rounded-[50px];
 }
 .search-light {
-    @apply self-center ml-[10px]
+    @apply self-center ml-[10px];
 }
 .input {
-    @apply ml-[10px] w-full bg-Bright-Gray bg-opacity-0
+    @apply ml-[10px] w-full bg-Bright-Gray bg-opacity-0;
 }
 .right-buttons {
-    @apply w-[86px] mr-[16px] md:mr-[20px] md:ml-[20px] ml-auto self-center justify-end flex justify-between md:w-[60px] 
+    @apply w-[86px] md:w-[60px] ml-auto md:ml-[20px] mr-[16px] md:mr-[20px] flex justify-between;
 }
 
 /* main landing */
 .main-section {
-    @apply flex flex-col relative h-screen overflow-hidden
+    @apply flex relative h-screen w-screen overflow-hidden;
 }
 .landing-img-m {
-    @apply absolute top-0 left-0 object-cover z-[-100] mobile-breakpoint:hidden
+    @apply absolute top-0 left-0 object-cover z-[-100] mobile-breakpoint:hidden;
 }
 .landing-img {
-    @apply hidden mobile-breakpoint:block absolute z-[-101]/* Tailwind utilities */
+    @apply hidden mobile-breakpoint:block absolute object-cover w-full h-[678px] z-[-10] -top-[86px];
 }
-@layer utilities {
-    .reverse-scaling {
-        transform: scale(max(1.2, calc(2 - (100vw / 500))));
-    }
+.main-text-container {
+    @apply flex flex-col;
 }
 .header {
-    @apply flex items-center font-designer text-Bright-Gray ml-[18px] w-[281px] h-[190px] text-[28px] leading-[110%] tracking-[3%] text-left text-shadow-custom2
+    @apply flex items-center font-designer text-Bright-Gray ml-[18px] md:ml-[98px] md:mt-[48px] w-auto md:w-[674px] h-[190px] md:h-[288px] text-[28px] md:text-[48px] lg:text-[64px] leading-[110%] tracking-[3%] text-left text-shadow-custom2;
 }
 .p1 {
-    @apply flex items-center font-orbitron text-Bright-Gray ml-[18px] w-[40vw] h-auto text-[12px] font-bold leading-[160%] tracking-[5%] text-left text-shadow-custom2
+    @apply flex items-center font-orbitron text-Bright-Gray ml-[18px] md:ml-[98px] w-[40vw] text-[12px] font-bold leading-[160%] tracking-[5%] text-left text-shadow-custom2;
 }
 .shop-button {
-    @apply mt-[14vw] w-[205px] h-[40px] rounded-[120px] bg-Limerick inner-shadow self-center font-orbitron font-medium text-[20px]
+    @apply absolute top-[70%] left-[50%] w-[205px] lg:w-[273px] h-[40px] lg:h-[56px] rounded-[120px] bg-Limerick inner-shadow self-center font-orbitron font-medium text-[20px] lg:text-[24px];
+    transform: translateX(-50%);
 }
-    .inner-shadow {
-        box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 1);
+    @media (min-width: 393px) {
+        .shop-button {
+            position: absolute;
+            top: 250px;
+            left: 75vw;
+        }
     }
+    @media (min-width: 770px) {
+        .shop-button {
+            top: 40%;
+            left: 75%;
+        }
+    }
+.inner-shadow {
+    box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 1);
+}
