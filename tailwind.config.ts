@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        'm-br': '393px', // Custom breakpoint for 393px
+        'xsm': '480px', // Custom breakpoint for extra small
       },
       fontFamily: {
         orbitron: ['Orbitron', 'sans-serif'],
@@ -19,6 +19,10 @@ const config: Config = {
       textShadow: {
         'custom': '0 4px 4px rgba(0, 0, 0, 0.25)',
         'custom2': '0 4px 4px rgba(19, 8, 35, 0.4)'
+      },
+      boxShadow: {
+        'custom': '0 4px 4px rgba(0, 0, 0, 0.25)',
+        'custom2': '0 4px 4px rgba(19, 8, 35, 0.4)',
       },
       colors: {
         'Limerick': '#9DC913',
@@ -30,6 +34,16 @@ const config: Config = {
       },
     },
   },
-  plugins: [textShadow],
+  plugins: [
+    textShadow,
+    function ({ addUtilities }) {
+      addUtilities({
+        '.hide-scrollbar': {
+          'scrollbar-width': 'none', /* Firefox */
+          '-ms-overflow-style': 'none', /* IE and Edge */
+        },
+      }, ['responsive', 'hover']);
+    },
+  ],
 };
 export default config;

@@ -72,7 +72,6 @@ export default function Home() {
         </div>
       </nav>
       <div aria-label="main-section" className="main-section">
-          <img src={Images.landingImgM.src} alt="Landing Image" className="landing-img-m" />
           <img src={Images.landingImg.src} alt="Landing Image" className="landing-img" />
           <h1 aria-label="header" className="header">
             Sunglasses Radically Crafted from Ghost Nets
@@ -89,11 +88,35 @@ export default function Home() {
           <div className="arrivals-sep">
             <p>NEW ARRIVALS</p>
           </div>
+          <div aria-label="new-products" className="new-products">
+            <div className='sunglasses'>
+              <img src={Images.zenith.src} alt="Zenith" className="product-img"/>
+              <p className="product-name">Zenith</p>
+              <div className="star-rating">
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+              </div>
+            </div>
+            <div className='sunglasses'>
+              <img src={Images.neonReef.src} alt="Neon Reef" className="product-img"/>
+              <p className="product-name">Neon Reef</p>
+            </div>
+            <div className='sunglasses'>
+              <img src={Images.stratos.src} alt="Stratos" className="product-img"/>
+              <p className="product-name">Stratos</p>
+            </div>
+            <div className='sunglasses'>
+              <img src={Images.coralRay.src} alt="Coral Ray" className="product-img"/>
+              <p className="product-name">Coral Ray</p>
+            </div>
+          </div>
         </div>
         <div aria-label="top-selling" className="top-selling">
         </div>
       </div>
-      <img src={Images.backgroundImgM.src} alt="Background Image" className='background-img-m'/>
       <img src={Images.backgroundImg.src} alt="Background Image" className='background-img'/>
     </div>
     );

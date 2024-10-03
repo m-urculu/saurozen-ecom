@@ -12,12 +12,13 @@
 
 /* homepage */
 .homepage {
-    @apply relative h-screen w-screen overflow-hidden;
+    @apply relative h-screen w-screen overflow-x-hidden;
 }
 
 /* promo banner */
 .promo-banner {
-    @apply h-[34px] md:h-[37px] w-screen bg-Limerick text-Cetacean-Blue font-orbitron text-[10px] md:text-[12px] flex items-center justify-center;
+    @apply h-[34px] md:h-[37px] w-screen bg-Limerick text-Cetacean-Blue font-orbitron flex items-center justify-center;
+    font-size: clamp(6px, 2vw, 12px);
 }
 .promo-button {
     @apply ml-1 underline text-Cetacean-Blue;
@@ -66,27 +67,24 @@
 
 /* main landing */
 .main-section {
-    @apply flex flex-col relative w-screen h-[592px];
-}
-.landing-img-m {
-    @apply absolute top-0 left-0 object-cover w-full h-[592px] z-[-10] m-br:hidden;
+    @apply flex flex-col relative w-screen h-[80vh];
 }
 .landing-img {
-    @apply hidden m-br:block absolute object-cover w-full h-[678px] lg:h-[400px] z-[-10] -top-[86px];
-}
+    @apply absolute object-cover w-full h-[90vh] z-[-10] -top-[10vh];
+}   
 .header {
-    @apply flex items-start font-designer text-Bright-Gray mt-[37px] ml-[18px] m-br:mt-[] m-br:ml-[5vw] md:mt-[48px] w-[80vw] md:w-[674px] h-auto text-[28px] md:text-[48px] lg:text-[64px] leading-[110%] tracking-[3%] text-left text-shadow-custom2;
+    @apply flex items-start font-designer text-Bright-Gray mt-[37px] ml-[18px] xsm:ml-[5vw] sm:mt-[48px] w-[70vw] lg:w-[50vw] h-auto text-[4vh] xsm:text-[28px] sm:text-[5vh] xl:text-[5vw] leading-[110%] tracking-[3%] text-left text-shadow-custom2;
 }
 .p1 {
-    @apply flex items-center font-orbitron text-Bright-Gray mt-[40px] ml-[18px] m-br:ml-[5vw] w-[40vw] text-[12px] font-bold leading-[160%] tracking-[5%] text-left text-shadow-custom2;
+    @apply flex items-center font-orbitron text-Bright-Gray mt-[40px] ml-[18px] xsm:ml-[5vw] w-[40vw] h-auto text-[1.5vh] xsm:text-[12px] md:text-[2vh] xl:text-[1vw] font-bold leading-[160%] tracking-[5%] text-left text-shadow-custom2;
 }
 .shop-button {
-    @apply m-auto w-[205px] lg:w-[273px] h-[40px] lg:h-[56px] rounded-[120px] bg-Limerick inner-shadow self-center font-orbitron font-medium text-[20px] lg:text-[24px];
+    @apply m-auto w-[205px] md:w-[273px] h-[40px] md:h-[56px] rounded-[120px] bg-Limerick inner-shadow self-center font-orbitron font-medium text-[20px] lg:text-[24px];
 }
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
         .shop-button {
         position: absolute;
-        top: 250px;
+        top: 50%;
         left: 65%;
         }
     }
@@ -96,22 +94,38 @@
 
 /* Products */
 .products {
-    @apply flex h-[892px]
+    @apply flex h-[100vh]
 }
     .new-arrivals {
         @apply w-screen h-[430px]
     }
         .arrivals-sep {
-            @apply flex items-center justify-center h-[50px] font-orbitron font-black text-[24px] bg-Bittersweet-Shimmer
+            @apply flex items-center justify-center w-screen h-[50px] font-orbitron font-black text-[24px] bg-Bittersweet-Shimmer
         }
+        .new-products {
+            @apply flex pt-[31px] px-[28px] lg:pt-[36px] gap-[13px] md:justify-around overflow-x-auto whitespace-nowrap hide-scrollbar;
+        }
+            .sunglasses {
+                @apply flex-shrink-0  w-[200px] lg:w-[250px];
+            }
+                .product-img {
+                    @apply justify-center h-[200px] w-[200px] lg:h-[250px] lg:w-[250px] rounded-[15px] top-[10px] inline-block
+                }
+                .product-name {
+                    @apply pt-[5px] pl-[3px] font-orbitron font-medium font-[16px] lg:font-[24px]
+                }
+                .star-rating{
+                    @apply flex gap-[3px]
+                }
+                    .star {
+                        @apply text-Bittersweet-Shimmer
+                    }
+                    
     .products {
         @apply h-[430px]
     }
 
-/* Background Images */
-.background-img-m {
-    @apply absolute top-0 left-0 z-[-200] m-br:hidden;
-}
+/* Background Image */
 .background-img {
-    @apply hidden m-br:block absolute top-0 left-0 w-screen z-[-200];
+    @apply absolute top-0 left-0 h-auto w-auto z-[-200];
 }
