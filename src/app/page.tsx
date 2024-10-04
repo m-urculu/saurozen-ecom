@@ -87,30 +87,80 @@ export default function Home() {
         <div aria-label="new-arrivals" className="new-arrivals">
           <div className="arrivals-sep">
             <p>NEW ARRIVALS</p>
+            <p>NEW ARRIVALS</p>
+            <p>NEW ARRIVALS</p>
+            <p>NEW ARRIVALS</p>
+            <p>NEW ARRIVALS</p>
+            <p>NEW ARRIVALS</p>
+            <p>NEW ARRIVALS</p>
+            <p>NEW ARRIVALS</p>
+            <p>NEW ARRIVALS</p>
+            <p>NEW ARRIVALS</p>
           </div>
           <div aria-label="new-products" className="new-products">
             <div className='sunglasses'>
               <img src={Images.zenith.src} alt="Zenith" className="product-img"/>
               <p className="product-name">Zenith</p>
-              <div className="star-rating">
-                <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+              <div aria-label="rating" className="rating">
+                <div className="star-rating">
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+                </div>
+                <p className="number-rate">4.5/5</p>
               </div>
+              <p className="price">129€</p>
             </div>
             <div className='sunglasses'>
               <img src={Images.neonReef.src} alt="Neon Reef" className="product-img"/>
               <p className="product-name">Neon Reef</p>
+              <div aria-label="rating" className="rating">
+                <div className="star-rating">
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                </div>
+                <p className="number-rate">4.0/5</p>
+              </div>
+              <p className="price">160€</p>
             </div>
             <div className='sunglasses'>
               <img src={Images.stratos.src} alt="Stratos" className="product-img"/>
               <p className="product-name">Stratos</p>
+              <div aria-label="rating" className="rating">
+                <div className="star-rating">
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+                </div>
+                <p className="number-rate">4.5/5</p>
+              </div>
+              <p className="price">145€</p>
             </div>
             <div className='sunglasses'>
               <img src={Images.coralRay.src} alt="Coral Ray" className="product-img"/>
               <p className="product-name">Coral Ray</p>
+              <div aria-label="rating" className="rating">
+                <div className="star-rating">
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+                </div>
+                <p className="number-rate">4.6/5</p>
+              </div>
+              <div className="price">212€
+                <p className="discounted-price">235€</p>
+                <div className="discount">
+                  <p className="percentage">-20%</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

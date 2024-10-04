@@ -15,6 +15,7 @@ const config: Config = {
       fontFamily: {
         orbitron: ['Orbitron', 'sans-serif'],
         designer: ['Designer', 'sans-serif'],
+        inter: ['Inter', 'sans-serif']
       },
       textShadow: {
         'custom': '0 4px 4px rgba(0, 0, 0, 0.25)',
@@ -31,6 +32,7 @@ const config: Config = {
         'Ateneo-Blue': '#0A4164',
         'Limerick': '#9DC913',
         'Bittersweet-Shimmer': '#C05459',
+        'Light-Pink': '#FFBEC1',
       },
     },
   },
