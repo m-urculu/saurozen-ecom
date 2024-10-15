@@ -1,6 +1,13 @@
 import React, { useEffect, useState, useRef } from 'react';
 
-const ElementsCalc: React.FC = () => {
+// Define the props interface
+interface ElementsCalcProps {
+    text: string;  // Prop for the text to display
+    separatorClass?: string;
+    wrapperClass?: string;
+}
+
+const ElementsCalc: React.FC<ElementsCalcProps> = ({ text, separatorClass, wrapperClass }) => {
     const [numElements, setNumElements] = useState(0);
     const [positions, setPositions] = useState<number[]>([]);
     const wrapperRef = useRef<HTMLDivElement | null>(null);
@@ -10,7 +17,13 @@ const ElementsCalc: React.FC = () => {
     // Calculate how many elements can fit on the screen
     const calcElementsNum = () => {
         const vw = window.innerWidth;
-        const elementsCanFit = Math.floor(vw / pElementWidth) + 3; // Extra elements for smoothness
+        let elementsCanFit;
+
+        // if (vw < 640) {
+            //     elementsCanFit = 1;
+            // } else { 
+            elementsCanFit = Math.floor(vw / pElementWidth) + 3; // Extra elements for smoothness
+        // }
         setNumElements(elementsCanFit);
         console.log(elementsCanFit)
     };
@@ -29,14 +42,14 @@ const ElementsCalc: React.FC = () => {
     }, [numElements]);
 
     return (
-        <div className="arrivals-wrapper" ref={wrapperRef}>
+        <div className={wrapperClass} ref={wrapperRef}>
             {positions.map((position, index) => (
                 <p 
                     key={index} 
-                    className="item" 
+                    className={separatorClass}
                     style={{ transform: `translateX(${position}px)` }}
                 >
-                    NEW ARRIVALS
+                    {text}
                 </p>
             ))}
         </div>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Inter } from 'next/font/google';  
+import { Inter, Syncopate } from 'next/font/google';  
 import Home from "./page"
 
 export const metadata: Metadata = {
@@ -13,6 +13,11 @@ const inter = Inter({
    styles: ['normal', 'italic'], 
   });
 
+const syncopate = Syncopate({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -23,7 +28,7 @@ export default function RootLayout({
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet"></link>
       </head>
-      <body>  
+      <body className={syncopate.className}>  
         {children}
       </body>
     </html>

@@ -4,3 +4,7 @@ export { default as coralRay} from './sunglasses/coral-ray.webp';
 export { default as neonReef} from './sunglasses/neon-reef.webp';
 export { default as stratos} from './sunglasses/stratos.webp';
 export { default as zenith} from './sunglasses/zenith.webp';
+export { default as solstice} from './sunglasses/solstice.webp';
+export { default as cascade} from './sunglasses/cascade.webp';
+export { default as aquaEdge} from './sunglasses/aqua-edge.webp';
+export { default as coralEclipse} from './sunglasses/coral-eclipse.webp';

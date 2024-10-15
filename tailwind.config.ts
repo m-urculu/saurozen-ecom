@@ -24,6 +24,7 @@ const config: Config = {
       boxShadow: {
         'custom': '0 4px 4px rgba(0, 0, 0, 0.25)',
         'custom2': '0 4px 4px rgba(19, 8, 35, 0.4)',
+        'custom3': 'inset 0 0 0 2px rgba(10, 65, 100, 0.15)',
       },
       colors: {
         'Limerick': '#9DC913',
@@ -33,6 +34,7 @@ const config: Config = {
         'Limerick': '#9DC913',
         'Bittersweet-Shimmer': '#C05459',
         'Light-Pink': '#FFBEC1',
+        'Dark-Sky-Blue': '#8BBDE3',
       },
     },
   },
