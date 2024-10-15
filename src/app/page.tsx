@@ -1,6 +1,8 @@
 'use client'
 import * as Icons from '../../public/icons'
 import * as Images from '../../public/images'
+import React from 'react'
+import ElementsCalc from '../components/elementsCalc';
 
 
 export default function Home() {
@@ -86,16 +88,7 @@ export default function Home() {
       <div aria-label="products" className="products">
         <div aria-label="new-arrivals" className="new-arrivals">
           <div className="arrivals-sep">
-            <p>NEW ARRIVALS</p>
-            <p>NEW ARRIVALS</p>
-            <p>NEW ARRIVALS</p>
-            <p>NEW ARRIVALS</p>
-            <p>NEW ARRIVALS</p>
-            <p>NEW ARRIVALS</p>
-            <p>NEW ARRIVALS</p>
-            <p>NEW ARRIVALS</p>
-            <p>NEW ARRIVALS</p>
-            <p>NEW ARRIVALS</p>
+              <ElementsCalc/>           
           </div>
           <div aria-label="new-products" className="new-products">
             <div className='sunglasses'>

@@ -10,9 +10,22 @@
     font-style: normal; /* Adjust if you have different styles */
 }
 
+body, html {
+    height: 100%;
+    overflow-x: hidden; 
+    overflow-y: auto;
+    scrollbar-width: none; 
+    scroll-behavior: smooth; 
+}
+
+body::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+}
+
 /* homepage */
 .homepage {
-    @apply relative min-h-screen w-screen overflow-x-hidden;
+    @apply relative w-screen overflow-x-hidden;
+    overflow: visible;
 }
 
 /* promo banner */
@@ -102,24 +115,24 @@
         .arrivals-sep {
             @apply flex items-center justify-center w-screen h-[50px] font-orbitron font-black text-black text-[24px] bg-Bittersweet-Shimmer
         }
-            @media (min-width: 640px) {
-                .arrivals-sep {
-                    @apply justify-start overflow-hidden;
-                }
-            
-                .arrivals-sep p {
-                    @apply  whitespace-nowrap mx-[10px];
-                    animation: scroll-left 10s linear infinite;
-                }
+            .arrivals-wrapper {
+                @apply flex items-center h-[50px]; 
+                animation: scroll-left 2s linear infinite;
             }
-            @keyframes scroll-left {
-                0% {
-                    transform: translateX(100%);
+                .item {
+                    @apply flex-shrink-0 px-[20px]; 
+                    width: 261px;                  
                 }
-                100% {
-                    transform: translateX(-100%);
+                
+                /* Keyframes to move the elements from right to left */
+                @keyframes scroll-left {
+                    0% {
+                        transform: translateX(0px); /* Start at current position */
+                    }
+                    100% {
+                        transform: translateX(-261px); /* Move to left completely */
+                    }
                 }
-            }
         .new-products {
             @apply flex pt-[31px] px-[28px] lg:pt-[36px] gap-[13px] md:justify-around overflow-x-auto whitespace-nowrap hide-scrollbar;
         }
@@ -153,15 +166,15 @@
                     }
                     .discounted-price::before {
                         content: '';
-                        @apply absolute bg-white; /* Background color of the line */
-                        height: 2px; /* Thickness of the line */
-                        width: 90%; /* Full width of the parent element */
-                        transform: rotate(-20deg); /* Angle of the line */
-                        transform-origin: left; /* Ensure the rotation happens from the left */
-                        left: 15%; /* Position it at the start */
-                        top: 90%; /* Center it vertically */
-                        z-index: 1; /* Ensure the line is above the text */
-                        margin-top: -1px; /* Adjust to ensure the line crosses the text */
+                        @apply absolute bg-white; 
+                        height: 2px; 
+                        width: 90%; 
+                        transform: rotate(-20deg); 
+                        transform-origin: left; 
+                        left: 15%; 
+                        top: 90%;
+                        z-index: 1; 
+                        margin-top: -1px; 
                     }
                     .discount {
                         @apply flex items-center justify-center ml-[6px] w-[42px] lg:w-[50px] h-[14px] lg:h-[17px] bg-Bittersweet-Shimmer rounded-[15px]
