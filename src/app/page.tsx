@@ -90,8 +90,8 @@ export default function Home() {
           <div className="arrivals-sep">
               <ElementsCalc text="NEW ARRIVALS" separatorClass="arrivals-text" wrapperClass="arrivals-wrapper"/>           
           </div>
-          <div aria-label="new-products" className="new-products">
-            <div className='sunglasses'>
+          <div aria-label="product-items" className="product-items">
+            <button className='sunglasses'>
               <img src={Images.zenith.src} alt="Zenith" className="product-img"/>
               <p className="product-name">Zenith</p>
               <div aria-label="rating" className="rating">
@@ -105,8 +105,8 @@ export default function Home() {
                 <p className="number-rate">4.5/5</p>
               </div>
               <p className="price">129€</p>
-            </div>
-            <div className='sunglasses'>
+            </button>
+            <button className='sunglasses'>
               <img src={Images.neonReef.src} alt="Neon Reef" className="product-img"/>
               <p className="product-name">Neon Reef</p>
               <div aria-label="rating" className="rating">
@@ -119,8 +119,8 @@ export default function Home() {
                 <p className="number-rate">4.0/5</p>
               </div>
               <p className="price">160€</p>
-            </div>
-            <div className='sunglasses'>
+            </button>
+            <button className='sunglasses'>
               <img src={Images.stratos.src} alt="Stratos" className="product-img"/>
               <p className="product-name">Stratos</p>
               <div aria-label="rating" className="rating">
@@ -134,8 +134,8 @@ export default function Home() {
                 <p className="number-rate">4.5/5</p>
               </div>
               <p className="price">145€</p>
-            </div>
-            <div className='sunglasses'>
+            </button>
+            <button className='sunglasses'>
               <img src={Images.coralRay.src} alt="Coral Ray" className="product-img"/>
               <p className="product-name">Coral Ray</p>
               <div aria-label="rating" className="rating">
@@ -154,86 +154,88 @@ export default function Home() {
                   <p className="percentage">-20%</p>
                 </div>
               </div>
-            </div>
+            </button>
           </div>
           <div className="btn-container">
             <button className="view-button">
               VIEW ALL
             </button>
           </div>
+        </div>
+        <div aria-label="top-products" className='top-products'>
           <div className="top-sep">
               <ElementsCalc text="TOP SELLING" separatorClass="top-text" wrapperClass="top-wrapper"/>           
           </div>
-          <div aria-label="new-products" className="new-products">
-            <div className='sunglasses'>
-              <img src={Images.solstice.src} alt="Solstice" className="product-img"/>
-              <p className="product-name">Solstice</p>
-              <div aria-label="rating" className="rating">
-                <div className="star-rating">
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+          <div aria-label="product-items" className="product-items">
+              <button className='sunglasses'>
+                <img src={Images.solstice.src} alt="Solstice" className="product-img"/>
+                <p className="product-name">Solstice</p>
+                <div aria-label="rating" className="rating">
+                  <div className="star-rating">
+                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                    <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+                  </div>
+                  <p className="number-rate">4.6/5</p>
                 </div>
-                <p className="number-rate">4.6/5</p>
-              </div>
-              <div className="price">212€
-                <p className="discounted-price">235€</p>
-                <div className="discount">
-                  <p className="percentage">-20%</p>
+                <div className="price">212€
+                  <p className="discounted-price">235€</p>
+                  <div className="discount">
+                    <p className="percentage">-20%</p>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className='sunglasses'>
-              <img src={Images.cascade.src} alt="Cascade" className="product-img"/>
-              <p className="product-name">Cascade</p>
-              <div aria-label="rating" className="rating">
-                <div className="star-rating">
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+              </button>
+              <button className='sunglasses'>
+                <img src={Images.cascade.src} alt="Cascade" className="product-img"/>
+                <p className="product-name">Cascade</p>
+                <div aria-label="rating" className="rating">
+                  <div className="star-rating">
+                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  </div>
+                  <p className="number-rate">4.0/5</p>
                 </div>
-                <p className="number-rate">4.0/5</p>
-              </div>
-              <p className="price">145€</p>
-            </div>
-            <div className='sunglasses'>
-              <img src={Images.aquaEdge.src} alt="Aqua Edge" className="product-img"/>
-              <p className="product-name">Aqua Edge</p>
-              <div aria-label="rating" className="rating">
-                <div className="star-rating">
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+                <p className="price">145€</p>
+              </button>
+              <button className='sunglasses'>
+                <img src={Images.aquaEdge.src} alt="Aqua Edge" className="product-img"/>
+                <p className="product-name">Aqua Edge</p>
+                <div aria-label="rating" className="rating">
+                  <div className="star-rating">
+                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                    <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+                  </div>
+                  <p className="number-rate">5/5</p>
                 </div>
-                <p className="number-rate">5/5</p>
-              </div>
-              <p className="price">200€</p>
-            </div>
-            <div className='sunglasses'>
-              <img src={Images.coralEclipse.src} alt="Coral Eclipse" className="product-img"/>
-              <p className="product-name">Coral Eclipse</p>
-              <div aria-label="rating" className="rating">
-                <div className="star-rating">
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+                <p className="price">200€</p>
+              </button>
+              <button className='sunglasses'>
+                <img src={Images.coralEclipse.src} alt="Coral Eclipse" className="product-img"/>
+                <p className="product-name">Coral Eclipse</p>
+                <div aria-label="rating" className="rating">
+                  <div className="star-rating">
+                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                    <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+                  </div>
+                  <p className="number-rate">4.6/5</p>
                 </div>
-                <p className="number-rate">4.6/5</p>
-              </div>
-              <div className="price">260€
-                <p className="discounted-price">300€</p>
-                <div className="discount">
-                  <p className="percentage">-40%</p>
+                <div className="price">260€
+                  <p className="discounted-price">300€</p>
+                  <div className="discount">
+                    <p className="percentage">-40%</p>
+                  </div>
                 </div>
-              </div>
-            </div>
+              </button>
           </div>
           <div className="btn-container">
             <button className="view-button">
@@ -241,9 +243,25 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div aria-label="top-selling" className="top-selling">
-        </div>
       </div>
+      <div aria-label="what-we-do" className="what-we-do">
+        <div className="key-sep">
+            <ElementsCalc text="SUSTAINABILITY IS KEY" separatorClass="key-text" wrapperClass="key-wrapper" />
+        </div>
+        <div className="what-container">
+            <div aria-label="text-window" className="text-window">
+              <p className="what-text-title">WHAT WE DO</p>
+              <p className='what-text-content'>
+              At SAUROZER, we’re on a mission to flip the script on waste. We take ghost nets — abandoned fishing gear lurking in the ocean — and upcycle them into bold, eco-friendly sunglasses that merge style with sustainability. Our vision? A future where fashion is fearless, waste is a thing of the past, and you’re part of the change.
+Why do we do it? Because the planet needs a reset, and we're all about pushing boundaries. When you rock a pair of our shades, you're not just making a fashion statement — you're repping a movement that’s saving the oceans and giving plastic a second life.
+Welcome to the future of eyewear: recycled, reimagined, and ready for what’s next.
+              </p>
+              <button className='what-learn-btn'>LEARN MORE</button>
+            </div>
+            <img src={Images.ghostnet.src} alt="Ghost Net Image" className='ghost-net-img' />
+        </div>
+</div>
+
       <img src={Images.backgroundImg.src} alt="Background Image" className='background-img'/>
     </div>
     );

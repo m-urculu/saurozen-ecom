@@ -15,6 +15,7 @@ const config: Config = {
       fontFamily: {
         orbitron: ['Orbitron', 'sans-serif'],
         designer: ['Designer', 'sans-serif'],
+        o210ital: ['o210ital', 'sans-serif'],
         inter: ['Inter', 'sans-serif']
       },
       textShadow: {
