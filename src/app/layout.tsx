@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <head>
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800;900&display=swap" rel="stylesheet"></link>
       </head>
       <body className={syncopate.className}>  
         {children}

@@ -27,6 +27,9 @@ const config: Config = {
         'custom2': '0 4px 4px rgba(19, 8, 35, 0.4)',
         'custom3': 'inset 0 0 0 2px rgba(10, 65, 100, 0.15)',
       },
+      dropShadow: {
+        'custom': '0 4px 4px rgba(0, 0, 0, 0.25)',  // Customize your drop shadow here
+      },
       colors: {
         'Limerick': '#9DC913',
         'Cetacean-Blue': '#160233',

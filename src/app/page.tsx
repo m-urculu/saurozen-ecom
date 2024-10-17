@@ -246,7 +246,7 @@ export default function Home() {
       </div>
       <div aria-label="what-we-do" className="what-we-do">
         <div className="key-sep">
-            <ElementsCalc text="SUSTAINABILITY IS KEY" separatorClass="key-text" wrapperClass="key-wrapper" />
+          <ElementsCalc text="SUSTAINABILITY IS KEY" separatorClass="key-text" wrapperClass="key-wrapper" />
         </div>
         <div className="what-container">
             <div aria-label="text-window" className="text-window">
@@ -260,8 +260,113 @@ Welcome to the future of eyewear: recycled, reimagined, and ready for what’s n
             </div>
             <img src={Images.ghostnet.src} alt="Ghost Net Image" className='ghost-net-img' />
         </div>
-</div>
-
+      </div>
+      <div aria-label="ocean-sep" className="ocean-sep">
+        <div className="blk-line-container">
+          <div className='blk-line'/>
+        </div>
+        <ElementsCalc text="FUTURE OCEAN" separatorClass="ocean-text" wrapperClass="ocean-wrapper" />
+        <div className="blk-line-btm"/>
+        <div className="blk-line-container">
+          <div className='blk-line'/>
+        </div>
+      </div>
+      <div aria-label="models" className='models'>
+        <img src={Images.image71.src} alt="Model 71" className='model-img mm'/>
+        <img src={Images.image72.src} alt="Model 72" className='model-img mm'/>
+        <img src={Images.image73.src} alt="Model 73" className='model-img mm'/>
+        <img src={Images.image75.src} alt="Model 75" className='model-img mm'/>
+        <img src={Images.image76.src} alt="Model 76" className='model-img mm'/>
+        <img src={Images.image80.src} alt="Model 80" className='model-img mm'/>
+        <img src={Images.image81.src} alt="Model 81" className='model-img'/>
+        <img src={Images.image87.src} alt="Model 87" className='model-img'/>
+        <img src={Images.image88.src} alt="Model 88" className='model-img'/>
+        <img src={Images.image89.src} alt="Model 89" className='model-img'/>
+        <img src={Images.image90.src} alt="Model 90" className='model-img'/>
+        <img src={Images.image91.src} alt="Model 91" className='model-img'/>
+      </div>
+      <div aria-label="reviews" className="reviews-section">
+        <div className="reviews-content">
+          <div className='reviews-header'>
+            <h1 className='reviews-title'>REVIEWS</h1>
+            <div className="arrows">
+              <button>
+                <img 
+                  src={Icons.arrow.src}
+                  alt="Previous"
+                  className="arrowleft"
+                />
+              </button>
+              <button>
+                <img 
+                  src={Icons.arrow.src}
+                  alt="Next"
+                  className="arrowright"
+                />
+              </button>
+            </div>
+          </div>
+          <div className='reviews'>
+            <div className='review1'>
+              <p className="customer-name">Sarah M.</p>
+              <div className="star-rating">
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img 
+                    src={Icons.verified.src}
+                    alt="Verified"
+                    className="verified"
+                />
+              </div>
+              <p className="quick-quote">"Stylish, sustainable, and I love them!"</p>
+              <p className='detailed-quote'>
+                “These sunglasses are incredible! Not only do they look great, but they’re also made from recycled ocean waste, which makes me feel good about wearing them. Super lightweight and durable too. I’m all about supporting a brand that’s making a real difference!”
+              </p>
+            </div>
+            <div className='review'>
+              <p className="customer-name">Sarah M.</p>
+              <div className="star-rating">
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img 
+                    src={Icons.verified.src}
+                    alt="Verified"
+                    className="verified"
+                />
+              </div>
+              <p className="quick-quote">"Stylish, sustainable, and I love them!"</p>
+              <p className='detailed-quote'>
+                “These sunglasses are incredible! Not only do they look great, but they’re also made from recycled ocean waste, which makes me feel good about wearing them. Super lightweight and durable too. I’m all about supporting a brand that’s making a real difference!”
+              </p>
+            </div>
+            <div className='review'>
+              <p className="customer-name">Sarah M.</p>
+              <div className="star-rating">
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img 
+                    src={Icons.verified.src}
+                    alt="Verified"
+                    className="verified"
+                />
+              </div>
+              <p className="quick-quote">"Stylish, sustainable, and I love them!"</p>
+              <p className='detailed-quote'>
+                “These sunglasses are incredible! Not only do they look great, but they’re also made from recycled ocean waste, which makes me feel good about wearing them. Super lightweight and durable too. I’m all about supporting a brand that’s making a real difference!”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       <img src={Images.backgroundImg.src} alt="Background Image" className='background-img'/>
     </div>
     );
