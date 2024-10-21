@@ -291,21 +291,24 @@ body::-webkit-scrollbar {
     }
 
         .text-window {
-            @apply flex flex-col justify-center items-center w-[90vw] max-w-[70vw] bg-black bg-opacity-50 rounded-[15px] p-[10px] sm:p-[30px] max-h-screen overflow-y-auto; 
+            @apply flex flex-col items-center justify-between w-[90vw] h-[80vh] max-w-[70vw] bg-black bg-opacity-50 rounded-[15px] p-[10px]; 
             z-index: 1; 
         }
 
-        .what-text-title {
-            @apply text-center py-[30px] font-o210ital text-white;
-        }
+            .what-text-title {
+                @apply flex justify-center items-center text-center font-o210ital text-white h-full;
+                font-size: clamp(1vw + 1vh, 1.5vw + 1.5vh, 3vw + 3vh);
+            }
 
-        .what-text-content {
-            @apply text-center px-[40px] font-orbitron text-white text-[10px] sm:text-[12px] lg:text-[16px] text-shadow-custom2;
-        }
+            .what-text-content {
+                @apply flex justify-center items-center text-center px-[3vw] font-orbitron text-white text-shadow-custom2;
+                font-size: clamp(0.1vw + 0.1vh, 1.2vw + 1vh, 1vw + 1vh);
+            }
 
-        .what-learn-btn {
-            @apply flex justify-center items-center my-[30px] font-orbitron text-white;
-        }
+            .what-learn-btn {
+                @apply flex justify-center items-center text-center h-full font-orbitron text-white;
+                font-size: clamp(1vw + 1vh, 1.5vw + 1.5vh, 3vw + 3vh);
+            }
 
     .ghost-net-img {
         @apply absolute top-0 left-0 w-full h-full object-cover;
@@ -333,49 +336,58 @@ body::-webkit-scrollbar {
         @apply px-[40px] w-full py-[45px]
     }
         .reviews-header {
-            @apply flex items-center
+            @apply flex items-center;
         }
             .reviews-title {
                 @apply font-orbitron text-black text-[20px] font-bold pt-[3px] text-shadow-custom2
             }
             .arrows {
-                @apply flex ml-auto items-center
+                @apply flex justify-between items-center w-[60px] ml-auto
             }
                 .arrow-btn {
-                    @apply p-[10px]
+                    @apply flex p-[10px] items-center
                 }
                     .arrowleft {
-                        @apply mr-[30px] h-[15px] w-[15px] self-center
+                        @apply h-[15px] w-[15px] self-start
                     }
                     .arrowright {
-                        @apply h-[15px] w-[15px] self-center rotate-180
+                        @apply h-[15px] w-[15px] self-end rotate-180
                     }
         .reviews {
-            @apply flex space-x-4
+            @apply flex space-x-4 overflow-x-auto;
         }            
-            .review1 {
-                @apply p-[15px] mt-[29px] mb-[58px] w-full h-full rounded-[15px];
-                background-color: rgba(255, 255, 255, 0.27);
-                box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25);  
-            }
             .review {
-                @apply hidden sm:block p-[15px] mt-[29px] mb-[58px] w-full h-full rounded-[15px];
+                @apply flex flex-col flex-shrink-0 justify-between p-[15px] space-y-[15px] mt-[29px] mb-[58px] review-width h-full rounded-[15px];
                 background-color: rgba(255, 255, 255, 0.27);
-                box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25);  
+                box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25);
+                font-size: clamp(0.1vw + 0.1vh, 1.2vw + 1vh, 1vw + 1vh);
+                scrollbar-width: none;
+            }
+            /* For Chrome, Safari, and Opera */
+            .reviews::-webkit-scrollbar {
+                display: none; /* Hide the scrollbar */
+            }
+
+            /* Optionally, if you want to hide the scrollbar track as well */
+            .reviews::-webkit-scrollbar-track {
+                display: none; /* Hide the track */
+            }
+            .review-width {
+                width: calc(100vw - 80px);
             }
                 .customer-name {
-                    @apply pb-[10px] font-orbitron font-black text-[12px];
+                    @apply font-orbitron font-black text-[12px];
                     letter-spacing: 0.2em;
                 }
                 .verified {
-                    @apply pl-[6px]
+                    @apply ml-[5px]
                 }
                 .quick-quote {
-                    @apply pt-[20px] font-orbitron font-bold text-[10px];
+                    @apply font-orbitron font-bold text-[10px];
                     letter-spacing: 0.2em;
                 }
                 .detailed-quote {
-                    @apply pt-[10px] font-orbitron text-[10px];
+                    @apply font-orbitron text-[10px] h-full flex-grow max-w-fit break-words;
                     letter-spacing: 0.2em;
                 }
 

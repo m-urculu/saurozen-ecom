@@ -25,7 +25,6 @@ const ElementsCalc: React.FC<ElementsCalcProps> = ({ text, separatorClass, wrapp
             elementsCanFit = Math.floor(vw / pElementWidth) + 3; // Extra elements for smoothness
         // }
         setNumElements(elementsCanFit);
-        console.log(elementsCanFit)
     };
 
     // Position the elements to fit the screen width

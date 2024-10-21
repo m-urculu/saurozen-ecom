@@ -1,11 +1,36 @@
 'use client'
+import React, { useState, useRef, useEffect } from 'react'
 import * as Icons from '../../public/icons'
 import * as Images from '../../public/images'
-import React from 'react'
 import ElementsCalc from '../components/elementsCalc';
 
 
 export default function Home() {
+  const reviewsRef = useRef(null); // Create a ref for the reviews container
+  const reviewWidth = window.innerWidth - 64; // Adjust based on your layout
+  const totalReviews = 4; // Adjust this to the actual number of reviews
+
+
+  const handleNext = () => {
+    if (reviewsRef.current) {
+      reviewsRef.current.scrollBy({
+        left: reviewWidth, // Scroll to the right by the width of one review
+        behavior: 'smooth', // Smooth scrolling
+      });
+    }
+  };
+
+  const handlePrevious = () => {
+    if (reviewsRef.current) {
+      reviewsRef.current.scrollBy({
+        left: -reviewWidth, // Scroll to the left by the width of one review
+        behavior: 'smooth', // Smooth scrolling
+      });
+    }
+  };
+
+  console.log(window.innerWidth)
+
 
   return (
     <div aria-label="homepage" className="homepage">
@@ -290,14 +315,14 @@ Welcome to the future of eyewear: recycled, reimagined, and ready for what’s n
           <div className='reviews-header'>
             <h1 className='reviews-title'>REVIEWS</h1>
             <div className="arrows">
-              <button>
+              <button onClick={handlePrevious} >
                 <img 
                   src={Icons.arrow.src}
                   alt="Previous"
                   className="arrowleft"
                 />
               </button>
-              <button>
+              <button onClick={handleNext} >
                 <img 
                   src={Icons.arrow.src}
                   alt="Next"
@@ -306,26 +331,16 @@ Welcome to the future of eyewear: recycled, reimagined, and ready for what’s n
               </button>
             </div>
           </div>
-          <div className='reviews'>
-            <div className='review1'>
-              <p className="customer-name">Sarah M.</p>
-              <div className="star-rating">
-                <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                <img 
-                    src={Icons.verified.src}
-                    alt="Verified"
-                    className="verified"
-                />
-              </div>
-              <p className="quick-quote">"Stylish, sustainable, and I love them!"</p>
-              <p className='detailed-quote'>
-                “These sunglasses are incredible! Not only do they look great, but they’re also made from recycled ocean waste, which makes me feel good about wearing them. Super lightweight and durable too. I’m all about supporting a brand that’s making a real difference!”
-              </p>
-            </div>
+          <div 
+            className='reviews'
+            ref={reviewsRef} // Attach the ref here
+            style={{
+              display: 'flex',
+              overflowX: 'auto', // Allow manual horizontal scrolling
+              scrollSnapType: 'x mandatory', // Optional: for a snapping effect
+              width: `${reviewWidth}px`, // Set width for the container
+            }}
+          >
             <div className='review'>
               <p className="customer-name">Sarah M.</p>
               <div className="star-rating">
@@ -346,7 +361,7 @@ Welcome to the future of eyewear: recycled, reimagined, and ready for what’s n
               </p>
             </div>
             <div className='review'>
-              <p className="customer-name">Sarah M.</p>
+              <p className="customer-name">Jenna L.</p>
               <div className="star-rating">
                 <img src={Icons.star.src} alt="Star Icon" className="star"/>
                 <img src={Icons.star.src} alt="Star Icon" className="star"/>
@@ -359,7 +374,45 @@ Welcome to the future of eyewear: recycled, reimagined, and ready for what’s n
                     className="verified"
                 />
               </div>
-              <p className="quick-quote">"Stylish, sustainable, and I love them!"</p>
+              <p className="quick-quote">"Unique style with a purpose — I’m in love!"</p>
+              <p className='detailed-quote'>
+                “I love my new sunglasses! The Y2K design is on point, and the fact that they're made from reclaimed ocean fishing lines makes them even better. Stylish, comfortable, and great for the environment. Totally worth it!”
+              </p>
+            </div>
+            <div className='review'>
+              <p className="customer-name">Sarah K.</p>
+              <div className="star-rating">
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img 
+                    src={Icons.verified.src}
+                    alt="Verified"
+                    className="verified"
+                />
+              </div>
+              <p className="quick-quote">"Stylish with a purpose!"</p>
+              <p className='detailed-quote'>
+                “I’m so impressed with the quality and design of these shades! The Y2K vibe is super trendy, and knowing they’re made from reclaimed ocean waste makes me feel good about my purchase. Lightweight, comfortable, and eco-friendly — couldn’t ask for more.”
+              </p>
+            </div>
+            <div className='review'>
+              <p className="customer-name">Ryan M..</p>
+              <div className="star-rating">
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img 
+                    src={Icons.verified.src}
+                    alt="Verified"
+                    className="verified"
+                />
+              </div>
+              <p className="quick-quote">"Fashion-forward and eco-friendly!"</p>
               <p className='detailed-quote'>
                 “These sunglasses are incredible! Not only do they look great, but they’re also made from recycled ocean waste, which makes me feel good about wearing them. Super lightweight and durable too. I’m all about supporting a brand that’s making a real difference!”
               </p>
