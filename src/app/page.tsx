@@ -287,92 +287,91 @@ Welcome to the future of eyewear: recycled, reimagined, and ready for what’s n
         <img src={Images.image91.src} alt="Model 91" className='model-img'/>
       </div>
       <div aria-label="reviews" className="reviews-section">
-      <div className="reviews-content">
-        <h1 className='reviews-title'>REVIEWS</h1>
-        <ReviewSlider>
-          {/* Individual review items */}
-          <div className='review'>
-            <p className="customer-name">Sarah M.</p>
-            <div className="star-rating">
-              <img src={Icons.star.src} alt="Star Icon" className="star" />
-              <img src={Icons.star.src} alt="Star Icon" className="star" />
-              <img src={Icons.star.src} alt="Star Icon" className="star" />
-              <img src={Icons.star.src} alt="Star Icon" className="star" />
-              <img src={Icons.star.src} alt="Star Icon" className="star" />
-              <img 
-                  src={Icons.verified.src}
-                  alt="Verified"
-                  className="verified"
-              />
+        <div className="reviews-content">
+          <ReviewSlider>
+            {/* Individual review items */}
+            <div className='review'>
+              <p className="customer-name">Sarah M.</p>
+              <div className="star-rating">
+                <img src={Icons.star.src} alt="Star Icon" className="star" />
+                <img src={Icons.star.src} alt="Star Icon" className="star" />
+                <img src={Icons.star.src} alt="Star Icon" className="star" />
+                <img src={Icons.star.src} alt="Star Icon" className="star" />
+                <img src={Icons.star.src} alt="Star Icon" className="star" />
+                <img 
+                    src={Icons.verified.src}
+                    alt="Verified"
+                    className="verified"
+                />
+              </div>
+              <p className="quick-quote">"Stylish, sustainable, and I love them!"</p>
+              <p className='detailed-quote'>
+                “These sunglasses are incredible! Not only do they look great, but they’re also made from recycled ocean waste, which makes me feel good about wearing them. Super lightweight and durable too. I’m all about supporting a brand that’s making a real difference!”
+              </p>
             </div>
-            <p className="quick-quote">"Stylish, sustainable, and I love them!"</p>
-            <p className='detailed-quote'>
-              “These sunglasses are incredible! Not only do they look great, but they’re also made from recycled ocean waste, which makes me feel good about wearing them. Super lightweight and durable too. I’m all about supporting a brand that’s making a real difference!”
-            </p>
-          </div>
 
-          <div className='review'>
-            <p className="customer-name">Jenna L.</p>
-            <div className="star-rating">
-              <img src={Icons.star.src} alt="Star Icon" className="star" />
-              <img src={Icons.star.src} alt="Star Icon" className="star" />
-              <img src={Icons.star.src} alt="Star Icon" className="star" />
-              <img src={Icons.star.src} alt="Star Icon" className="star" />
-              <img src={Icons.star.src} alt="Star Icon" className="star" />
-              <img 
-                  src={Icons.verified.src}
-                  alt="Verified"
-                  className="verified"
-              />
+            <div className='review'>
+              <p className="customer-name">Jenna L.</p>
+              <div className="star-rating">
+                <img src={Icons.star.src} alt="Star Icon" className="star" />
+                <img src={Icons.star.src} alt="Star Icon" className="star" />
+                <img src={Icons.star.src} alt="Star Icon" className="star" />
+                <img src={Icons.star.src} alt="Star Icon" className="star" />
+                <img src={Icons.star.src} alt="Star Icon" className="star" />
+                <img 
+                    src={Icons.verified.src}
+                    alt="Verified"
+                    className="verified"
+                />
+              </div>
+              <p className="quick-quote">"Unique style with a purpose — I’m in love!"</p>
+              <p className='detailed-quote'>
+                “I love my new sunglasses! The Y2K design is on point, and the fact that they're made from reclaimed ocean fishing lines makes them even better. Stylish, comfortable, and great for the environment. Totally worth it!”
+              </p>
             </div>
-            <p className="quick-quote">"Unique style with a purpose — I’m in love!"</p>
-            <p className='detailed-quote'>
-              “I love my new sunglasses! The Y2K design is on point, and the fact that they're made from reclaimed ocean fishing lines makes them even better. Stylish, comfortable, and great for the environment. Totally worth it!”
-            </p>
-          </div>
 
-          <div className='review'>
-            <p className="customer-name">Sarah K.</p>
-            <div className="star-rating">
-              <img src={Icons.star.src} alt="Star Icon" className="star" />
-              <img src={Icons.star.src} alt="Star Icon" className="star" />
-              <img src={Icons.star.src} alt="Star Icon" className="star" />
-              <img src={Icons.star.src} alt="Star Icon" className="star" />
-              <img src={Icons.star.src} alt="Star Icon" className="star" />
-              <img 
-                  src={Icons.verified.src}
-                  alt="Verified"
-                  className="verified"
-              />
+            <div className='review'>
+              <p className="customer-name">Sarah K.</p>
+              <div className="star-rating">
+                <img src={Icons.star.src} alt="Star Icon" className="star" />
+                <img src={Icons.star.src} alt="Star Icon" className="star" />
+                <img src={Icons.star.src} alt="Star Icon" className="star" />
+                <img src={Icons.star.src} alt="Star Icon" className="star" />
+                <img src={Icons.star.src} alt="Star Icon" className="star" />
+                <img 
+                    src={Icons.verified.src}
+                    alt="Verified"
+                    className="verified"
+                />
+              </div>
+              <p className="quick-quote">"Stylish with a purpose!"</p>
+              <p className='detailed-quote'>
+                “I’m so impressed with the quality and design of these shades! The Y2K vibe is super trendy, and knowing they’re made from reclaimed ocean waste makes me feel good about my purchase. Lightweight, comfortable, and eco-friendly — couldn’t ask for more.”
+              </p>
             </div>
-            <p className="quick-quote">"Stylish with a purpose!"</p>
-            <p className='detailed-quote'>
-              “I’m so impressed with the quality and design of these shades! The Y2K vibe is super trendy, and knowing they’re made from reclaimed ocean waste makes me feel good about my purchase. Lightweight, comfortable, and eco-friendly — couldn’t ask for more.”
-            </p>
-          </div>
 
-          <div className='review'>
-            <p className="customer-name">Ryan M.</p>
-            <div className="star-rating">
-              <img src={Icons.star.src} alt="Star Icon" className="star" />
-              <img src={Icons.star.src} alt="Star Icon" className="star" />
-              <img src={Icons.star.src} alt="Star Icon" className="star" />
-              <img src={Icons.star.src} alt="Star Icon" className="star" />
-              <img src={Icons.star.src} alt="Star Icon" className="star" />
-              <img 
-                  src={Icons.verified.src}
-                  alt="Verified"
-                  className="verified"
-              />
+            <div className='review'>
+              <p className="customer-name">Ryan M.</p>
+              <div className="star-rating">
+                <img src={Icons.star.src} alt="Star Icon" className="star" />
+                <img src={Icons.star.src} alt="Star Icon" className="star" />
+                <img src={Icons.star.src} alt="Star Icon" className="star" />
+                <img src={Icons.star.src} alt="Star Icon" className="star" />
+                <img src={Icons.star.src} alt="Star Icon" className="star" />
+                <img 
+                    src={Icons.verified.src}
+                    alt="Verified"
+                    className="verified"
+                />
+              </div>
+              <p className="quick-quote">"Fashion-forward and eco-friendly!"</p>
+              <p className='detailed-quote'>
+                “These sunglasses are incredible! Not only do they look great, but they’re also made from recycled ocean waste, which makes me feel good about wearing them. Super lightweight and durable too. I’m all about supporting a brand that’s making a real difference!”
+              </p>
             </div>
-            <p className="quick-quote">"Fashion-forward and eco-friendly!"</p>
-            <p className='detailed-quote'>
-              “These sunglasses are incredible! Not only do they look great, but they’re also made from recycled ocean waste, which makes me feel good about wearing them. Super lightweight and durable too. I’m all about supporting a brand that’s making a real difference!”
-            </p>
-          </div>
-        </ReviewSlider>
+          </ReviewSlider>
+        </div>
       </div>
-    </div>
       <img src={Images.backgroundImg.src} alt="Background Image" className='background-img'/>
     </div>
     );

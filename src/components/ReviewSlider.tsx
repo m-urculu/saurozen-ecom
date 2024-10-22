@@ -38,7 +38,6 @@ const ReviewSlider = ({ children }) => {
   const scrollToReview = (index) => {
     if (reviewsRef.current) {
       const targetPosition = reviewWidth * index; // Calculate the target scroll position based on the index
-      console.log(`Scrolling to index: ${index}, Target position: ${targetPosition}`); // Log for debugging
       reviewsRef.current.scrollTo({
         left: targetPosition, // Scroll to the calculated position
         behavior: 'smooth', // Smooth scrolling
@@ -79,10 +78,7 @@ const ReviewSlider = ({ children }) => {
 
         // Update the current index and log the new index
         setCurrentIndex(newIndex); // Update the current index
-        console.log('Current Index:', newIndex); // Log the new index
-        console.log('Scroll Position:', scrollLeft);
-        console.log('Reviews Width:', reviewWidth);
-      }
+        }
     };
 
     // Add scroll event listener
@@ -97,21 +93,24 @@ const ReviewSlider = ({ children }) => {
 
   return (
     <div>
-      <div className="arrows">
-        <button onClick={handlePrevious}>
-          <img 
-            src={Icons.arrow.src}
-            alt="Previous"
-            className="arrowleft"
-          />
-        </button>
-        <button onClick={handleNext}>
-          <img 
-            src={Icons.arrow.src}
-            alt="Next"
-            className="arrowright"
-          />
-        </button>
+      <div className='reviews-header'>
+        <h1 className='reviews-title'>REVIEWS</h1>
+        <div className="arrows">
+          <button onClick={handlePrevious}>
+            <img 
+              src={Icons.arrow.src}
+              alt="Previous"
+              className="arrowleft"
+            />
+          </button>
+          <button onClick={handleNext}>
+            <img 
+              src={Icons.arrow.src}
+              alt="Next"
+              className="arrowright"
+            />
+          </button>
+        </div>
       </div>
 
       <div 

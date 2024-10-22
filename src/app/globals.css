@@ -321,11 +321,20 @@ body::-webkit-scrollbar {
     @apply flex items-center justify-center grid gap-0; /* Grid layout with a gap between items */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
 }
+/* For larger screens, 4 images per row */
+@media (min-width: 1000px) {
+    .models {
+      grid-template-columns: repeat(4, 1fr); /* 4 images per row */
+    }
+  }
     .model-img {
         @apply w-full h-full object-cover; /* Fixed size and maintain aspect ratio */
     }
     .mm {
         @apply hidden md:flex
+    }
+    .mmm {
+        @apply flex lg:hidden
     }
 
 /* Reviews */
@@ -333,14 +342,19 @@ body::-webkit-scrollbar {
     @apply flex items-center justify-center
 }
     .reviews-content {
-        @apply px-[40px] w-full py-[45px]
+        @apply w-full py-[45px];
     }
         .reviews-header {
-            @apply flex items-center;
+            @apply flex items-center px-[40px] ;
         }
             .reviews-title {
-                @apply font-orbitron text-black text-[20px] font-bold pt-[3px] text-shadow-custom2
+                @apply hidden font-orbitron text-black text-[20px] font-bold pt-[3px] text-shadow-custom2
             }
+            @media (min-width: 400px) {
+                .reviews-title {
+                    @apply block
+                }
+              }
             .arrows {
                 @apply flex justify-between items-center w-[60px] ml-auto
             }
@@ -354,13 +368,12 @@ body::-webkit-scrollbar {
                         @apply h-[15px] w-[15px] self-end rotate-180
                     }
         .reviews {
-            @apply flex space-x-4 overflow-x-auto;
+            @apply flex pl-[40px] space-x-4 overflow-visible;
         }            
             .review {
-                @apply flex flex-col flex-shrink-0 justify-between p-[15px] space-y-[15px] mt-[29px] mb-[58px] review-width h-full rounded-[15px];
+                @apply flex flex-col flex-shrink-0 justify-between p-[15px] space-y-[15px] mt-[29px] mb-[58px] w-[388px] review-width h-auto rounded-[15px];
                 background-color: rgba(255, 255, 255, 0.27);
                 box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25);
-                font-size: clamp(0.1vw + 0.1vh, 1.2vw + 1vh, 1vw + 1vh);
                 scrollbar-width: none;
             }
             /* For Chrome, Safari, and Opera */
@@ -372,12 +385,15 @@ body::-webkit-scrollbar {
             .reviews::-webkit-scrollbar-track {
                 display: none; /* Hide the track */
             }
-            .review-width {
-                width: calc(100vw - 80px);
+            @media (max-width: 640px) {
+                .review-width {
+                    width: calc(100vw - 80px);
+                }
             }
                 .customer-name {
                     @apply font-orbitron font-black text-[12px];
                     letter-spacing: 0.2em;
+                    font-size: clamp(10px, 2vw, 13px);
                 }
                 .verified {
                     @apply ml-[5px]
@@ -385,10 +401,12 @@ body::-webkit-scrollbar {
                 .quick-quote {
                     @apply font-orbitron font-bold text-[10px];
                     letter-spacing: 0.2em;
+                    font-size: clamp(10px, 2vw, 11px);
                 }
                 .detailed-quote {
                     @apply font-orbitron text-[10px] h-full flex-grow max-w-fit break-words;
                     letter-spacing: 0.2em;
+                    font-size: clamp(10px, 2vw, 11px);
                 }
 
 /* Background Image */
