@@ -7,3 +7,8 @@ export { default as star } from './star.svg';
 export { default as halfStar } from './half-star.svg';
 export { default as arrow } from './arrow.svg';
 export { default as verified } from './verified.svg';
+export { default as mail } from './mail.svg';
+export { default as twitter } from './twitter.svg';
+export { default as facebook } from './facebook.svg';
+export { default as instagram } from './instagram.svg';
+export { default as github } from './github.svg';

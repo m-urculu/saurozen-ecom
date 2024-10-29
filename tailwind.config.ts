@@ -20,7 +20,8 @@ const config: Config = {
       },
       textShadow: {
         'custom': '0 4px 4px rgba(0, 0, 0, 0.25)',
-        'custom2': '0 4px 4px rgba(19, 8, 35, 0.4)'
+        'custom2': '0 4px 4px rgba(19, 8, 35, 0.4)',
+        'custom-white': '2px 2px 3px rgba(255, 255, 255, 0.4)',
       },
       boxShadow: {
         'custom': '0 4px 4px rgba(0, 0, 0, 0.25)',
@@ -35,10 +36,12 @@ const config: Config = {
         'Cetacean-Blue': '#160233',
         'Bright-Gray': '#EEEDF7',
         'Ateneo-Blue': '#0A4164',
-        'Limerick': '#9DC913',
         'Bittersweet-Shimmer': '#C05459',
         'Light-Pink': '#FFBEC1',
         'Dark-Sky-Blue': '#8BBDE3',
+        'Chinese-Silver': '#C7C7C7',
+        'eerie-black-85': '#1D1B20D9',
+        'Light-Steel-Blue': '#ACCADC'
       },
     },
   },

@@ -372,6 +372,56 @@ Welcome to the future of eyewear: recycled, reimagined, and ready for what’s n
           </ReviewSlider>
         </div>
       </div>
+      <div aria-label="newsletter" className="newsletter">
+        <div className="newsletter-container">
+          <h1 className="newsletter-title">STAY IN THE LOOP WITH OUR FRESH DROPS</h1>
+          <div className="newsletter-input">
+            <div className="email">
+              <img
+                  src={Icons.mail.src}
+                  alt="Mail Icon"
+                  className="mail-icon"
+              />
+              <input className="email-input" placeholder="Enter your email address" ></input>
+            </div>
+            <button className="sub-btn">Subscribe to Newsletter</button>
+          </div>
+        </div>
+      </div>
+      <div aria-label="footer" className="footer">
+        <h1 className="footer-logo">SAUROZEN</h1>
+        <p className="about">At SAUROZER, we transform discarded ocean plastics into cutting-edge, eco-friendly sunglasses. Style meets sustainability in every pair — wear the change, save the planet.</p>
+        <div className="link-buttons">
+          <button className="link-btn">
+            <img
+              src={Icons.twitter.src}
+              alt="Twitter Icon"
+              className="link-icon"
+            />
+          </button>
+          <button className="link-btn">
+            <img
+              src={Icons.facebook.src}
+              alt="Facebook Icon"
+              className="link-icon"
+            />
+          </button>
+          <button className="link-btn">
+            <img
+              src={Icons.instagram.src}
+              alt="Instagram Icon"
+              className="link-icon"
+            />
+          </button>
+          <button className="link-btn">
+            <img
+              src={Icons.github.src}
+              alt="Github Icon"
+              className="link-icon"
+            />
+          </button>
+        </div>
+      </div>
       <img src={Images.backgroundImg.src} alt="Background Image" className='background-img'/>
     </div>
     );
