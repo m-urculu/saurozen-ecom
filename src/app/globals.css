@@ -436,23 +436,59 @@ body::-webkit-scrollbar {
 .footer {
     @apply flex flex-col pt-[65px] sm:pt-[48px] px-[16px] sm:px-[40px]
 }
-    .footer-logo {
-        @apply text-[16px] sm:text-[32px] font-designer text-shadow-custom
+    .footer-container {
+        @apply flex flex-col lg:flex-row
     }
-    .about {
-        @apply pt-[17px] text-[12px] font-inter text-eerie-black-85
+    .saurozen {
+        @apply flex flex-col
     }
-    .link-buttons {
-        @apply flex space-x-[13px] pt-[26px]
-    }
-        .link-btn {
-            @apply flex items-center justify-center h-[25px] w-[25px] bg-Light-Steel-Blue rounded-[100px];
-            box-shadow: inset 0 0px 4px rgba(0, 0, 0, 0.25);
-            filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+        .footer-logo {
+            @apply text-[16px] sm:text-[32px] font-designer text-shadow-custom
         }
-            .link-icon {
-                filter: drop-shadow(0px 0px 0.5px rgba(0, 0, 0, 0.75));
+        .about {
+            @apply pt-[17px] text-[12px] font-inter font-bold text-eerie-black-85 w-[50vw] lg:w-[30vw]
+        }
+        .link-buttons {
+            @apply flex space-x-[13px] pt-[26px]
+        }
+            .link-btn {
+                @apply flex items-center justify-center h-[25px] w-[25px] bg-Light-Steel-Blue rounded-[100px];
+                box-shadow: inset 0 0px 4px rgba(0, 0, 0, 0.25);
+                filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
             }
+                .link-icon {
+                    filter: drop-shadow(0px 0px 0.5px rgba(0, 0, 0, 0.75));
+                }
+    .footlinksrow {
+        @apply flex justify-evenly
+    }
+    .footitle {
+        @apply flex flex-col font-orbitron text-[16px] font-bold pt-[23px] w-[160px]
+    }
+    .footlink {
+        @apply flex font-orbitron text-[11px] font-normal pt-[10px] tracking-[2px]
+    }
+    .line {
+        @apply w-full h-[1px] mt-[37px];
+        background-color: rgba(0, 0, 0, 0.31)
+    }
+    .rights {
+        @apply flex items-center justify-center mt-[14px] font-orbitron font-bold text-[11px] tracking-[3px];
+        color: rgba(0, 0, 0, 0.5)
+    }
+    .payments {
+        @apply flex justify-center items-center space-x-[14px] pt-[18px]
+    }
+        .whitebox {
+            @apply w-[39px] h-[22px] bg-white flex items-center justify-center rounded-full; /* Use 'rounded-full' for circular shape */
+        }
+            .payment-icon {
+                @apply w-auto h-auto;
+            }
+            .google-icon {
+                @apply w-[28px] h-[15px]
+            }
+       
 
 /* Background Image */
 .background-img {

@@ -1,6 +1,10 @@
 export { default as landingImg } from './landing-img.webp';
 export { default as backgroundImg } from './background-img.webp';
 export { default as ghostnet } from './ghost-net.webp';
+export { default as visa } from './visa.png'
+export { default as mastercard } from './mastercard.png'
+export { default as apple } from './apple.png'
+export { default as google } from './google.png'
 export { default as coralRay } from './sunglasses/coral-ray.webp';
 export { default as neonReef } from './sunglasses/neon-reef.webp';
 export { default as stratos } from './sunglasses/stratos.webp';
@@ -21,13 +25,3 @@ export { default as image88 } from './models/image-88.webp'
 export { default as image89 } from './models/image-89.webp'
 export { default as image90 } from './models/image-90.webp'
 export { default as image91 } from './models/image-91.webp'
-
-
-
-
-
-
-
-
-
-
