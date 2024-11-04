@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 const inter = Inter({
    subsets: ['latin'],
-   styles: ['normal', 'italic'], 
+   style: 'normal', 
   });
 
 const syncopate = Syncopate({
