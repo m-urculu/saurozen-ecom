@@ -424,49 +424,49 @@ Welcome to the future of eyewear: recycled, reimagined, and ready for what’s n
               </button>
             </div>
           </div>
-          <div className="footlinksrow">
+          <div className="footlinks">
             <div className="footitle">COMPANY
-            <button className="footlink">About</button>
-            <button className="footlink">Features</button>
-            <button className="footlink">Work</button>
-            <button className="footlink">Career</button>
+              <button className="footlink">About</button>
+              <button className="footlink">Features</button>
+              <button className="footlink">Work</button>
+              <button className="footlink">Career</button>
             </div>
             <div className="footitle">HELP
-            <button className="footlink">Customer Support</button>
-            <button className="footlink">Delivery Details</button>
-            <button className="footlink">Terms & Conditions</button>
-            <button className="footlink">Privacy Policy</button>
+              <button className="footlink">Customer Support</button>
+              <button className="footlink">Delivery Details</button>
+              <button className="footlink">Terms & Conditions</button>
+              <button className="footlink">Privacy Policy</button>
             </div>
-          </div>
-          <div className="footlinksrow">
             <div className="footitle">FAQ
-            <button className="footlink">Account</button>
-            <button className="footlink">Manage Deliveries</button>
-            <button className="footlink">Orders</button>
-            <button className="footlink">Payment</button>
+              <button className="footlink">Account</button>
+              <button className="footlink">Manage Deliveries</button>
+              <button className="footlink">Orders</button>
+              <button className="footlink">Payment</button>
             </div>
             <div className="footitle">RESOURCES
-            <button className="footlink">Sustainability</button>
-            <button className="footlink">Upcycling</button>
-            <button className="footlink">Blog</button>
-            <button className="footlink">Playlist</button>
-            </div>
+              <button className="footlink">Sustainability</button>
+              <button className="footlink">Upcycling</button>
+              <button className="footlink">Blog</button>
+              <button className="footlink">Playlist</button>
+              </div>
           </div>
         </div>
-        <div className="line"></div>
-        <div className="rights">SAUROZER © 2024, All Rights Reserved</div>
-        <div className="payments">
-          <div className="whitebox">
-            <img src={Images.visa.src} alt="Visa" className='payment-icon'/>        
-          </div>
-          <div className="whitebox">
-            <img src={Images.mastercard.src} alt="Mastercard" className='payment-icon'/>        
-          </div>
-          <div className="whitebox">
-            <img src={Images.apple.src} alt="Apple" className='payment-icon'/>        
-          </div>
-          <div className="whitebox">
-            <img src={Images.google.src} alt="Google" className='google-icon'/>        
+        <div className="bottomfooter">
+          <div className="line"></div>
+          <div className="rights">SAUROZER © 2024, All Rights Reserved</div>
+          <div className="payments">
+            <div className="whitebox">
+              <img src={Images.visa.src} alt="Visa" className='payment-icon'/>        
+            </div>
+            <div className="whitebox">
+              <img src={Images.mastercard.src} alt="Mastercard" className='payment-icon'/>        
+            </div>
+            <div className="whitebox">
+              <img src={Images.apple.src} alt="Apple" className='payment-icon'/>        
+            </div>
+            <div className="whitebox">
+              <img src={Images.google.src} alt="Google" className='google-icon'/>        
+            </div>
           </div>
         </div>
       </div>

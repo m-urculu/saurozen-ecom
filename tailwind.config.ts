@@ -10,7 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        'xsm': '480px', // Custom breakpoint for extra small
+        'xxsm': '400px',
+        'xsm': '480px'
       },
       fontFamily: {
         orbitron: ['Orbitron', 'sans-serif'],
@@ -21,6 +22,7 @@ const config: Config = {
       textShadow: {
         'custom': '0 4px 4px rgba(0, 0, 0, 0.25)',
         'custom2': '0 4px 4px rgba(19, 8, 35, 0.4)',
+        'customblack': '2px 3px 2px rgba(0, 0, 0, 1)',
         'custom-white': '2px 2px 3px rgba(255, 255, 255, 0.4)',
       },
       boxShadow: {
