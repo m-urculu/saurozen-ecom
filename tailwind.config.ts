@@ -49,7 +49,7 @@ const config: Config = {
   },
   plugins: [
     textShadow,
-    function ({ addUtilities }) {
+    function ({ addUtilities }: { addUtilities: (utilities: { [key: string]: any }, variants?: string[]) => void }) {
       addUtilities({
         '.hide-scrollbar': {
           'scrollbar-width': 'none', /* Firefox */
