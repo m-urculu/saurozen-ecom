@@ -2,10 +2,14 @@
 import React, { useState, useRef, useEffect } from 'react';
 import * as Icons from '../../public/icons';
 
-const ReviewSlider = ({ children }) => {
+interface ReviewSliderProps {
+  children: React.ReactNode; // Specify that children can be any valid React node
+}
+
+const ReviewSlider: React.FC<ReviewSliderProps> = ({ children }) => {
   const [currentIndex, setCurrentIndex] = useState(0); // State for the current index of the review
   const [reviewWidth, setReviewWidth] = useState(0); // State for dynamic review width
-  const reviewsRef = useRef(null); // Create a ref for the reviews container
+  const reviewsRef = useRef<HTMLDivElement | null>(null); // Create a ref for the reviews container
   const totalReviews = React.Children.count(children); // Count of total reviews
 
   // Calculate the width of a single review and log the scrollable width
@@ -35,7 +39,7 @@ const ReviewSlider = ({ children }) => {
   }, [totalReviews]); // Recalculate when total reviews change and on resize
 
   // Scroll to a specific review based on its index
-  const scrollToReview = (index) => {
+  const scrollToReview = (index: number) => {
     if (reviewsRef.current) {
       const targetPosition = reviewWidth * index; // Calculate the target scroll position based on the index
       reviewsRef.current.scrollTo({
@@ -59,37 +63,49 @@ const ReviewSlider = ({ children }) => {
 
   // Move to the previous review
   const handlePrevious = () => {
-    if (reviewsRef.current.scrollLeft > (reviewWidth * currentIndex)) {
-      // Ensure it scrolls to position 0 when at the start
-      scrollToReview(currentIndex); // Ensure it scrolls to x = 0
-    } else {
-      const newIndex = currentIndex - 1;
-      setCurrentIndex(newIndex); // Update the current index
-      scrollToReview(newIndex); // Scroll to the new review
+    if (reviewsRef.current) {
+      if (reviewsRef.current.scrollLeft > (reviewWidth * currentIndex)) {
+        // Ensure it scrolls to position 0 when at the start
+        scrollToReview(currentIndex); // Ensure it scrolls to x = 0
+      } else {
+        const newIndex = Math.max(currentIndex - 1, 0); // Prevent newIndex from going below 0
+        setCurrentIndex(newIndex); // Update the current index
+        scrollToReview(newIndex); // Scroll to the new review
+      }
     }
   };
 
   // Update current index based on scroll position
-  useEffect(() => {
-    const handleScroll = () => {
-      if (reviewsRef.current) {
-        const scrollLeft = reviewsRef.current.scrollLeft; // Get the current scroll position
-        const newIndex = Math.floor(scrollLeft / reviewWidth); // Calculate the new index based on scroll position
+useEffect(() => {
+  // Define the handleScroll function
+  const handleScroll = () => {
+    if (reviewsRef.current) {
+      const scrollLeft = reviewsRef.current.scrollLeft; // Get the current scroll position
+      const newIndex = Math.floor(scrollLeft / reviewWidth); // Calculate the new index based on scroll position
 
-        // Update the current index and log the new index
+      // Update the current index only if it has changed
+      if (newIndex !== currentIndex) {
         setCurrentIndex(newIndex); // Update the current index
-        }
-    };
+      }
+    }
+  };
 
-    // Add scroll event listener
-    const reviewsElement = reviewsRef.current;
+  // Get the current ref element
+  const reviewsElement = reviewsRef.current;
+
+  // Add scroll event listener if the element exists
+  if (reviewsElement) {
     reviewsElement.addEventListener('scroll', handleScroll); // Attach the scroll listener
+  }
 
-    // Clean up the event listener on component unmount
-    return () => {
+  // Clean up the event listener on component unmount or when reviewWidth changes
+  return () => {
+    if (reviewsElement) {
       reviewsElement.removeEventListener('scroll', handleScroll); // Remove the listener
-    };
-  }, [reviewWidth]); // Run this effect whenever reviewWidth changes
+    }
+  };
+}, [reviewWidth, currentIndex]); // Run this effect whenever reviewWidth or currentIndex changes
+
 
   return (
     <div>
