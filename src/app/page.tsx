@@ -254,7 +254,7 @@ export default function Home() {
               <p className="what-text-title">WHAT WE DO</p>
               <p className='what-text-content'>
               At SAUROZER, we&apos;re on a mission to flip the script on waste. We take ghost nets — abandoned fishing gear lurking in the ocean — and upcycle them into bold, eco-friendly sunglasses that merge style with sustainability. Our vision? A future where fashion is fearless, waste is a thing of the past, and you’re part of the change.
-Why do we do it? Because the planet needs a reset, and we're all about pushing boundaries. When you rock a pair of our shades, you're not just making a fashion statement — you're repping a movement that&apos;s saving the oceans and giving plastic a second life.
+Why do we do it? Because the planet needs a reset, and we&apos;re all about pushing boundaries. When you rock a pair of our shades, you&apos;re not just making a fashion statement — you&apos;re repping a movement that&apos;s saving the oceans and giving plastic a second life.
 Welcome to the future of eyewear: recycled, reimagined, and ready for what&apos;s next.
               </p>
               <button className='what-learn-btn'>LEARN MORE</button>
@@ -326,7 +326,7 @@ Welcome to the future of eyewear: recycled, reimagined, and ready for what&apos;
               </div>
               <p className="quick-quote">&quot;Unique style with a purpose — I&apos;m in love!&quot;</p>
               <p className='detailed-quote'>
-              &quot;I love my new sunglasses! The Y2K design is on point, and the fact that they're made from reclaimed ocean fishing lines makes them even better. Stylish, comfortable, and great for the environment. Totally worth it!&quot;
+              &quot;I love my new sunglasses! The Y2K design is on point, and the fact that they&apos;re made from reclaimed ocean fishing lines makes them even better. Stylish, comfortable, and great for the environment. Totally worth it!&quot;
               </p>
             </div>
 
