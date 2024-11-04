@@ -17,22 +17,15 @@ const ElementsCalc: React.FC<ElementsCalcProps> = ({ text, separatorClass, wrapp
     // Calculate how many elements can fit on the screen
     const calcElementsNum = () => {
         const vw = window.innerWidth;
-        let elementsCanFit;
-
-        // if (vw < 640) {
-            //     elementsCanFit = 1;
-            // } else { 
-            elementsCanFit = Math.floor(vw / pElementWidth) + 3; // Extra elements for smoothness
-        // }
+        const elementsCanFit = Math.floor(vw / pElementWidth) + 3; // Extra elements for smoothness
         setNumElements(elementsCanFit);
     };
-
     // Position the elements to fit the screen width
     useEffect(() => {
         calcElementsNum();
         window.addEventListener('resize', calcElementsNum);
         
-        const initialPositions = Array.from({ length: numElements }, (_, index) => 0);
+        const initialPositions = Array.from({ length: numElements }, () => 0);
         setPositions(initialPositions);
 
         return () => {

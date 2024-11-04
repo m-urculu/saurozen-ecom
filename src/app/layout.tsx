@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Inter, Syncopate } from 'next/font/google';  
-import Home from "./page"
 
 export const metadata: Metadata = {
   title: "Create Next App",

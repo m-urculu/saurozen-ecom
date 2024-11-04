@@ -253,9 +253,9 @@ export default function Home() {
             <div aria-label="text-window" className="text-window">
               <p className="what-text-title">WHAT WE DO</p>
               <p className='what-text-content'>
-              At SAUROZER, we’re on a mission to flip the script on waste. We take ghost nets — abandoned fishing gear lurking in the ocean — and upcycle them into bold, eco-friendly sunglasses that merge style with sustainability. Our vision? A future where fashion is fearless, waste is a thing of the past, and you’re part of the change.
-Why do we do it? Because the planet needs a reset, and we're all about pushing boundaries. When you rock a pair of our shades, you're not just making a fashion statement — you're repping a movement that’s saving the oceans and giving plastic a second life.
-Welcome to the future of eyewear: recycled, reimagined, and ready for what’s next.
+              At SAUROZER, we&apos;re on a mission to flip the script on waste. We take ghost nets — abandoned fishing gear lurking in the ocean — and upcycle them into bold, eco-friendly sunglasses that merge style with sustainability. Our vision? A future where fashion is fearless, waste is a thing of the past, and you’re part of the change.
+Why do we do it? Because the planet needs a reset, and we're all about pushing boundaries. When you rock a pair of our shades, you're not just making a fashion statement — you're repping a movement that&apos;s saving the oceans and giving plastic a second life.
+Welcome to the future of eyewear: recycled, reimagined, and ready for what&apos;s next.
               </p>
               <button className='what-learn-btn'>LEARN MORE</button>
             </div>
@@ -304,9 +304,9 @@ Welcome to the future of eyewear: recycled, reimagined, and ready for what’s n
                     className="verified"
                 />
               </div>
-              <p className="quick-quote">"Stylish, sustainable, and I love them!"</p>
+              <p className="quick-quote">&quot;Stylish, sustainable, and I love them!&quot;</p>
               <p className='detailed-quote'>
-                “These sunglasses are incredible! Not only do they look great, but they’re also made from recycled ocean waste, which makes me feel good about wearing them. Super lightweight and durable too. I’m all about supporting a brand that’s making a real difference!”
+              &quot;These sunglasses are incredible! Not only do they look great, but they&apos;re also made from recycled ocean waste, which makes me feel good about wearing them. Super lightweight and durable too. I&apos;m all about supporting a brand that&apos;s making a real difference!&quot;
               </p>
             </div>
 
@@ -324,9 +324,9 @@ Welcome to the future of eyewear: recycled, reimagined, and ready for what’s n
                     className="verified"
                 />
               </div>
-              <p className="quick-quote">"Unique style with a purpose — I’m in love!"</p>
+              <p className="quick-quote">&quot;Unique style with a purpose — I&apos;m in love!&quot;</p>
               <p className='detailed-quote'>
-                “I love my new sunglasses! The Y2K design is on point, and the fact that they're made from reclaimed ocean fishing lines makes them even better. Stylish, comfortable, and great for the environment. Totally worth it!”
+              &quot;I love my new sunglasses! The Y2K design is on point, and the fact that they're made from reclaimed ocean fishing lines makes them even better. Stylish, comfortable, and great for the environment. Totally worth it!&quot;
               </p>
             </div>
 
@@ -344,9 +344,9 @@ Welcome to the future of eyewear: recycled, reimagined, and ready for what’s n
                     className="verified"
                 />
               </div>
-              <p className="quick-quote">"Stylish with a purpose!"</p>
+              <p className="quick-quote">&quot;Stylish with a purpose!&quot;</p>
               <p className='detailed-quote'>
-                “I’m so impressed with the quality and design of these shades! The Y2K vibe is super trendy, and knowing they’re made from reclaimed ocean waste makes me feel good about my purchase. Lightweight, comfortable, and eco-friendly — couldn’t ask for more.”
+              &quot;I&apos;m so impressed with the quality and design of these shades! The Y2K vibe is super trendy, and knowing they&apos;re made from reclaimed ocean waste makes me feel good about my purchase. Lightweight, comfortable, and eco-friendly — couldn&apos;t ask for more.&quot;
               </p>
             </div>
 
@@ -364,9 +364,9 @@ Welcome to the future of eyewear: recycled, reimagined, and ready for what’s n
                     className="verified"
                 />
               </div>
-              <p className="quick-quote">"Fashion-forward and eco-friendly!"</p>
+              <p className="quick-quote">&quot;Fashion-forward and eco-friendly!&quot;</p>
               <p className='detailed-quote'>
-                “These sunglasses are incredible! Not only do they look great, but they’re also made from recycled ocean waste, which makes me feel good about wearing them. Super lightweight and durable too. I’m all about supporting a brand that’s making a real difference!”
+              &quot;These sunglasses are incredible! Not only do they look great, but they&apos;re also made from recycled ocean waste, which makes me feel good about wearing them. Super lightweight and durable too. I&apos;m all about supporting a brand that&apos;s making a real difference!&quot;
               </p>
             </div>
           </ReviewSlider>
