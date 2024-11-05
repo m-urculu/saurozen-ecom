@@ -1,5 +1,5 @@
 'use client'
-// import React, { useRef, useEffect, useState } from 'react'
+import Link from "next/link"
 import * as Icons from '../../public/icons'
 import * as Images from '../../public/images'
 import ElementsCalc from '../components/ElementsCalc';
@@ -30,10 +30,10 @@ export default function Home() {
             <div>Shop ▼</div>
           </button>
           <button aria-label="shop-dropdown">
-            <div>On Sale</div>
+            <Link href="/shop/eyewear">On Sale</Link>
           </button>
           <button aria-label="shop-dropdown">
-            <div>New Arrivals</div>
+            <Link href="/shop/eyewear">New Arrivals</Link>
           </button>
           <button aria-label="shop-dropdown">
             <div>What We Do</div>
@@ -58,13 +58,13 @@ export default function Home() {
               className="search-icon"
             />
           </button>
-          <button aria-label="cart-button">
+          <Link href="/shop/eyewear" aria-label="cart-button">
             <img
               src={Icons.cart.src}
               alt="Cart Icon"
               className="cart-icon"
             />
-          </button>
+          </Link>
           <button aria-label="user-button">
             <img
               src={Icons.user.src}
@@ -82,9 +82,9 @@ export default function Home() {
           <p aria-label="paragraph1" className="p1">
             Explore our future with sunglasses made from reclaimed ocean fishing lines. Blending Y2K vibes with cutting-edge eco-innovation. Step into a future where fashion meets sustainability.
           </p>
-          <button arial-label="shop-button" className="shop-button">
+          <Link href="/shop/eyewear" arial-label="shop-button" className="shop-button">
             Shop Now
-          </button>
+          </Link>
       </div>
       <div aria-label="products" className="products">
         <div aria-label="new-arrivals" className="new-arrivals">
@@ -158,9 +158,9 @@ export default function Home() {
             </button>
           </div>
           <div className="btn-container">
-            <button className="view-button">
+            <Link href="/shop/eyewear" className="view-button">
               VIEW ALL
-            </button>
+            </Link>
           </div>
         </div>
         <div aria-label="top-products" className='top-products'>
@@ -239,9 +239,9 @@ export default function Home() {
               </button>
           </div>
           <div className="btn-container">
-            <button className="view-button">
+            <Link href="/shop/eyewear" className="view-button">
               VIEW ALL
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -451,8 +451,8 @@ Welcome to the future of eyewear: recycled, reimagined, and ready for what&apos;
               </div>
           </div>
         </div>
+        <div className="line"></div>
         <div className="bottomfooter">
-          <div className="line"></div>
           <div className="rights">SAUROZER © 2024, All Rights Reserved</div>
           <div className="payments">
             <div className="whitebox">

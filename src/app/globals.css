@@ -46,7 +46,7 @@ body::-webkit-scrollbar {
 
 /* nav bar */
 .nav-bar {
-    @apply h-[62px] md:h-[75px] w-screen bg-Ateneo-Blue flex;
+    @apply flex items-center h-[62px] md:h-[75px] w-screen bg-Ateneo-Blue flex;
 }
     .menu-button {
         @apply block lg:hidden ml-[16px] self-center;
@@ -61,8 +61,11 @@ body::-webkit-scrollbar {
         @apply hidden md:flex ml-auto self-center;
     }
         .input-bar {
-            @apply flex w-[50vw] lg:w-[30vw] h-[37px] bg-Bright-Gray bg-opacity-50 rounded-[50px];
+            @apply flex w-[50vw] lg:w-[30vw] h-[37px] bg-Bright-Gray bg-opacity-50 rounded-[50px] font-orbitron text-white text-[14px];
         }
+        .input:focus-visible {
+            outline: none;
+          }
             .search-light {
                 @apply self-center ml-[10px];
             }
@@ -70,7 +73,7 @@ body::-webkit-scrollbar {
                 @apply ml-[10px] w-full bg-Bright-Gray bg-opacity-0;
             }
     .right-buttons {
-        @apply w-[86px] md:w-[60px] ml-auto md:ml-0 md:w-[9vw] flex justify-evenly;
+        @apply w-[86px] h-fit md:w-[60px] ml-auto md:ml-0 md:w-[9vw] flex justify-evenly;
     }
         .search-icon {
             @apply block md:hidden w-[18px] h-[18px];
@@ -108,7 +111,7 @@ body::-webkit-scrollbar {
     animation-delay: 2s;
 }
 .shop-button {
-    @apply m-auto opacity-0 w-[205px] md:w-[273px] h-[40px] md:h-[56px] rounded-[120px] bg-Limerick inner-shadow self-center font-orbitron font-medium text-black text-[20px] lg:text-[24px];
+    @apply inline-flex items-center justify-center m-auto opacity-0 w-[205px] md:w-[273px] h-[40px] md:h-[56px] rounded-[120px] bg-Limerick inner-shadow self-center font-orbitron font-medium text-black text-[20px] lg:text-[24px];
     animation: fadeIn 0.5s linear forwards 3s;
     transform: scale(1); /* Ensure a base scale to avoid conflicts */
     transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
@@ -274,7 +277,7 @@ body::-webkit-scrollbar {
         @apply flex justify-center
     }
         .view-button {
-            @apply w-fit px-[40px] h-[48px] my-[24px] bg-Dark-Sky-Blue rounded-[50px] shadow-custom3 text-[21px] font-designer tracking-[3px] text-black
+            @apply inline-flex items-center justify-center w-fit px-[30px] h-[48px] my-[24px] bg-Dark-Sky-Blue rounded-[50px] shadow-custom3 text-[18px] font-designer tracking-[3px] text-otherblue shadow-custom opacity-80;
         }
     
     .new-products {
@@ -428,6 +431,10 @@ body::-webkit-scrollbar {
                 .email-input {
                     @apply text-center w-auto h-full mr-[20px] pt-[3px] flex-grow bg-Bright-Gray font-orbitron font-bold tracking-widest text-[11px]
                 }
+                .email-input:focus-visible {
+                    @apply text-start pl-[20px] placeholder-transparent;
+                    outline: none;
+                }
             .sub-btn {
                 @apply mt-[16px] pl-[15px] w-full h-[40px] text-center bg-Bright-Gray text-black text-[11px] font-orbitron font-black tracking-widest rounded-[50px]
             }
@@ -460,27 +467,27 @@ body::-webkit-scrollbar {
                     filter: drop-shadow(0px 0px 0.5px rgba(0, 0, 0, 0.75));
                 }
     .footlinks {
-        @apply flex flex-wrap justify-start w-full
+        @apply flex flex-wrap justify-between w-full lg:flex-nowrap
     }
         .footitle {
-            @apply flex flex-col font-orbitron text-[16px] font-bold pt-[23px] w-[150px] mr-auto
+            @apply flex flex-col font-orbitron text-[16px] font-bold pt-[23px] w-fit
         }
             .footlink {
                 @apply flex font-orbitron text-[11px] font-normal pt-[10px] tracking-[2px] text-start w-fit
             }
-    .bottomfooter {
-        @apply my-[37px]
+    .line {
+        @apply w-full h-[1px] mt-[39px];
+        background-color: rgba(0, 0, 0, 0.31)
     }
-        .line {
-            @apply w-full h-[1px];
-            background-color: rgba(0, 0, 0, 0.31)
-        }
+    .bottomfooter {
+        @apply flex flex-col items-center justify-center text-center text-wrap h-[74px] md:flex-row md:justify-between
+    }   
         .rights {
-            @apply flex items-center justify-center mt-[14px] font-orbitron font-bold text-[11px] tracking-[3px];
+            @apply font-orbitron font-bold text-[11px] tracking-[3px];
             color: rgba(0, 0, 0, 0.5)
         }
         .payments {
-            @apply flex justify-center items-center space-x-[14px] pt-[18px]
+            @apply flex space-x-[14px] pt-[18px] md:pt-[0px]
         }
             .whitebox {
                 @apply w-[39px] h-[22px] bg-white flex items-center justify-center rounded-full; /* Use 'rounded-full' for circular shape */

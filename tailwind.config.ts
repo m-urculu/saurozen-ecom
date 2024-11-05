@@ -43,7 +43,8 @@ const config: Config = {
         'Dark-Sky-Blue': '#8BBDE3',
         'Chinese-Silver': '#C7C7C7',
         'eerie-black-85': '#1D1B20D9',
-        'Light-Steel-Blue': '#ACCADC'
+        'Light-Steel-Blue': '#ACCADC',
+        'otherblue': 'rgba(10, 65, 100, 1)'
       },
     },
   },
