@@ -70,6 +70,24 @@ const EyewearPage = () => {
                     </button>
                 </div>
             </nav>
+            <div className="products-container">
+                <div className="dir-container">
+                    <p className="dir">Home &gt; Shop &gt; &nbsp;</p><p className="folder">Eyewear</p>
+                </div>
+                <div className="products">
+                    <div aria-label="filter" className="filter">
+                        <div className="filter-top">
+                            <p className="filters-title">FILTERS</p>
+                            <img 
+                                src={Icons.sliders.src}
+                                alt="Sliders Icon"
+                                className="sliders-button"
+                            />
+                        </div>
+                        <div className="filter-line"></div>
+                    </div>
+                </div>
+            </div>
             <img src={Images.backgroundImg.src} alt="Background Image" className='background-img'/>
         </div>
     )

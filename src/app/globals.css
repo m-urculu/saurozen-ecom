@@ -500,6 +500,41 @@ body::-webkit-scrollbar {
                 }
         
 
+/* Store Page */
+    /* File Nav*/
+    .products-container {
+        @apply mx-[40px]
+    }
+        .dir-container {
+            @apply flex my-[20px]
+        }
+            .dir {
+                @apply font-orbitron text-[12px] text-Cetacean-Blue text-opacity-60
+            }
+            .folder {
+                @apply font-orbitron text-[12px] text-Cetacean-Blue text-opacity-100
+            }
+        .products {
+            @apply flex
+        }
+            .filter {
+                @apply h-[80vh] w-[274px] bg-Light-Silver rounded-[25px] p-[22px];
+                background-color: rgba(192, 192, 192, 0.5);
+            }
+                .filter-top {
+                    @apply flex justify-between
+                }
+                    .filters-title {
+                        @apply font-designer font-black text-opacity-80 text-[14px]
+                    }
+                    .sliders-button {
+                        @apply h-[16px] w-[16px]
+                    }
+                .filter-line {
+                    @apply w-full h-[2px];
+                    background-color: rgba(0, 0, 0, 0.31)
+                }
+
 /* Background Image */
 .background-img {
     @apply fixed top-0 left-0 h-screen w-screen z-[-200] object-cover;

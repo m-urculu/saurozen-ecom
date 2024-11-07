@@ -44,6 +44,7 @@ const config: Config = {
         'Chinese-Silver': '#C7C7C7',
         'eerie-black-85': '#1D1B20D9',
         'Light-Steel-Blue': '#ACCADC',
+        'Light-Silver': '#D9D9D9',
         'otherblue': 'rgba(10, 65, 100, 1)'
       },
     },
