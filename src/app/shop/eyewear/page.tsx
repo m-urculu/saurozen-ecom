@@ -78,13 +78,110 @@ const EyewearPage = () => {
                     <div aria-label="filter" className="filter">
                         <div className="filter-top">
                             <p className="filters-title">FILTERS</p>
-                            <img 
+                            <img
                                 src={Icons.sliders.src}
                                 alt="Sliders Icon"
                                 className="sliders-button"
                             />
                         </div>
                         <div className="filter-line"></div>
+                        <div className="types">
+                            <button className="type">
+                                <p className="type-name">Classic</p>
+                                <img
+                                src={Icons.arrowFilter.src}
+                                alt="Arrow Filter Icon"
+                                className="arrow-filter"
+                                />
+                            </button>
+                            <button className="type">
+                                <p className="type-name">Sport</p>
+                                <img
+                                src={Icons.arrowFilter.src}
+                                alt="Arrow Filter Icon"
+                                className="arrow-filter"
+                                />
+                            </button>
+                            <button className="type">
+                                <p className="type-name">Wrap</p>
+                                <img
+                                src={Icons.arrowFilter.src}
+                                alt="Arrow Filter Icon"
+                                className="arrow-filter"
+                                />
+                            </button>
+                            <button className="type">
+                                <p className="type-name">Aviator</p>
+                                <img
+                                src={Icons.arrowFilter.src}
+                                alt="Arrow Filter Icon"
+                                className="arrow-filter"
+                                />
+                            </button>
+                            <button className="type">
+                                <p className="type-name">Clubmaster</p>
+                                <img
+                                src={Icons.arrowFilter.src}
+                                alt="Arrow Filter Icon"
+                                className="arrow-filter"
+                                />
+                            </button>
+                        </div>
+                        <div className="filter-line"></div>
+                        <div className="filter-price">
+                            <div className="title-container">
+                                <p className="filters-title">PRICE</p>
+                                <img
+                                    src={Icons.arrowFilter.src}
+                                    alt="Arrow Filter Icon"
+                                    className="arrow-filter-down"
+                                />
+                            </div>
+                            <div className="price-slider">
+                                <div className="slider-bar">
+                                    <div className="min-slider-container">
+                                        <div className="min-price-slide"></div>
+                                        <div className="price-min">50€</div>
+                                    </div>
+                                    <div className="slider-bar-range"></div>
+                                    <div className="max-slider-container">
+                                        <div className="max-price-slide"></div>
+                                        <div className="price-max">200€</div>
+                                    </div>
+                                </div>
+                                </div>
+                            <div className="filter-line"></div>
+                            </div>
+                        <div className="filter-colors">
+                            <p className="filters-title">COLORS</p>
+                            <img
+                                src={Icons.arrowFilter.src}
+                                alt="Arrow Filter Icon"
+                                className="arrow-filter-down"
+                            />
+                        </div>
+                        <div className="colors-selection">
+                            <div className="sel-row">
+                                <div className="sel-orange">
+                                    <img
+                                        src={Icons.check.src}
+                                        alt="Checked Icon"
+                                        className="checked"
+                                    />
+                                </div>
+                                <div className="sel-magenta"></div>
+                                <div className="sel-lime"></div>
+                                <div className="sel-black"></div>
+                                <div className="sel-white"></div>
+                            </div>
+                            <div className="sel-row">
+                                <div className="sel-pink"></div>
+                                <div className="sel-yellow"></div>
+                                <div className="sel-green"></div>
+                                <div className="sel-cian"></div>
+                                <div className="sel-red"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

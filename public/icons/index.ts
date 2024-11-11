@@ -13,3 +13,5 @@ export { default as facebook } from './facebook.svg';
 export { default as instagram } from './instagram.svg';
 export { default as github } from './github.svg';
 export { default as sliders } from './sliders.svg';
+export { default as arrowFilter} from './arrow-filter.svg'
+export { default as check} from './check.svg'

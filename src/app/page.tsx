@@ -93,7 +93,9 @@ export default function Home() {
           </div>
           <div aria-label="product-items" className="product-items">
             <button className='sunglasses'>
-              <img src={Images.zenith.src} alt="Zenith" className="product-img"/>
+              <div className="img-container">
+                <img src={Images.zenith.src} alt="Zenith" className="product-img"/>
+              </div>
               <p className="product-name">Zenith</p>
               <div aria-label="rating" className="rating">
                 <div className="star-rating">
@@ -108,7 +110,9 @@ export default function Home() {
               <p className="price">129€</p>
             </button>
             <button className='sunglasses'>
-              <img src={Images.neonReef.src} alt="Neon Reef" className="product-img"/>
+              <div className="img-container">
+                <img src={Images.neonReef.src} alt="Neon Reef" className="product-img"/>
+              </div>
               <p className="product-name">Neon Reef</p>
               <div aria-label="rating" className="rating">
                 <div className="star-rating">
@@ -122,7 +126,9 @@ export default function Home() {
               <p className="price">160€</p>
             </button>
             <button className='sunglasses'>
-              <img src={Images.stratos.src} alt="Stratos" className="product-img"/>
+              <div className="img-container">
+                <img src={Images.stratos.src} alt="Stratos" className="product-img"/>
+              </div>
               <p className="product-name">Stratos</p>
               <div aria-label="rating" className="rating">
                 <div className="star-rating">
@@ -137,7 +143,9 @@ export default function Home() {
               <p className="price">145€</p>
             </button>
             <button className='sunglasses'>
-              <img src={Images.coralRay.src} alt="Coral Ray" className="product-img"/>
+              <div className="img-container">
+                <img src={Images.coralRay.src} alt="Coral Ray" className="product-img"/>
+              </div>
               <p className="product-name">Coral Ray</p>
               <div aria-label="rating" className="rating">
                 <div className="star-rating">
@@ -169,7 +177,9 @@ export default function Home() {
           </div>
           <div aria-label="product-items" className="product-items">
               <button className='sunglasses'>
-                <img src={Images.solstice.src} alt="Solstice" className="product-img"/>
+                <div className="img-container">
+                  <img src={Images.solstice.src} alt="Solstice" className="product-img"/>
+                </div>
                 <p className="product-name">Solstice</p>
                 <div aria-label="rating" className="rating">
                   <div className="star-rating">
@@ -189,7 +199,9 @@ export default function Home() {
                 </div>
               </button>
               <button className='sunglasses'>
-                <img src={Images.cascade.src} alt="Cascade" className="product-img"/>
+                <div className="img-container">
+                  <img src={Images.cascade.src} alt="Cascade" className="product-img"/>
+                </div>
                 <p className="product-name">Cascade</p>
                 <div aria-label="rating" className="rating">
                   <div className="star-rating">
@@ -203,7 +215,9 @@ export default function Home() {
                 <p className="price">145€</p>
               </button>
               <button className='sunglasses'>
-                <img src={Images.aquaEdge.src} alt="Aqua Edge" className="product-img"/>
+                <div className="img-container">
+                  <img src={Images.aquaEdge.src} alt="Aqua Edge" className="product-img"/>
+                </div>
                 <p className="product-name">Aqua Edge</p>
                 <div aria-label="rating" className="rating">
                   <div className="star-rating">
@@ -218,7 +232,9 @@ export default function Home() {
                 <p className="price">200€</p>
               </button>
               <button className='sunglasses'>
-                <img src={Images.coralEclipse.src} alt="Coral Eclipse" className="product-img"/>
+                <div className="img-container">
+                  <img src={Images.coralEclipse.src} alt="Coral Eclipse" className="product-img"/>
+                </div>
                 <p className="product-name">Coral Eclipse</p>
                 <div aria-label="rating" className="rating">
                   <div className="star-rating">
