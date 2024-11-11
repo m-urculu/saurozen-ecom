@@ -580,7 +580,7 @@ body::-webkit-scrollbar {
                                 background-color: rgba(33, 32, 36, 1);
                             }
                             .price-min {
-                                @apply w-fit font-orbitron font-bold text-[14px] lg:text-[24px];
+                                @apply w-fit font-orbitron font-bold text-[14px];
                             }
                         .slider-bar-range {
                             @apply flex items-center w-[116px] h-[5px] rounded-[20px];
@@ -595,7 +595,7 @@ body::-webkit-scrollbar {
                                 background-color: rgba(33, 32, 36, 1);
                             }
                             .price-max {
-                                @apply w-fit font-orbitron font-bold text-[14px] lg:text-[24px];
+                                @apply w-fit font-orbitron font-bold text-[14px];
                             }
                 .filter-colors {
                     @apply flex justify-between

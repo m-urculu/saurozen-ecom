@@ -151,7 +151,7 @@ const EyewearPage = () => {
                                 </div>
                                 </div>
                             <div className="filter-line"></div>
-                            </div>
+                        </div>
                         <div className="filter-colors">
                             <p className="filters-title">COLORS</p>
                             <img
