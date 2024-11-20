@@ -29,9 +29,12 @@ const ProductItem = () => {
                 <img src={Images.image86.src} alt="Coral Model" className="item-img"/>
               </div>
             </div>
-            <div className='item-img-lg'>
-              <img src={Images.coralEclipse.src} alt="Coral Eclipse" className=""/>
+            <div className='item-lg-container'>
+              <img src={Images.coralEclipse.src} alt="Coral Eclipse" className="item-img-lg"/>
             </div>
+          </div>
+          <div className='item-description'>
+            <h1 className="item-title">Coral Eclipse</h1>
           </div>
         </div>
       </div>

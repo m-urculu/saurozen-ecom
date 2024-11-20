@@ -720,10 +720,10 @@ body::-webkit-scrollbar {
 
 /* Item Page*/
 .item {
-    @apply flex-col
+    @apply flex flex-row pt-[45px]
 }
     .item-imgs {
-        @apply flex pt-[45px]
+        @apply flex
     }
         .item-imgs-sm {
             @apply flex flex-col space-y-[11px]
@@ -735,8 +735,17 @@ body::-webkit-scrollbar {
                 .item-img {
                     @apply w-[160px] h-[160px] rounded-[20px];
                     }
-        .item-img-lg {
-            @apply w-full h-full object-cover scale-110 w-[502px] h-[502px] overflow-hidden
+        .item-lg-container {
+            @apply w-[502px] h-[502px] overflow-hidden rounded-[20px] ml-[12px]
+        }
+            .item-img-lg {
+                @apply w-full h-full object-cover scale-110  overflow-hidden
+            }
+    .item-description {
+        @apply flex ml-[57px]
+    }
+        .item-title {
+            @apply font-designer text-[48px] text-Limerick text-shadow-custom
         }
           
 
