@@ -13,6 +13,7 @@ export { default as solstice } from './sunglasses/solstice.webp';
 export { default as cascade } from './sunglasses/cascade.webp';
 export { default as aquaEdge } from './sunglasses/aqua-edge.webp';
 export { default as coralEclipse } from './sunglasses/coral-eclipse.webp';
+export { default as driftLens } from './sunglasses/drift-lens.webp';
 export { default as image71 } from './models/image-71.webp'
 export { default as image72 } from './models/image-72.webp'
 export { default as image73 } from './models/image-73.webp'

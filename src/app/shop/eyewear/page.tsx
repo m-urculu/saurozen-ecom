@@ -1,9 +1,9 @@
 import React from 'react'
-import Link from "next/link"
 import * as Icons from '@/../public/icons'
 import * as Images from '@/../public/images'
 import Newsletter from '@/components/Newsletter'
 import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
 
 const EyewearPage = () => {
     return (
@@ -14,64 +14,7 @@ const EyewearPage = () => {
                 Sign Up Now
                 </button>
             </div>
-            <nav aria-label="nav-bar" className="nav-bar">
-                <button aria-label="menu-button">
-                    <img 
-                        src={Icons.hamburgerMenu.src}
-                        alt="Hamburger Menu Icon"
-                        className="menu-button"
-                    />
-                </button>
-                <div aria-label="logo" className="logo">SAUROZEN</div>
-                <div aria-label="nav-links" className="nav-links">
-                    <button aria-label="shop-dropdown">
-                        <div>Shop ▼</div>
-                    </button>
-                    <button aria-label="shop-dropdown">
-                        <Link href="/shop/eyewear">On Sale</Link>
-                    </button>
-                    <button aria-label="shop-dropdown">
-                        <Link href="/shop/eyewear">New Arrivals</Link>
-                    </button>
-                    <button aria-label="shop-dropdown">
-                        <div>What We Do</div>
-                    </button>
-                </div>
-                <div aria-label="search-bar" className="search-bar">
-                    <div className="input-bar">
-                        <img
-                        src={Icons.searchLight.src}
-                        className="search-light"
-                        />
-                        <input
-                        className="input"
-                        />
-                    </div>
-                </div>
-                <div className="right-buttons">
-                    <button aria-label="search-button">
-                        <img
-                        src={Icons.search.src}
-                        alt="Search Icon"
-                        className="search-icon"
-                        />
-                    </button>
-                    <Link href="/shop/eyewear" aria-label="cart-button">
-                        <img
-                        src={Icons.cart.src}
-                        alt="Cart Icon"
-                        className="cart-icon"
-                        />
-                    </Link>
-                    <button aria-label="user-button">
-                        <img
-                        src={Icons.user.src}
-                        alt="User Icon"
-                        className="user-icon"
-                        />
-                    </button>
-                </div>
-            </nav>
+            <Navbar/>
             <div className="products-container">
                 <div className="dir-container">
                     <p className="dir">Home &gt; Shop &gt; &nbsp;</p><p className="folder">Eyewear</p>
@@ -259,7 +202,227 @@ const EyewearPage = () => {
                             <button className="apply-button">APPLY FILTER</button>
                         </div>
                     </div>
-                    <div className="eyewear"></div>
+                    <div className="eyewear">
+                        <div className="eye-top">
+                            <h1 className="eyewear-title">EYEWEAR</h1>
+                            <div className="sort-items">
+                                <p className="sort-text">Showing 1-9 of 100 Products - Sort by:&nbsp;</p>
+                                <button className="sort-btn">
+                                    <p>Most Popular &nbsp;</p>
+                                    <img
+                                    src={Icons.arrowFilter.src}
+                                    alt="Arrow Filter Icon"
+                                    className="arrow-filter-down"
+                                    />
+                                </button>
+                            </div>
+                        </div>
+                        <div className="eye-products">
+                            <div className="products-row">
+                                <button className='sunglasses'>
+                                <div className="img-container">
+                                    <img src={Images.zenith.src} alt="Zenith" className="product-img"/>
+                                </div>
+                                <p className="product-name">Zenith</p>
+                                <div aria-label="rating" className="rating">
+                                    <div className="star-rating">
+                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                    <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+                                    </div>
+                                    <p className="number-rate">4.5/5</p>
+                                </div>
+                                <p className="price">129€</p>
+                                </button>
+                                <button className='sunglasses'>
+                                <div className="img-container">
+                                    <img src={Images.neonReef.src} alt="Neon Reef" className="product-img"/>
+                                </div>
+                                <p className="product-name">Neon Reef</p>
+                                <div aria-label="rating" className="rating">
+                                    <div className="star-rating">
+                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                    </div>
+                                    <p className="number-rate">4.0/5</p>
+                                </div>
+                                <p className="price">160€</p>
+                                </button>
+                                <button className='sunglasses'>
+                                <div className="img-container">
+                                    <img src={Images.stratos.src} alt="Stratos" className="product-img"/>
+                                </div>
+                                <p className="product-name">Stratos</p>
+                                <div aria-label="rating" className="rating">
+                                    <div className="star-rating">
+                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                    <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+                                    </div>
+                                    <p className="number-rate">4.5/5</p>
+                                </div>
+                                <p className="price">145€</p>
+                                </button>
+                            </div>
+                            <div className="products-row">
+
+                                <button className='sunglasses'>
+                                <div className="img-container">
+                                    <img src={Images.coralRay.src} alt="Coral Ray" className="product-img"/>
+                                </div>
+                                <p className="product-name">Coral Ray</p>
+                                <div aria-label="rating" className="rating">
+                                    <div className="star-rating">
+                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                    <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+                                    </div>
+                                    <p className="number-rate">4.6/5</p>
+                                </div>
+                                <div className="price">212€
+                                    <p className="discounted-price">235€</p>
+                                    <div className="discount">
+                                    <p className="percentage">-20%</p>
+                                    </div>
+                                </div>
+                                </button>
+                                <button className='sunglasses'>
+                                    <div className="img-container">
+                                    <img src={Images.solstice.src} alt="Solstice" className="product-img"/>
+                                    </div>
+                                    <p className="product-name">Solstice</p>
+                                    <div aria-label="rating" className="rating">
+                                    <div className="star-rating">
+                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                        <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+                                    </div>
+                                    <p className="number-rate">4.6/5</p>
+                                    </div>
+                                    <div className="price">212€
+                                    <p className="discounted-price">235€</p>
+                                    <div className="discount">
+                                        <p className="percentage">-20%</p>
+                                    </div>
+                                    </div>
+                                </button>
+                                <button className='sunglasses'>
+                                    <div className="img-container">
+                                    <img src={Images.cascade.src} alt="Cascade" className="product-img"/>
+                                    </div>
+                                    <p className="product-name">Cascade</p>
+                                    <div aria-label="rating" className="rating">
+                                    <div className="star-rating">
+                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                    </div>
+                                    <p className="number-rate">4.0/5</p>
+                                    </div>
+                                    <p className="price">145€</p>
+                                </button>
+                            </div>
+                            <div className='products-row'>
+
+                                <button className='sunglasses'>
+                                    <div className="img-container">
+                                    <img src={Images.aquaEdge.src} alt="Aqua Edge" className="product-img"/>
+                                    </div>
+                                    <p className="product-name">Aqua Edge</p>
+                                    <div aria-label="rating" className="rating">
+                                    <div className="star-rating">
+                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                        <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+                                    </div>
+                                    <p className="number-rate">5/5</p>
+                                    </div>
+                                    <p className="price">200€</p>
+                                </button>
+                                <button className='sunglasses'>
+                                    <div className="img-container">
+                                    <img src={Images.coralEclipse.src} alt="Coral Eclipse" className="product-img"/>
+                                    </div>
+                                    <p className="product-name">Coral Eclipse</p>
+                                    <div aria-label="rating" className="rating">
+                                    <div className="star-rating">
+                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                        <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+                                    </div>
+                                    <p className="number-rate">4.6/5</p>
+                                    </div>
+                                    <div className="price">260€
+                                    <p className="discounted-price">300€</p>
+                                    <div className="discount">
+                                        <p className="percentage">-40%</p>
+                                    </div>
+                                    </div>
+                                </button>
+                                <button className='sunglasses'>
+                                    <div className="img-container">
+                                    <img src={Images.driftLens.src} alt="Drift Lens" className="product-img"/>
+                                    </div>
+                                    <p className="product-name">Drift Lens</p>
+                                    <div aria-label="rating" className="rating">
+                                    <div className="star-rating">
+                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                        <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+                                    </div>
+                                    <p className="number-rate">4.5/5</p>
+                                    </div>
+                                    <div className="price">245€
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <div className="listing">
+                            <button className='prev-btn'>
+                                <img 
+                                src={Icons.arrowFat.src}
+                                alt="Previous"
+                                className="listing-arrowleft"
+                                />&nbsp; &nbsp;
+                                <p className='btn-text'>Previous</p>
+                            </button>
+                            <div className="num-sel">
+                                <button className='num-btn'>1</button>
+                                <button className='num-btn'>2</button>
+                                <button className='num-btn'>3</button>
+                                <p className='num-btn'>...</p>
+                                <button className='num-btn'>8</button>
+                                <button className='num-btn'>9</button>
+                                <button className='num-btn'>10</button>
+                            </div>
+                            <button className='prev-btn'>
+                                <p className='btn-text'>Next</p>
+                                &nbsp; &nbsp;
+                                <img 
+                                src={Icons.arrowFat.src}
+                                alt="Next"
+                                className="listing-arrowright"
+                                />
+                            </button>                        
+                        </div>
+                    </div>
                 </div>
             </div>
             <Newsletter/>

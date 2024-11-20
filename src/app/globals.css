@@ -137,7 +137,7 @@ body::-webkit-scrollbar {
 
 /* Products */
 .products {
-    @apply flex flex-row pb-[86px]
+    @apply flex flex-row
 }
     .new-arrivals, .top-products {
         @apply w-full;
@@ -242,7 +242,7 @@ body::-webkit-scrollbar {
                     object-position: center;  /* Focus on the center of the image, adjust to top/bottom if needed */
                 }
             .product-name {
-                @apply pt-[5px] pl-[3px] font-orbitron font-medium text-black text-[16px] lg:text-[24px] text-left
+                @apply pt-[5px] pl-[3px] font-orbitron font-bold text-black text-[16px] lg:text-[24px] text-left
             }
             .rating {
                 @apply flex items-center
@@ -257,7 +257,7 @@ body::-webkit-scrollbar {
                         @apply font-inter font-medium italic text-black ml-[6px] lg:ml-[12px] text-[12px] lg:text-[16px];
                 }
             .price {
-                @apply relative flex items-center font-orbitron font-bold text-[14px] lg:text-[24px];
+                @apply relative flex items-center font-orbitron font-black text-[14px] lg:text-[24px];
             }
                 .discounted-price {
                     @apply pl-[8px] lg:pl-[12px] pt-[4px] lg:pt-0 font-orbitron font-bold text-white text-[11px] lg:text-[16px];
@@ -670,6 +670,53 @@ body::-webkit-scrollbar {
                     .apply-button {
                         @apply px-[25px] py-[7px] rounded-full bg-black text-white font-designer
                     }
+            .eyewear {
+                @apply flex flex-col ml-[69px] w-full
+            }
+                .eye-top {
+                    @apply flex w-full justify-between items-start h-min mb-[50px]
+                }
+                    .eyewear-title {
+                        @apply font-o210ital text-white text-[36px] text-shadow-custom
+                    }
+                    .sort-items {
+                        @apply flex self-center
+                    }
+                        .sort-text {
+                            @apply font-orbitron text-[13px]
+                        }
+                        .sort-btn {
+                            @apply flex items-center font-orbitron text-black font-bold text-[13px]
+                        }
+                .eye-products {
+                    @apply flex flex-col space-y-[76px]
+                }
+                    .products-row {
+                        @apply flex justify-between
+                    }
+                .listing {
+                    @apply flex justify-between py-[87px]
+                }
+                    .prev-btn {
+                        @apply flex items-center font-orbitron w-auto h-[32px] bg-white rounded-full px-[10px] shadow-custom;
+                        background-color: rgba(217, 217, 217, 0.5)
+                    }
+                        .btn-text {
+                            @apply font-orbitron font-black text-[13px]
+                        }
+                        .listing-arrowleft {
+                            @apply h-[11px] w-[10px] stroke-[20px]
+                        }
+                        .listing-arrowright {
+                            @apply h-[11px] w-[10px] rotate-180
+                        }
+                    .num-sel {
+                        @apply flex space-x-[19px]
+                    }
+                        .num-btn {
+                            @apply flex items-center justify-center font-orbitron font-bold w-auto w-[32px] h-[32px] bg-white rounded-full px-[10px] shadow-custom;
+                            background-color: rgba(217, 217, 217, 0.5)
+                        }   
 
 
 /* Background Image */
