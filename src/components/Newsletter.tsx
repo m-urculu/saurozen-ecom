@@ -1,11 +1,11 @@
 import React from "react";
 import * as Icons from '../../public/icons'
 
-interface NewsletterProps {
-  onSubscribe?: (email: string) => void; // Optional callback for handling the subscription
-}
+// interface NewsletterProps {
+//   onSubscribe?: (email: string) => void; // Optional callback for handling the subscription
+// }
 
-const Newsletter: React.FC<NewsletterProps> = ({ onSubscribe }) => {
+const Newsletter = () => {
   // const handleSubscribe = () => {
   //   const emailInput = (document.getElementById("email-input") as HTMLInputElement)?.value;
   //   if (onSubscribe && emailInput) {
