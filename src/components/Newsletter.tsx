@@ -6,12 +6,12 @@ interface NewsletterProps {
 }
 
 const Newsletter: React.FC<NewsletterProps> = ({ onSubscribe }) => {
-  const handleSubscribe = () => {
-    const emailInput = (document.getElementById("email-input") as HTMLInputElement)?.value;
-    if (onSubscribe && emailInput) {
-      onSubscribe(emailInput);
-    }
-  };
+  // const handleSubscribe = () => {
+  //   const emailInput = (document.getElementById("email-input") as HTMLInputElement)?.value;
+  //   if (onSubscribe && emailInput) {
+  //     onSubscribe(emailInput);
+  //   }
+  // };
 
   return (
     <div aria-label="newsletter" className="newsletter">
