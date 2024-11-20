@@ -13,6 +13,7 @@ export { default as solstice } from './sunglasses/solstice.webp';
 export { default as cascade } from './sunglasses/cascade.webp';
 export { default as aquaEdge } from './sunglasses/aqua-edge.webp';
 export { default as coralEclipse } from './sunglasses/coral-eclipse.webp';
+export { default as coralEclipse2 } from './sunglasses/coral-eclipse2.webp';
 export { default as driftLens } from './sunglasses/drift-lens.webp';
 export { default as image71 } from './models/image-71.webp'
 export { default as image72 } from './models/image-72.webp'
@@ -22,6 +23,7 @@ export { default as image76 } from './models/image-76.webp'
 export { default as image80 } from './models/image-80.webp'
 export { default as image81 } from './models/image-81.webp'
 export { default as image87 } from './models/image-87.webp'
+export { default as image86 } from './models/image-86.webp'
 export { default as image88 } from './models/image-88.webp'
 export { default as image89 } from './models/image-89.webp'
 export { default as image90 } from './models/image-90.webp'

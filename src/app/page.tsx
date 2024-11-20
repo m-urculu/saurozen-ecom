@@ -2,23 +2,20 @@
 import Link from "next/link"
 import * as Images from '../../public/images'
 import * as Icons from '../../public/icons'
+import PromoBanner from "@/components/PromoBanner"
+import Navbar from '@/components/Navbar'
 import ElementsCalc from '../components/ElementsCalc';
 import ReviewSlider from '../components/ReviewSlider';
 import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
-import Navbar from '@/components/Navbar'
+import Background from "@/components/Background"
 
 
 export default function Home() {
 
   return (
     <div aria-label="homepage" className="homepage">
-      <div aria-label="promo-banner" className="promo-banner">
-        Sign up and get 20% off your first order.
-        <button aria-label="promo-button" className="promo-button">
-          Sign Up Now
-        </button>
-      </div>
+      <PromoBanner/>
       <Navbar/>
       <div aria-label="main-section" className="main-section">
           <img src={Images.landingImg.src} alt="Landing Image" className="landing-img" />
@@ -336,8 +333,7 @@ Welcome to the future of eyewear: recycled, reimagined, and ready for what&apos;
       </div>
       <Newsletter/>
       <Footer/>
-      
-      <img src={Images.backgroundImg.src} alt="Background Image" className='background-img'/>
+      <Background/>      
     </div>
     );
   }

@@ -1,9 +1,10 @@
 import React from 'react'
 import * as Icons from '@/../public/icons'
 import * as Images from '@/../public/images'
+import Navbar from '@/components/Navbar'
 import Newsletter from '@/components/Newsletter'
 import Footer from '@/components/Footer'
-import Navbar from '@/components/Navbar'
+import Background from '@/components/Background'
 
 const EyewearPage = () => {
     return (
@@ -427,7 +428,7 @@ const EyewearPage = () => {
             </div>
             <Newsletter/>
             <Footer/>
-            <img src={Images.backgroundImg.src} alt="Background Image" className='background-img'/>
+            <Background/>
         </div>
     )
 }

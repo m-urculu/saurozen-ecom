@@ -718,6 +718,27 @@ body::-webkit-scrollbar {
                             background-color: rgba(217, 217, 217, 0.5)
                         }   
 
+/* Item Page*/
+.item {
+    @apply flex-col
+}
+    .item-imgs {
+        @apply flex pt-[45px]
+    }
+        .item-imgs-sm {
+            @apply flex flex-col space-y-[11px]
+        }
+            .sel-img {
+                @apply w-[160px] h-[160px] rounded-[22px] overflow-hidden;
+                border: 2.5px solid rgba(0, 0, 0, 0.8); /* Inner shadow */
+            }
+                .item-img {
+                    @apply w-[160px] h-[160px] rounded-[20px];
+                    }
+        .item-img-lg {
+            @apply w-full h-full object-cover scale-110 w-[502px] h-[502px] overflow-hidden
+        }
+          
 
 /* Background Image */
 .background-img {
