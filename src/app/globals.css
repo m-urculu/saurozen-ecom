@@ -137,7 +137,7 @@ body::-webkit-scrollbar {
 
 /* Products */
 .products {
-    @apply flex flex-row
+    @apply flex flex-col
 }
     .new-arrivals, .top-products {
         @apply w-full;
@@ -251,10 +251,10 @@ body::-webkit-scrollbar {
                     @apply flex gap-[3px]
                 }
                     .star {
-                        @apply p-0 m-0 text-Bittersweet-Shimmer w-4 h-4 lg:w-5 lg:h-5;
+                        @apply text-Bittersweet-Shimmer w-4 h-4 lg:w-5 lg:h-5;
                     }
                 .number-rate {
-                        @apply font-inter font-medium italic text-black ml-[6px] lg:ml-[12px] text-[12px] lg:text-[16px];
+                        @apply font-inter font-medium italic text-black ml-[6px] text-[12px] lg:text-[16px] text-shadow;
                 }
             .price {
                 @apply relative flex items-center font-orbitron font-black text-[14px] lg:text-[24px];
@@ -266,7 +266,7 @@ body::-webkit-scrollbar {
                 .discounted-price::before {
                     content: '';
                     @apply absolute bg-white; 
-                    height: 2px; 
+                    height: 1px; 
                     width: 90%; 
                     transform: rotate(-20deg); 
                     transform-origin: left; 
@@ -646,6 +646,10 @@ body::-webkit-scrollbar {
                                 @apply w-[35px] h-[35px] rounded-full;
                                 background-color: #F60607;
                             }
+                            .sel-blue {
+                                @apply w-[35px] h-[35px] rounded-full;
+                                background-color: #0616f6;
+                            }
                                 .checked {
                                     color: black;
                                 }
@@ -742,12 +746,56 @@ body::-webkit-scrollbar {
                 @apply w-full h-full object-cover scale-110  overflow-hidden
             }
     .item-description {
-        @apply flex ml-[57px]
+        @apply flex-col ml-[57px]
     }
         .item-title {
             @apply font-designer text-[48px] text-Limerick text-shadow-custom
         }
-          
+        .description {
+            @apply font-orbitron text-[14px] font-bold mt-[9px]
+        }
+        .line-sep {
+            @apply w-full h-[1px] mt-[39px];
+            background-color: rgba(0, 0, 0, 1)
+        }
+        .color {
+            @apply flex my-[32px] space-x-[12px] items-center
+        }
+            .color-type {
+                @apply font-orbitron text-[16px] font-bold
+            }
+        .size {
+            @apply flex my-[32px] space-x-[12px] items-center
+        }
+            .size-type {
+                @apply font-orbitron text-[16px] font-bold
+            }
+            .size-sel {
+                @apply flex items-center space-x-[12px]
+            }
+                .size-lg {
+                    @apply px-[20px] py-[7px] w-auto h-auto bg-black font-orbitron text-[15px] font-thin text-white rounded-full
+                }
+                .size-md {
+                    @apply px-[20px] py-[7px] w-auto h-auto font-orbitron text-[15px] font-thin text-black rounded-full;
+                    background:rgba(255, 255, 255, 0.5)
+                }
+        .add-cart {
+            @apply flex mt-[47px] space-x-[10px]
+        }
+            .cart-count {
+                @apply flex px-[20px] pt-[12px] pb-[10px] items-center space-x-[36px] rounded-full;
+                background:rgba(255, 255, 255, 0.5);
+                border: 1px solid black;
+            }
+                .count {
+                    @apply font-[36px] text-black font-bold                    
+                }
+            .add-btn {
+                @apply items-center font-orbitron font-bold text-black w-full bg-Bittersweet-Shimmer rounded-full;
+                border: 1px solid black;
+            }
+            
 
 /* Background Image */
 .background-img {

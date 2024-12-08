@@ -35,8 +35,56 @@ const ProductItem = () => {
           </div>
           <div className='item-description'>
             <h1 className="item-title">Coral Eclipse</h1>
+            <div aria-label="rating" className="rating">
+              <div className="star-rating">
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+              </div>
+              <p className="number-rate">4.8/5</p>
+            </div>
+            <div className="price">180€
+              <p className="discounted-price">300€</p>
+              <div className="discount">
+                <p className="percentage">-40%</p>
+              </div>
+            </div>
+            <p className="description">
+              Where sustainability meets bold style. Inspired by the vibrant hues of coral reefs, Coral Eclipse sunglasses feature eco-friendly frames made from recycled ocean plastics, offering a sleek design that protects both your eyes and the planet. Shine bright, make an impact.
+            </p>
+            <div className="line-sep"></div>
+            <div className="color">
+              <p className="color-type">Color:</p>
+              <button className="sel-orange">
+                <img
+                    src={Icons.check.src}
+                    alt="Checked Icon"
+                    className="checked"
+                />
+              </button>
+              <button className="sel-blue"></button>
+            </div>
+            <div className="size">
+              <p className="size-type">Size:</p>
+              <div className="size-sel">
+                <button className="size-lg">Large</button>
+                <button className="size-md">Medium</button>
+              </div>
+            </div>
+            <div className="line-sep"></div>
+            <div className="add-cart">
+              <div className="cart-count">
+                <button className="count">-</button>
+                <p className="count">1</p>
+                <button className="count">+</button>
+              </div>
+              <button className="add-btn">Add to Cart</button>
+            </div>
           </div>
         </div>
+        <div></div>
       </div>
       <Newsletter/>
       <Footer/>
