@@ -29,6 +29,14 @@ body::-webkit-scrollbar {
     display: none; /* For Chrome, Safari, and Edge */
 }
 
+/* warning */
+.work-in-progress {
+    @apply bg-opacity-50 font-orbitron fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-red-500 text-white font-bold py-2 px-4 rounded-lg shadow-lg z-50;
+}
+
+
+
+
 /* homepage */
 .homepage {
     @apply relative min-h-full w-screen overflow-x-hidden;
