@@ -522,7 +522,7 @@ body::-webkit-scrollbar {
             .folder {
                 @apply font-orbitron text-[12px] text-Cetacean-Blue text-opacity-100
             }
-        .products {
+        .products-filtered {
             @apply flex
         }
             .filter {

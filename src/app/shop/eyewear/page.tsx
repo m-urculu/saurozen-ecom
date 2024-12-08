@@ -20,7 +20,7 @@ const EyewearPage = () => {
                 <div className="dir-container">
                     <p className="dir">Home &gt; Shop &gt; &nbsp;</p><p className="folder">Eyewear</p>
                 </div>
-                <div className="products">
+                <div className="products-filtered">
                     <div aria-label="filter" className="filter">
                         <div className="filter-top">
                             <p className="filters-title">FILTERS</p>
