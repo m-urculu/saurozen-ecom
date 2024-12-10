@@ -129,7 +129,7 @@ const ProductItem = () => {
                     />
                   </p>
                   <p className='detailed-quote'>
-                    "I absolutely love my Coral Eclipse sunglasses! The design is super sleek and the coral-inspired color is gorgeous. They&#39;re lightweight, comfortable, and fit perfectly. Best of all, they&#39;re made from recycled ocean plastic, so I feel great about supporting an eco-friendly brand. I wear them every day, and they always get compliments. Highly recommend!"
+                    &quot;I absolutely love my Coral Eclipse sunglasses! The design is super sleek and the coral-inspired color is gorgeous. They&#39;re lightweight, comfortable, and fit perfectly. Best of all, they&#39;re made from recycled ocean plastic, so I feel great about supporting an eco-friendly brand. I wear them every day, and they always get compliments. Highly recommend!&quot;
                   </p>
                   <p className='date'>Posted on September 24, 2024</p>
               </div>
@@ -149,49 +149,7 @@ const ProductItem = () => {
                     />
                   </p>
                   <p className='detailed-quote'>
-                    "I absolutely love my Coral Eclipse sunglasses! The design is super sleek and the coral-inspired color is gorgeous. They&#39;re lightweight, comfortable, and fit perfectly. Best of all, they&#39;re made from recycled ocean plastic, so I feel great about supporting an eco-friendly brand. I wear them every day, and they always get compliments. Highly recommend!"
-                  </p>
-                  <p className='date'>Posted on September 24, 2024</p>
-              </div>
-            </div>
-            <div className='product-reviews-row'>
-              <div className='product-review'>
-                  <div className="star-rating">
-                    <img src={Icons.star.src} alt="Star Icon" className="star" />
-                    <img src={Icons.star.src} alt="Star Icon" className="star" />
-                    <img src={Icons.star.src} alt="Star Icon" className="star" />
-                    <img src={Icons.star.src} alt="Star Icon" className="star" />
-                    <img src={Icons.star.src} alt="Star Icon" className="star" />
-                  </div>
-                  <p className="customer-name">Samantha D.
-                    <img 
-                        src={Icons.verified.src}
-                        alt="Verified"
-                        className="verified"
-                    />
-                  </p>
-                  <p className='detailed-quote'>
-                    "I absolutely love my Coral Eclipse sunglasses! The design is super sleek and the coral-inspired color is gorgeous. They&#39;re lightweight, comfortable, and fit perfectly. Best of all, they&#39;re made from recycled ocean plastic, so I feel great about supporting an eco-friendly brand. I wear them every day, and they always get compliments. Highly recommend!"
-                  </p>
-                  <p className='date'>Posted on September 24, 2024</p>
-              </div>
-              <div className='product-review'>
-                  <div className="star-rating">
-                    <img src={Icons.star.src} alt="Star Icon" className="star" />
-                    <img src={Icons.star.src} alt="Star Icon" className="star" />
-                    <img src={Icons.star.src} alt="Star Icon" className="star" />
-                    <img src={Icons.star.src} alt="Star Icon" className="star" />
-                    <img src={Icons.star.src} alt="Star Icon" className="star" />
-                  </div>
-                  <p className="customer-name">Samantha D.
-                    <img 
-                        src={Icons.verified.src}
-                        alt="Verified"
-                        className="verified"
-                    />
-                  </p>
-                  <p className='detailed-quote'>
-                    "I absolutely love my Coral Eclipse sunglasses! The design is super sleek and the coral-inspired color is gorgeous. They&#39;re lightweight, comfortable, and fit perfectly. Best of all, they&#39;re made from recycled ocean plastic, so I feel great about supporting an eco-friendly brand. I wear them every day, and they always get compliments. Highly recommend!"
+                    &quot;I absolutely love my Coral Eclipse sunglasses! The design is super sleek and the coral-inspired color is gorgeous. They&#39;re lightweight, comfortable, and fit perfectly. Best of all, they&#39;re made from recycled ocean plastic, so I feel great about supporting an eco-friendly brand. I wear them every day, and they always get compliments. Highly recommend!&quot;
                   </p>
                   <p className='date'>Posted on September 24, 2024</p>
               </div>
@@ -213,7 +171,7 @@ const ProductItem = () => {
                     />
                   </p>
                   <p className='detailed-quote'>
-                    "I absolutely love my Coral Eclipse sunglasses! The design is super sleek and the coral-inspired color is gorgeous. They&#39;re lightweight, comfortable, and fit perfectly. Best of all, they&#39;re made from recycled ocean plastic, so I feel great about supporting an eco-friendly brand. I wear them every day, and they always get compliments. Highly recommend!"
+                    &quot;I absolutely love my Coral Eclipse sunglasses! The design is super sleek and the coral-inspired color is gorgeous. They&#39;re lightweight, comfortable, and fit perfectly. Best of all, they&#39;re made from recycled ocean plastic, so I feel great about supporting an eco-friendly brand. I wear them every day, and they always get compliments. Highly recommend!&quot;
                   </p>
                   <p className='date'>Posted on September 24, 2024</p>
               </div>
@@ -233,7 +191,49 @@ const ProductItem = () => {
                     />
                   </p>
                   <p className='detailed-quote'>
-                    "I absolutely love my Coral Eclipse sunglasses! The design is super sleek and the coral-inspired color is gorgeous. They&#39;re lightweight, comfortable, and fit perfectly. Best of all, they&#39;re made from recycled ocean plastic, so I feel great about supporting an eco-friendly brand. I wear them every day, and they always get compliments. Highly recommend!"
+                    &quot;I absolutely love my Coral Eclipse sunglasses! The design is super sleek and the coral-inspired color is gorgeous. They&#39;re lightweight, comfortable, and fit perfectly. Best of all, they&#39;re made from recycled ocean plastic, so I feel great about supporting an eco-friendly brand. I wear them every day, and they always get compliments. Highly recommend!&quot;
+                  </p>
+                  <p className='date'>Posted on September 24, 2024</p>
+              </div>
+            </div>
+            <div className='product-reviews-row'>
+              <div className='product-review'>
+                  <div className="star-rating">
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                  </div>
+                  <p className="customer-name">Samantha D.
+                    <img 
+                        src={Icons.verified.src}
+                        alt="Verified"
+                        className="verified"
+                    />
+                  </p>
+                  <p className='detailed-quote'>
+                    &quot;I absolutely love my Coral Eclipse sunglasses! The design is super sleek and the coral-inspired color is gorgeous. They&#39;re lightweight, comfortable, and fit perfectly. Best of all, they&#39;re made from recycled ocean plastic, so I feel great about supporting an eco-friendly brand. I wear them every day, and they always get compliments. Highly recommend!&quot;
+                  </p>
+                  <p className='date'>Posted on September 24, 2024</p>
+              </div>
+              <div className='product-review'>
+                  <div className="star-rating">
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                  </div>
+                  <p className="customer-name">Samantha D.
+                    <img 
+                        src={Icons.verified.src}
+                        alt="Verified"
+                        className="verified"
+                    />
+                  </p>
+                  <p className='detailed-quote'>
+                    &quot;I absolutely love my Coral Eclipse sunglasses! The design is super sleek and the coral-inspired color is gorgeous. They&#39;re lightweight, comfortable, and fit perfectly. Best of all, they&#39;re made from recycled ocean plastic, so I feel great about supporting an eco-friendly brand. I wear them every day, and they always get compliments. Highly recommend!&quot;
                   </p>
                   <p className='date'>Posted on September 24, 2024</p>
               </div>
