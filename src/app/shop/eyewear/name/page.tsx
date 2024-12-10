@@ -84,7 +84,245 @@ const ProductItem = () => {
             </div>
           </div>
         </div>
-        <div></div>
+        <div className='tabs'>
+          <button className='product-detail'>
+            <p>Product Detail</p>
+            <div className='line-tab'></div>
+          </button>
+          <button className='rating-reviews'>
+            <p>Rating & Reviews</p>
+            <div className='line-sel'></div>
+          </button>
+          <button className='faqs'>
+            <p>FAQs</p>
+            <div className='line-tab'></div>
+          </button>
+        </div>
+        <div className='product-reviews-container'>
+          <div className='product-reviews-header'>
+            <h1 className="reviews-name">All Reviews</h1>
+            <p className="reviews-number">(451)</p>
+            <div className="filter-container">
+              <img
+                  src={Icons.filter.src}
+                  alt="Filter Icon"
+                  className="filter-icon"
+              />
+            </div>
+            <button className="write-review">Write a Review</button>
+          </div>
+          <div className='product-reviews'>
+            <div className='product-reviews-row'>
+              <div className='product-review'>
+                  <div className="star-rating">
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                  </div>
+                  <p className="customer-name">Samantha D.
+                    <img 
+                        src={Icons.verified.src}
+                        alt="Verified"
+                        className="verified"
+                    />
+                  </p>
+                  <p className='detailed-quote'>
+                    "I absolutely love my Coral Eclipse sunglasses! The design is super sleek and the coral-inspired color is gorgeous. They&#39;re lightweight, comfortable, and fit perfectly. Best of all, they&#39;re made from recycled ocean plastic, so I feel great about supporting an eco-friendly brand. I wear them every day, and they always get compliments. Highly recommend!"
+                  </p>
+                  <p className='date'>Posted on September 24, 2024</p>
+              </div>
+              <div className='product-review'>
+                  <div className="star-rating">
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                  </div>
+                  <p className="customer-name">Samantha D.
+                    <img 
+                        src={Icons.verified.src}
+                        alt="Verified"
+                        className="verified"
+                    />
+                  </p>
+                  <p className='detailed-quote'>
+                    "I absolutely love my Coral Eclipse sunglasses! The design is super sleek and the coral-inspired color is gorgeous. They&#39;re lightweight, comfortable, and fit perfectly. Best of all, they&#39;re made from recycled ocean plastic, so I feel great about supporting an eco-friendly brand. I wear them every day, and they always get compliments. Highly recommend!"
+                  </p>
+                  <p className='date'>Posted on September 24, 2024</p>
+              </div>
+            </div>
+            <div className='product-reviews-row'>
+              <div className='product-review'>
+                  <div className="star-rating">
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                  </div>
+                  <p className="customer-name">Samantha D.
+                    <img 
+                        src={Icons.verified.src}
+                        alt="Verified"
+                        className="verified"
+                    />
+                  </p>
+                  <p className='detailed-quote'>
+                    "I absolutely love my Coral Eclipse sunglasses! The design is super sleek and the coral-inspired color is gorgeous. They&#39;re lightweight, comfortable, and fit perfectly. Best of all, they&#39;re made from recycled ocean plastic, so I feel great about supporting an eco-friendly brand. I wear them every day, and they always get compliments. Highly recommend!"
+                  </p>
+                  <p className='date'>Posted on September 24, 2024</p>
+              </div>
+              <div className='product-review'>
+                  <div className="star-rating">
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                  </div>
+                  <p className="customer-name">Samantha D.
+                    <img 
+                        src={Icons.verified.src}
+                        alt="Verified"
+                        className="verified"
+                    />
+                  </p>
+                  <p className='detailed-quote'>
+                    "I absolutely love my Coral Eclipse sunglasses! The design is super sleek and the coral-inspired color is gorgeous. They&#39;re lightweight, comfortable, and fit perfectly. Best of all, they&#39;re made from recycled ocean plastic, so I feel great about supporting an eco-friendly brand. I wear them every day, and they always get compliments. Highly recommend!"
+                  </p>
+                  <p className='date'>Posted on September 24, 2024</p>
+              </div>
+            </div>
+            <div className='product-reviews-row'>
+              <div className='product-review'>
+                  <div className="star-rating">
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                  </div>
+                  <p className="customer-name">Samantha D.
+                    <img 
+                        src={Icons.verified.src}
+                        alt="Verified"
+                        className="verified"
+                    />
+                  </p>
+                  <p className='detailed-quote'>
+                    "I absolutely love my Coral Eclipse sunglasses! The design is super sleek and the coral-inspired color is gorgeous. They&#39;re lightweight, comfortable, and fit perfectly. Best of all, they&#39;re made from recycled ocean plastic, so I feel great about supporting an eco-friendly brand. I wear them every day, and they always get compliments. Highly recommend!"
+                  </p>
+                  <p className='date'>Posted on September 24, 2024</p>
+              </div>
+              <div className='product-review'>
+                  <div className="star-rating">
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                    <img src={Icons.star.src} alt="Star Icon" className="star" />
+                  </div>
+                  <p className="customer-name">Samantha D.
+                    <img 
+                        src={Icons.verified.src}
+                        alt="Verified"
+                        className="verified"
+                    />
+                  </p>
+                  <p className='detailed-quote'>
+                    "I absolutely love my Coral Eclipse sunglasses! The design is super sleek and the coral-inspired color is gorgeous. They&#39;re lightweight, comfortable, and fit perfectly. Best of all, they&#39;re made from recycled ocean plastic, so I feel great about supporting an eco-friendly brand. I wear them every day, and they always get compliments. Highly recommend!"
+                  </p>
+                  <p className='date'>Posted on September 24, 2024</p>
+              </div>
+            </div>
+          </div>
+          <button className="more-reviews">Load More Reviews</button>
+        </div>
+        <div className='suggestions'>
+          <h1 className='suggestions-title'>YOU MIGHT ALSO LIKE</h1>
+          <div aria-label="product-items" className="product-items">
+            <button className='sunglasses'>
+              <div className="img-container">
+                <img src={Images.solstice.src} alt="Solstice" className="product-img"/>
+              </div>
+              <p className="product-name">Solstice</p>
+              <div aria-label="rating" className="rating">
+                <div className="star-rating">
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+                </div>
+                <p className="number-rate">4.6/5</p>
+              </div>
+              <div className="price">212€
+                <p className="discounted-price">235€</p>
+                <div className="discount">
+                  <p className="percentage">-20%</p>
+                </div>
+              </div>
+            </button>
+            <button className='sunglasses'>
+              <div className="img-container">
+                <img src={Images.cascade.src} alt="Cascade" className="product-img"/>
+              </div>
+              <p className="product-name">Cascade</p>
+              <div aria-label="rating" className="rating">
+                <div className="star-rating">
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                </div>
+                <p className="number-rate">4.0/5</p>
+              </div>
+              <p className="price">145€</p>
+            </button>
+            <button className='sunglasses'>
+              <div className="img-container">
+                <img src={Images.aquaEdge.src} alt="Aqua Edge" className="product-img"/>
+              </div>
+              <p className="product-name">Aqua Edge</p>
+              <div aria-label="rating" className="rating">
+                <div className="star-rating">
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+                </div>
+                <p className="number-rate">5/5</p>
+              </div>
+              <p className="price">200€</p>
+            </button>
+            <button className='sunglasses'>
+              <div className="img-container">
+                <img src={Images.coralEclipse.src} alt="Coral Eclipse" className="product-img"/>
+              </div>
+              <p className="product-name">Coral Eclipse</p>
+              <div aria-label="rating" className="rating">
+                <div className="star-rating">
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                  <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+                </div>
+                <p className="number-rate">4.6/5</p>
+              </div>
+              <div className="price">260€
+                <p className="discounted-price">300€</p>
+                <div className="discount">
+                  <p className="percentage">-40%</p>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
       </div>
       <Newsletter/>
       <Footer/>

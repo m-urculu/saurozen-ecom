@@ -31,7 +31,8 @@ body::-webkit-scrollbar {
 
 /* warning */
 .work-in-progress {
-    @apply bg-opacity-50 font-orbitron fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-red-500 text-white font-bold py-2 px-4 rounded-lg shadow-lg z-50;
+    @apply flex justify-center items-center bg-opacity-50 font-orbitron fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-red-500 text-white font-bold py-2 px-4 rounded-lg shadow-lg z-50;
+    text-align: center;
 }
 
 
@@ -95,10 +96,10 @@ body::-webkit-scrollbar {
 
 /* main landing */
 .main-section {
-    @apply flex flex-col relative w-screen h-[80vh];
+    @apply flex flex-col relative w-screen h-[70vh];
 }
 .landing-img {
-    @apply absolute object-cover w-full h-[90vh] z-[-10] -top-[10vh];
+    @apply absolute object-cover w-full h-[80vh] z-[-10] -top-[10vh];
 }   
 .header {
     @apply flex opacity-0 font-designer text-Bright-Gray mt-[37px] lg:mt-[4vw] ml-[18px] lg:ml-[4vw] w-[70vw] lg:w-[50vw] h-auto leading-[110%] tracking-[3%] text-left text-shadow-custom2;
@@ -410,12 +411,12 @@ body::-webkit-scrollbar {
                 }
             }
                 .customer-name {
-                    @apply font-orbitron font-black text-[12px];
+                    @apply flex items-center font-orbitron font-black text-[12px];
                     letter-spacing: 0.2em;
                     font-size: clamp(10px, 2vw, 13px);
                 }
                 .verified {
-                    @apply ml-[5px]
+                    @apply ml-[5px] w-[auto] h-[auto]
                 }
                 .quick-quote {
                     @apply font-orbitron font-bold text-[10px];
@@ -557,7 +558,7 @@ body::-webkit-scrollbar {
                         @apply flex justify-between items-center w-full
                     }
                         .type-name {
-                            @apply font-orbitron font-[14px];
+                            @apply font-orbitron text-[14px];
                             font-weight: medium;
                         }
                         .arrow-filter {
@@ -732,7 +733,7 @@ body::-webkit-scrollbar {
 
 /* Item Page*/
 .item {
-    @apply flex flex-row pt-[45px]
+    @apply flex flex-row pb-[74px]
 }
     .item-imgs {
         @apply flex
@@ -754,26 +755,26 @@ body::-webkit-scrollbar {
                 @apply w-full h-full object-cover scale-110  overflow-hidden
             }
     .item-description {
-        @apply flex-col ml-[57px]
+        @apply flex flex-col ml-[57px] justify-between
     }
         .item-title {
             @apply font-designer text-[48px] text-Limerick text-shadow-custom
         }
         .description {
-            @apply font-orbitron text-[14px] font-bold mt-[9px]
+            @apply font-orbitron text-[14px] font-bold
         }
         .line-sep {
-            @apply w-full h-[1px] mt-[39px];
+            @apply w-full h-[1px];
             background-color: rgba(0, 0, 0, 1)
         }
         .color {
-            @apply flex my-[32px] space-x-[12px] items-center
+            @apply flex space-x-[12px] items-center
         }
             .color-type {
                 @apply font-orbitron text-[16px] font-bold
             }
         .size {
-            @apply flex my-[32px] space-x-[12px] items-center
+            @apply flex space-x-[12px] items-center
         }
             .size-type {
                 @apply font-orbitron text-[16px] font-bold
@@ -789,7 +790,7 @@ body::-webkit-scrollbar {
                     background:rgba(255, 255, 255, 0.5)
                 }
         .add-cart {
-            @apply flex mt-[47px] space-x-[10px]
+            @apply flex space-x-[10px]
         }
             .cart-count {
                 @apply flex px-[20px] pt-[12px] pb-[10px] items-center space-x-[36px] rounded-full;
@@ -797,15 +798,87 @@ body::-webkit-scrollbar {
                 border: 1px solid black;
             }
                 .count {
-                    @apply font-[36px] text-black font-bold                    
+                    @apply text-[20px] text-black font-bold                    
                 }
             .add-btn {
-                @apply items-center font-orbitron font-bold text-black w-full bg-Bittersweet-Shimmer rounded-full;
+                @apply items-center font-orbitron font-extrabold text-black w-full bg-Bittersweet-Shimmer rounded-full;
                 border: 1px solid black;
             }
+.tabs {
+    @apply flex items-center justify-center mb-[32px]
+}
+    .product-detail {
+        @apply flex-1 text-center font-orbitron text-[20px] font-thin;
+    }
+    .rating-reviews {
+        @apply flex-1 text-center font-orbitron text-[20px] font-bold;
+    }
+    .faqs {
+        @apply flex-1 text-center font-orbitron text-[20px] font-thin;
+    }
+        .line-tab {
+            @apply w-full h-[1px] mt-[7px];
+            background-color: rgba(0, 0, 0, 0.31)
+        }
+        .line-sel {
+            @apply w-full h-[1px] mt-[7px];
+            background-color: rgba(0, 0, 0, 1)
+        }
+.product-reviews-container {
+    @apply flex flex-col pb-[48px]
+}
+    .product-reviews-header {
+        @apply flex items-center
+    }
+        .review-header-title {
+            @apply flex mr-auto
+        }
+        .reviews-name {
+            @apply font-orbitron text-[16px] font-bold
+        }
+        .reviews-number {            
+            @apply ml-[10px] font-orbitron text-[16px] font-bold text-Bittersweet-Shimmer
+        }
+        .filter-container {
+                @apply flex mr-[7px] items-center justify-center rounded-full border border-black ml-auto w-[40px] h-[40px];
+                background-color:rgba(217, 217, 217, 0.5)
+            }
+            .filter-icon {
+                @apply pt-[4px]
+            }
+            .write-review {
+                @apply font-orbitron text-[12px] font-bold bg-Limerick rounded-full h-[40px] px-[11px]
+            }
+    .product-reviews {
+        @apply flex flex-col justify-center items-center px-[auto] py-[24px] space-y-[12px]
+    }
+        .product-reviews-row {
+            @apply flex space-x-[12px]
+        }
+            .product-review {        
+                @apply flex flex-col flex-shrink-0 justify-between p-[15px] space-y-[15px] w-[40vw] review-width h-auto rounded-[15px];
+                background-color: rgba(255, 255, 255, 0.27);
+                box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25);
+                scrollbar-width: none;
+            }
+                .date {
+                    @apply font-orbitron text-[12px] font-bold
+                }
+    .more-reviews {
+        @apply flex justify-center items-center text-center self-center font-orbitron text-[13px] font-bold w-[220px] h-[46px] rounded-full border border-black;
+        background-color: rgba(217, 217, 217, 0.5)
+    }
+.suggestions {
+    @apply flex flex-col
+}
+    .suggestions-title {
+        @apply flex self-center font-o210ital text-wrap text-[40px] w-[50vw] text-center
+    }
+    .suggestions-container {
+        @apply flex justify-between;
+    }
             
-
-/* Background Image */
-.background-img {
+            /* Background Image */
+            .background-img {
     @apply fixed top-0 left-0 h-screen w-screen z-[-200] object-cover;
 }

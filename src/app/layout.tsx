@@ -28,7 +28,9 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800;900&display=swap" rel="stylesheet"></link>
       </head>
       <body className={syncopate.className}>
-        <div className="work-in-progress">WORK IN PROGRESS</div>
+        <div className="work-in-progress">
+          <p>WORK IN PROGRESS</p>
+        </div>
         {children}
       </body>
     </html>

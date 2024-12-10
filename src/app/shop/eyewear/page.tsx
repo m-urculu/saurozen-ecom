@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from "next/link"
 import * as Icons from '@/../public/icons'
 import * as Images from '@/../public/images'
 import Navbar from '@/components/Navbar'
@@ -220,7 +221,7 @@ const EyewearPage = () => {
                         </div>
                         <div className="eye-products">
                             <div className="products-row">
-                                <button className='sunglasses'>
+                                <Link href="/shop/eyewear/name" className='sunglasses'>
                                 <div className="img-container">
                                     <img src={Images.zenith.src} alt="Zenith" className="product-img"/>
                                 </div>
@@ -236,8 +237,8 @@ const EyewearPage = () => {
                                     <p className="number-rate">4.5/5</p>
                                 </div>
                                 <p className="price">129€</p>
-                                </button>
-                                <button className='sunglasses'>
+                                </Link>
+                                <Link href="/shop/eyewear/name" className='sunglasses'>
                                 <div className="img-container">
                                     <img src={Images.neonReef.src} alt="Neon Reef" className="product-img"/>
                                 </div>
@@ -252,8 +253,8 @@ const EyewearPage = () => {
                                     <p className="number-rate">4.0/5</p>
                                 </div>
                                 <p className="price">160€</p>
-                                </button>
-                                <button className='sunglasses'>
+                                </Link>
+                                <Link href="/shop/eyewear/name" className='sunglasses'>
                                 <div className="img-container">
                                     <img src={Images.stratos.src} alt="Stratos" className="product-img"/>
                                 </div>
@@ -269,11 +270,10 @@ const EyewearPage = () => {
                                     <p className="number-rate">4.5/5</p>
                                 </div>
                                 <p className="price">145€</p>
-                                </button>
+                                </Link>
                             </div>
                             <div className="products-row">
-
-                                <button className='sunglasses'>
+                                <Link href="/shop/eyewear/name" className='sunglasses'>
                                 <div className="img-container">
                                     <img src={Images.coralRay.src} alt="Coral Ray" className="product-img"/>
                                 </div>
@@ -294,8 +294,8 @@ const EyewearPage = () => {
                                     <p className="percentage">-20%</p>
                                     </div>
                                 </div>
-                                </button>
-                                <button className='sunglasses'>
+                                </Link>
+                                <Link href="/shop/eyewear/name" className='sunglasses'>
                                     <div className="img-container">
                                     <img src={Images.solstice.src} alt="Solstice" className="product-img"/>
                                     </div>
@@ -316,8 +316,8 @@ const EyewearPage = () => {
                                         <p className="percentage">-20%</p>
                                     </div>
                                     </div>
-                                </button>
-                                <button className='sunglasses'>
+                                </Link>
+                                <Link href="/shop/eyewear/name" className='sunglasses'>
                                     <div className="img-container">
                                     <img src={Images.cascade.src} alt="Cascade" className="product-img"/>
                                     </div>
@@ -332,11 +332,10 @@ const EyewearPage = () => {
                                     <p className="number-rate">4.0/5</p>
                                     </div>
                                     <p className="price">145€</p>
-                                </button>
+                                </Link>
                             </div>
                             <div className='products-row'>
-
-                                <button className='sunglasses'>
+                                <Link href="/shop/eyewear/name" className='sunglasses'>
                                     <div className="img-container">
                                     <img src={Images.aquaEdge.src} alt="Aqua Edge" className="product-img"/>
                                     </div>
@@ -352,8 +351,8 @@ const EyewearPage = () => {
                                     <p className="number-rate">5/5</p>
                                     </div>
                                     <p className="price">200€</p>
-                                </button>
-                                <button className='sunglasses'>
+                                </Link>
+                                <Link href="/shop/eyewear/name" className='sunglasses'>
                                     <div className="img-container">
                                     <img src={Images.coralEclipse.src} alt="Coral Eclipse" className="product-img"/>
                                     </div>
@@ -374,8 +373,8 @@ const EyewearPage = () => {
                                         <p className="percentage">-40%</p>
                                     </div>
                                     </div>
-                                </button>
-                                <button className='sunglasses'>
+                                </Link>
+                                <Link href="/shop/eyewear/name" className='sunglasses'>
                                     <div className="img-container">
                                     <img src={Images.driftLens.src} alt="Drift Lens" className="product-img"/>
                                     </div>
@@ -392,38 +391,38 @@ const EyewearPage = () => {
                                     </div>
                                     <div className="price">245€
                                     </div>
-                                </button>
+                                </Link>
                             </div>
-                        </div>
-                        <div className="listing">
-                            <button className='prev-btn'>
-                                <img 
-                                src={Icons.arrowFat.src}
-                                alt="Previous"
-                                className="listing-arrowleft"
-                                />&nbsp; &nbsp;
-                                <p className='btn-text'>Previous</p>
-                            </button>
-                            <div className="num-sel">
-                                <button className='num-btn'>1</button>
-                                <button className='num-btn'>2</button>
-                                <button className='num-btn'>3</button>
-                                <p className='num-btn'>...</p>
-                                <button className='num-btn'>8</button>
-                                <button className='num-btn'>9</button>
-                                <button className='num-btn'>10</button>
-                            </div>
-                            <button className='prev-btn'>
-                                <p className='btn-text'>Next</p>
-                                &nbsp; &nbsp;
-                                <img 
-                                src={Icons.arrowFat.src}
-                                alt="Next"
-                                className="listing-arrowright"
-                                />
-                            </button>                        
                         </div>
                     </div>
+                </div>
+                <div className="listing">
+                    <button className='prev-btn'>
+                        <img 
+                        src={Icons.arrowFat.src}
+                        alt="Previous"
+                        className="listing-arrowleft"
+                        />&nbsp; &nbsp;
+                        <p className='btn-text'>Previous</p>
+                    </button>
+                    <div className="num-sel">
+                        <button className='num-btn'>1</button>
+                        <button className='num-btn'>2</button>
+                        <button className='num-btn'>3</button>
+                        <p className='num-btn'>...</p>
+                        <button className='num-btn'>8</button>
+                        <button className='num-btn'>9</button>
+                        <button className='num-btn'>10</button>
+                    </div>
+                    <button className='prev-btn'>
+                        <p className='btn-text'>Next</p>
+                        &nbsp; &nbsp;
+                        <img 
+                        src={Icons.arrowFat.src}
+                        alt="Next"
+                        className="listing-arrowright"
+                        />
+                    </button>                        
                 </div>
             </div>
             <Newsletter/>

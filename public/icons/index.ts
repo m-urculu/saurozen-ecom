@@ -16,3 +16,4 @@ export { default as github } from './github.svg';
 export { default as sliders } from './sliders.svg';
 export { default as arrowFilter} from './arrow-filter.svg'
 export { default as check} from './check.svg'
+export { default as filter} from './filter.svg'
