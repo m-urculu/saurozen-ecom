@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## [Saurozen E-Commerce Store](https://saurozen.vercel.app) 🙌
 
-## Getting Started
+🎨 [Figma Design](https://www.figma.com/design/XkBlzPxWxbtLvTXzlN0BfE/E-Commerce-Site?node-id=0-1&node-type=canvas&t=MOyQLYaGBUCusHSX-0)
 
-First, run the development server:
+## 📂 Project Structure
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```plaintext
+├── @types                            // Type definitions
+│   └── tailwindcss-textshadow.d.ts
+├── public                            // Static assets
+│   ├── fonts
+│   ├── icons
+│   ├── images
+├── src                               // Project files
+│   ├── app
+│   │   ├── shop/eyewear
+│   │   │   └── name
+│   │   ├── page.tsx
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   └── components
+│       ├── Background.tsx
+│       ├── ElementsCalc.tsx
+│       ├── Footer.tsx
+│       ├── Navbar.tsx
+│       ├── Newsletter.tsx
+│       ├── PromoBanner.tsx
+│       └── ReviewSlider.tsx
+├── ...                               // Config files
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📝 TODO List
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [x] ~~Implement frontend with responsiveness~~
+- [ ] Create Database with Products
+- [ ] User Athentication
+- [ ] Cart Cashing System
+- [ ] Payment Method
+- [ ] User Product Reviews
+- [ ] Dynamic Rendering from DB
 
-## Learn More
+Feel free to suggest new features or improvements by opening an issue in the repository!
 
-To learn more about Next.js, take a look at the following resources:
+### 📬 Contact
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+If you have any questions, feedback, or opportunities, feel free to reach out:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Email: [your-email@example.com](mailto:your-email@example.com)
+- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/yourusername)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Thank you for visiting my portfolio site!
