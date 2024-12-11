@@ -24,7 +24,7 @@
 
 ---
 
-## 📝 **TODO List**
+### 📝 **TODO List**
 
 - [x] ~~Implement frontend with responsiveness~~  
 - [ ] Create database with products  
