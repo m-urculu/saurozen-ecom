@@ -35,7 +35,6 @@
 - [ ] Implement dynamic rendering from the database  
 
 Feel free to suggest new features or improvements by opening an issue in the repository!
-
 ##
 
 ### 📬 **Contact**
