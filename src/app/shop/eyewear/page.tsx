@@ -1,11 +1,13 @@
-import React from 'react'
-import Link from "next/link"
-import * as Icons from '@/../public/icons'
-import * as Images from '@/../public/images'
-import Navbar from '@/components/Navbar'
-import Newsletter from '@/components/Newsletter'
-import Footer from '@/components/Footer'
-import Background from '@/components/Background'
+"use client";
+import React from "react";
+import Link from "next/link";
+import * as Icons from "@/../public/icons";
+import * as Images from "@/../public/images";
+import Navbar from "@/components/Navbar";
+import Newsletter from "@/components/Newsletter";
+import Footer from "@/components/Footer";
+import Background from "@/components/Background";
+import Filter from "@/components/Filter";
 
 const EyewearPage = () => {
     return (
@@ -13,16 +15,18 @@ const EyewearPage = () => {
             <div aria-label="promo-banner" className="promo-banner">
                 Sign up and get 20% off your first order.
                 <button aria-label="promo-button" className="promo-button">
-                Sign Up Now
+                    Sign Up Now
                 </button>
             </div>
-            <Navbar/>
+            <Navbar />
             <div className="products-container">
                 <div className="dir-container">
-                    <p className="dir">Home &gt; Shop &gt; &nbsp;</p><p className="folder">Eyewear</p>
+                    <p className="dir">Home &gt; Shop &gt; &nbsp;</p>
+                    <p className="folder">Eyewear</p>
                 </div>
                 <div className="products-filtered">
-                    <div aria-label="filter" className="filter">
+                    <Filter />
+                    {/* <div aria-label="filter" className="filter">
                         <div className="filter-top">
                             <p className="filters-title">FILTERS</p>
                             <img
@@ -203,233 +207,475 @@ const EyewearPage = () => {
                         <div className="button-container">
                             <button className="apply-button">APPLY FILTER</button>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="eyewear">
                         <div className="eye-top">
                             <h1 className="eyewear-title">EYEWEAR</h1>
                             <div className="sort-items">
-                                <p className="sort-text">Showing 1-9 of 100 Products - Sort by:&nbsp;</p>
+                                <p className="sort-text">
+                                    Showing 1-9 of 100 Products - Sort by:&nbsp;
+                                </p>
                                 <button className="sort-btn">
                                     <p>Most Popular &nbsp;</p>
                                     <img
-                                    src={Icons.arrowFilter.src}
-                                    alt="Arrow Filter Icon"
-                                    className="arrow-filter-down"
+                                        src={Icons.arrowFilter.src}
+                                        alt="Arrow Filter Icon"
+                                        className="arrow-filter-down"
                                     />
                                 </button>
                             </div>
                         </div>
                         <div className="eye-products">
                             <div className="products-row">
-                                <Link href="/shop/eyewear/name" className='sunglasses'>
-                                <div className="img-container">
-                                    <img src={Images.zenith.src} alt="Zenith" className="product-img"/>
-                                </div>
-                                <p className="product-name">Zenith</p>
-                                <div aria-label="rating" className="rating">
-                                    <div className="star-rating">
-                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                    <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
-                                    </div>
-                                    <p className="number-rate">4.5/5</p>
-                                </div>
-                                <p className="price">129€</p>
-                                </Link>
-                                <Link href="/shop/eyewear/name" className='sunglasses'>
-                                <div className="img-container">
-                                    <img src={Images.neonReef.src} alt="Neon Reef" className="product-img"/>
-                                </div>
-                                <p className="product-name">Neon Reef</p>
-                                <div aria-label="rating" className="rating">
-                                    <div className="star-rating">
-                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                    </div>
-                                    <p className="number-rate">4.0/5</p>
-                                </div>
-                                <p className="price">160€</p>
-                                </Link>
-                                <Link href="/shop/eyewear/name" className='sunglasses'>
-                                <div className="img-container">
-                                    <img src={Images.stratos.src} alt="Stratos" className="product-img"/>
-                                </div>
-                                <p className="product-name">Stratos</p>
-                                <div aria-label="rating" className="rating">
-                                    <div className="star-rating">
-                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                    <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
-                                    </div>
-                                    <p className="number-rate">4.5/5</p>
-                                </div>
-                                <p className="price">145€</p>
-                                </Link>
-                            </div>
-                            <div className="products-row">
-                                <Link href="/shop/eyewear/name" className='sunglasses'>
-                                <div className="img-container">
-                                    <img src={Images.coralRay.src} alt="Coral Ray" className="product-img"/>
-                                </div>
-                                <p className="product-name">Coral Ray</p>
-                                <div aria-label="rating" className="rating">
-                                    <div className="star-rating">
-                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                    <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
-                                    </div>
-                                    <p className="number-rate">4.6/5</p>
-                                </div>
-                                <div className="price">212€
-                                    <p className="discounted-price">235€</p>
-                                    <div className="discount">
-                                    <p className="percentage">-20%</p>
-                                    </div>
-                                </div>
-                                </Link>
-                                <Link href="/shop/eyewear/name" className='sunglasses'>
+                                <Link
+                                    href="/shop/eyewear/name"
+                                    className="sunglasses"
+                                >
                                     <div className="img-container">
-                                    <img src={Images.solstice.src} alt="Solstice" className="product-img"/>
+                                        <img
+                                            src={Images.zenith.src}
+                                            alt="Zenith"
+                                            className="product-img"
+                                        />
                                     </div>
-                                    <p className="product-name">Solstice</p>
+                                    <p className="product-name">Zenith</p>
                                     <div aria-label="rating" className="rating">
-                                    <div className="star-rating">
-                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                        <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+                                        <div className="star-rating">
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.halfStar.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                        </div>
+                                        <p className="number-rate">4.5/5</p>
                                     </div>
-                                    <p className="number-rate">4.6/5</p>
-                                    </div>
-                                    <div className="price">212€
-                                    <p className="discounted-price">235€</p>
-                                    <div className="discount">
-                                        <p className="percentage">-20%</p>
-                                    </div>
-                                    </div>
+                                    <p className="price">129€</p>
                                 </Link>
-                                <Link href="/shop/eyewear/name" className='sunglasses'>
+                                <Link
+                                    href="/shop/eyewear/name"
+                                    className="sunglasses"
+                                >
                                     <div className="img-container">
-                                    <img src={Images.cascade.src} alt="Cascade" className="product-img"/>
+                                        <img
+                                            src={Images.neonReef.src}
+                                            alt="Neon Reef"
+                                            className="product-img"
+                                        />
                                     </div>
-                                    <p className="product-name">Cascade</p>
+                                    <p className="product-name">Neon Reef</p>
                                     <div aria-label="rating" className="rating">
-                                    <div className="star-rating">
-                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
+                                        <div className="star-rating">
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                        </div>
+                                        <p className="number-rate">4.0/5</p>
                                     </div>
-                                    <p className="number-rate">4.0/5</p>
+                                    <p className="price">160€</p>
+                                </Link>
+                                <Link
+                                    href="/shop/eyewear/name"
+                                    className="sunglasses"
+                                >
+                                    <div className="img-container">
+                                        <img
+                                            src={Images.stratos.src}
+                                            alt="Stratos"
+                                            className="product-img"
+                                        />
+                                    </div>
+                                    <p className="product-name">Stratos</p>
+                                    <div aria-label="rating" className="rating">
+                                        <div className="star-rating">
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.halfStar.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                        </div>
+                                        <p className="number-rate">4.5/5</p>
                                     </div>
                                     <p className="price">145€</p>
                                 </Link>
                             </div>
-                            <div className='products-row'>
-                                <Link href="/shop/eyewear/name" className='sunglasses'>
+                            <div className="products-row">
+                                <Link
+                                    href="/shop/eyewear/name"
+                                    className="sunglasses"
+                                >
                                     <div className="img-container">
-                                    <img src={Images.aquaEdge.src} alt="Aqua Edge" className="product-img"/>
+                                        <img
+                                            src={Images.coralRay.src}
+                                            alt="Coral Ray"
+                                            className="product-img"
+                                        />
+                                    </div>
+                                    <p className="product-name">Coral Ray</p>
+                                    <div aria-label="rating" className="rating">
+                                        <div className="star-rating">
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.halfStar.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                        </div>
+                                        <p className="number-rate">4.6/5</p>
+                                    </div>
+                                    <div className="price">
+                                        212€
+                                        <p className="discounted-price">235€</p>
+                                        <div className="discount">
+                                            <p className="percentage">-20%</p>
+                                        </div>
+                                    </div>
+                                </Link>
+                                <Link
+                                    href="/shop/eyewear/name"
+                                    className="sunglasses"
+                                >
+                                    <div className="img-container">
+                                        <img
+                                            src={Images.solstice.src}
+                                            alt="Solstice"
+                                            className="product-img"
+                                        />
+                                    </div>
+                                    <p className="product-name">Solstice</p>
+                                    <div aria-label="rating" className="rating">
+                                        <div className="star-rating">
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.halfStar.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                        </div>
+                                        <p className="number-rate">4.6/5</p>
+                                    </div>
+                                    <div className="price">
+                                        212€
+                                        <p className="discounted-price">235€</p>
+                                        <div className="discount">
+                                            <p className="percentage">-20%</p>
+                                        </div>
+                                    </div>
+                                </Link>
+                                <Link
+                                    href="/shop/eyewear/name"
+                                    className="sunglasses"
+                                >
+                                    <div className="img-container">
+                                        <img
+                                            src={Images.cascade.src}
+                                            alt="Cascade"
+                                            className="product-img"
+                                        />
+                                    </div>
+                                    <p className="product-name">Cascade</p>
+                                    <div aria-label="rating" className="rating">
+                                        <div className="star-rating">
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                        </div>
+                                        <p className="number-rate">4.0/5</p>
+                                    </div>
+                                    <p className="price">145€</p>
+                                </Link>
+                            </div>
+                            <div className="products-row">
+                                <Link
+                                    href="/shop/eyewear/name"
+                                    className="sunglasses"
+                                >
+                                    <div className="img-container">
+                                        <img
+                                            src={Images.aquaEdge.src}
+                                            alt="Aqua Edge"
+                                            className="product-img"
+                                        />
                                     </div>
                                     <p className="product-name">Aqua Edge</p>
                                     <div aria-label="rating" className="rating">
-                                    <div className="star-rating">
-                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                        <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
-                                    </div>
-                                    <p className="number-rate">5/5</p>
+                                        <div className="star-rating">
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.halfStar.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                        </div>
+                                        <p className="number-rate">5/5</p>
                                     </div>
                                     <p className="price">200€</p>
                                 </Link>
-                                <Link href="/shop/eyewear/name" className='sunglasses'>
+                                <Link
+                                    href="/shop/eyewear/name"
+                                    className="sunglasses"
+                                >
                                     <div className="img-container">
-                                    <img src={Images.coralEclipse.src} alt="Coral Eclipse" className="product-img"/>
+                                        <img
+                                            src={Images.coralEclipse.src}
+                                            alt="Coral Eclipse"
+                                            className="product-img"
+                                        />
                                     </div>
-                                    <p className="product-name">Coral Eclipse</p>
+                                    <p className="product-name">
+                                        Coral Eclipse
+                                    </p>
                                     <div aria-label="rating" className="rating">
-                                    <div className="star-rating">
-                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                        <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+                                        <div className="star-rating">
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.halfStar.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                        </div>
+                                        <p className="number-rate">4.6/5</p>
                                     </div>
-                                    <p className="number-rate">4.6/5</p>
-                                    </div>
-                                    <div className="price">260€
-                                    <p className="discounted-price">300€</p>
-                                    <div className="discount">
-                                        <p className="percentage">-40%</p>
-                                    </div>
+                                    <div className="price">
+                                        260€
+                                        <p className="discounted-price">300€</p>
+                                        <div className="discount">
+                                            <p className="percentage">-40%</p>
+                                        </div>
                                     </div>
                                 </Link>
-                                <Link href="/shop/eyewear/name" className='sunglasses'>
+                                <Link
+                                    href="/shop/eyewear/name"
+                                    className="sunglasses"
+                                >
                                     <div className="img-container">
-                                    <img src={Images.driftLens.src} alt="Drift Lens" className="product-img"/>
+                                        <img
+                                            src={Images.driftLens.src}
+                                            alt="Drift Lens"
+                                            className="product-img"
+                                        />
                                     </div>
                                     <p className="product-name">Drift Lens</p>
                                     <div aria-label="rating" className="rating">
-                                    <div className="star-rating">
-                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                        <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                                        <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
+                                        <div className="star-rating">
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.star.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                            <img
+                                                src={Icons.halfStar.src}
+                                                alt="Star Icon"
+                                                className="star"
+                                            />
+                                        </div>
+                                        <p className="number-rate">4.5/5</p>
                                     </div>
-                                    <p className="number-rate">4.5/5</p>
-                                    </div>
-                                    <div className="price">245€
-                                    </div>
+                                    <div className="price">245€</div>
                                 </Link>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="listing">
-                    <button className='prev-btn'>
-                        <img 
-                        src={Icons.arrowFat.src}
-                        alt="Previous"
-                        className="listing-arrowleft"
-                        />&nbsp; &nbsp;
-                        <p className='btn-text'>Previous</p>
+                    <button className="prev-btn">
+                        <img
+                            src={Icons.arrowFat.src}
+                            alt="Previous"
+                            className="listing-arrowleft"
+                        />
+                        &nbsp; &nbsp;
+                        <p className="btn-text">Previous</p>
                     </button>
                     <div className="num-sel">
-                        <button className='num-btn'>1</button>
-                        <button className='num-btn'>2</button>
-                        <button className='num-btn'>3</button>
-                        <p className='num-btn'>...</p>
-                        <button className='num-btn'>8</button>
-                        <button className='num-btn'>9</button>
-                        <button className='num-btn'>10</button>
+                        <button className="num-btn">1</button>
+                        <button className="num-btn">2</button>
+                        <button className="num-btn">3</button>
+                        <p className="num-btn">...</p>
+                        <button className="num-btn">8</button>
+                        <button className="num-btn">9</button>
+                        <button className="num-btn">10</button>
                     </div>
-                    <button className='prev-btn'>
-                        <p className='btn-text'>Next</p>
+                    <button className="prev-btn">
+                        <p className="btn-text">Next</p>
                         &nbsp; &nbsp;
-                        <img 
-                        src={Icons.arrowFat.src}
-                        alt="Next"
-                        className="listing-arrowright"
+                        <img
+                            src={Icons.arrowFat.src}
+                            alt="Next"
+                            className="listing-arrowright"
                         />
-                    </button>                        
+                    </button>
                 </div>
             </div>
-            <Newsletter/>
-            <Footer/>
-            <Background/>
+            <Newsletter />
+            <Footer />
+            <Background />
         </div>
-    )
-}
+    );
+};
 
 export default EyewearPage;

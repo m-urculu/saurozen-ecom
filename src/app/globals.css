@@ -47,7 +47,7 @@ body::-webkit-scrollbar {
 /* promo banner */
 .promo-banner {
     @apply h-[34px] md:h-[37px] w-screen bg-Limerick text-Cetacean-Blue font-orbitron flex items-center justify-center;
-    font-size: clamp(10px, 2vw, 12px);
+    font-size: clamp(10px, 2vw, 14px);
 }
 .promo-button {
     @apply ml-1 underline text-Cetacean-Blue;
@@ -64,7 +64,7 @@ body::-webkit-scrollbar {
         @apply font-designer text-[20px] md:text-[32px] text-Bright-Gray text-shadow-custom ml-[19px] md:ml-[40px] mr-[20px] self-center;
     }
     .nav-links {
-        @apply hidden lg:flex mx-auto w-[30vw] font-orbitron text-Bright-Gray text-[12px] justify-between;
+        @apply hidden lg:flex mx-auto w-[30vw] font-orbitron text-Bright-Gray text-[12px] 2xl:text-[16px] justify-between;
     }
     .search-bar {
         @apply hidden md:flex ml-auto self-center;
@@ -82,7 +82,7 @@ body::-webkit-scrollbar {
                 @apply ml-[10px] w-full bg-Bright-Gray bg-opacity-0;
             }
     .right-buttons {
-        @apply w-[86px] h-fit md:w-[60px] ml-auto md:ml-0 md:w-[9vw] flex justify-evenly;
+        @apply w-[150px] h-fit md:w-[60px] ml-auto md:ml-0 md:w-[9vw] flex justify-evenly;
     }
         .search-icon {
             @apply block md:hidden w-[18px] h-[18px];
@@ -104,8 +104,8 @@ body::-webkit-scrollbar {
 .header {
     @apply flex opacity-0 font-designer text-Bright-Gray mt-[37px] lg:mt-[4vw] ml-[18px] lg:ml-[4vw] w-[70vw] lg:w-[50vw] h-auto leading-[110%] tracking-[3%] text-left text-shadow-custom2;
     font-size: clamp(22px, 4vw, 7vh); /* Minimum 20px, responsive scaling at 4vw, max 5vh */
-    animation: fadeIn .5s ease-in forwards;
-    animation-delay: 1s;
+    animation: fadeIn .2s ease-in forwards;
+    animation-delay: .5s;
 }
 @keyframes fadeIn {
     0% {
@@ -119,7 +119,7 @@ body::-webkit-scrollbar {
     @apply flex opacity-0 items-center font-orbitron text-Bright-Gray mt-[40px] ml-[18px] lg:ml-[4vw] w-[40vw] h-auto font-bold leading-[160%] tracking-[5%] text-left text-shadow-custom2;
     font-size: clamp(10px, 1.5vw, 24px); /* Minimum 10px, maximum 24px, responsive in between */
     animation: fadeIn .5s ease-in forwards;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 .shop-button {
     @apply inline-flex items-center justify-center m-auto opacity-0 w-[205px] md:w-[273px] h-[40px] md:h-[56px] rounded-[120px] bg-Limerick inner-shadow self-center font-orbitron font-medium text-black text-[20px] lg:text-[24px];
@@ -534,22 +534,129 @@ body::-webkit-scrollbar {
         .products-filtered {
             @apply flex
         }
-            .filter {
-                @apply h-full w-[274px] bg-Light-Silver rounded-[25px] p-[22px];
-                background-color: rgba(192, 192, 192, 0.5);
+        /* Filter Animations */
+        @keyframes expandWidthThenHeight {
+            0% {
+                width: 40px;
+                max-height: 40px;
             }
-                .filter-top {
-                    @apply flex justify-between
+
+            50% {
+
+                padding-top: 0px;
+                width: 400px;
+                max-height: 40px
+            }
+
+            51% {
+                padding-right: 22px;
+            }
+
+            100% {
+                padding: 22px;
+                width: 400px;
+                max-height: 1020px;
+            }
+        }
+        @keyframes collapseHeightThenWidth {
+            0% {
+                padding: 22px;
+                width: 400px;
+                max-height: 1020px;
+            }
+            50% {
+                padding-top: 1px;
+                max-height: 40px;
+                width: 400px;
+            }
+            100% {
+                max-height: 40px;
+                width: 40px;
+            }
+        }
+
+        @keyframes turnVisible {
+            0% {
+                opacity: 0%;
+            }
+
+            90% {
+                opacity: 0%;
+            }
+
+            100% {
+                opacity: 100%;
+            }
+        }
+        @keyframes turnInvisible {
+            0% {
+                opacity: 100%;
+            }
+            90% {
+                opacity: 0%;
+            }
+            100% {
+                opacity: 0%;
+            }
+        }
+
+        @keyframes moveIn {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(0px);
+            }
+        }
+        @keyframes moveOut {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(0px);
+            }
+        }
+        
+
+        
+        .filter {
+            @apply flex flex-col bg-Light-Silver rounded-[25px] p-[0px] overflow-hidden;
+            padding-top: 1px;
+            max-height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        .filter.expand {
+            animation: expandWidthThenHeight 1s ease-in-out forwards;
+        }
+        .filter.hide {
+        animation: collapseHeightThenWidth 1s ease-in-out forwards;
+        }
+                .filter-head {
+                    @apply flex justify-between items-center;
                 }
-                    .filters-title {
-                        @apply font-designer font-black text-opacity-80 text-[14px]
+                .filter-head.moveIn {
+                    @apply flex justify-between items-center;
+                    animation: moveIn 2s ease-in-out forwards;
+                }
+                .filter-head.moveOut {
+                    animation: moveOut 2s ease-in-out forwards;
+                }
+                
+                .filter-title {
+                    @apply font-designer font-black text-opacity-80 text-[14px];
                     }
-                    .sliders-button {
-                        @apply h-[16px] w-[16px]
+                    .filter-button-container {
+                        @apply flex items-center justify-center h-[40px] w-[40px] bg-Light-Silver rounded-[100px];
+                        background-color: rgba(255, 255, 255, 0.5);
                     }
+                        .sliders-button {
+                            @apply h-[16px] w-[16px];
+                        }
+
                 .filter-line {
                     @apply w-full h-[2px] mt-[18px];
-                    background-color: rgba(0, 0, 0, 0.31)
+                    background-color: rgba(0, 0, 0, 0.31);
                 }
                 .types {
                     @apply flex-col space-y-[14px] my-[20px]
@@ -613,7 +720,7 @@ body::-webkit-scrollbar {
                         @apply flex flex-col mt-[14px]
                     }
                         .sel-row {
-                            @apply flex flex-row space-x-[13px] my-[6px]
+                            @apply flex flex-row justify-evenly my-[6px]
                         }
                             .sel-orange {
                                 @apply flex justify-center items-center w-[35px] h-[35px] rounded-full;
@@ -678,13 +785,13 @@ body::-webkit-scrollbar {
                         @apply py-[21px]
                     }
                 .button-container {
-                    @apply flex justify-center pb-[7px]
+                    @apply flex justify-center items-end;
                 }
                     .apply-button {
-                        @apply px-[25px] py-[7px] rounded-full bg-black text-white font-designer
+                        @apply px-[25px] py-[7px] mb-[20px] rounded-full bg-black text-white font-designer
                     }
             .eyewear {
-                @apply flex flex-col ml-[69px] w-full
+                @apply flex flex-col ml-[2vw] w-full
             }
                 .eye-top {
                     @apply flex w-full justify-between items-start h-min mb-[50px]
@@ -839,9 +946,8 @@ body::-webkit-scrollbar {
         .reviews-number {            
             @apply ml-[10px] font-orbitron text-[16px] font-bold text-Bittersweet-Shimmer
         }
-        .filter-container {
-                @apply flex mr-[7px] items-center justify-center rounded-full border border-black ml-auto w-[40px] h-[40px];
-                background-color:rgba(217, 217, 217, 0.5)
+        .filter-animation {
+                animation: turnVisible 1s ease-in-out forwards;
             }
             .filter-icon {
                 @apply pt-[4px]
