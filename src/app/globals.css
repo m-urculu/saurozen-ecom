@@ -104,8 +104,8 @@ body::-webkit-scrollbar {
 .header {
     @apply flex opacity-0 font-designer text-Bright-Gray mt-[37px] lg:mt-[4vw] ml-[18px] lg:ml-[4vw] w-[70vw] lg:w-[50vw] h-auto leading-[110%] tracking-[3%] text-left text-shadow-custom2;
     font-size: clamp(22px, 4vw, 7vh); /* Minimum 20px, responsive scaling at 4vw, max 5vh */
-    animation: fadeIn .2s ease-in forwards;
-    animation-delay: .5s;
+    animation: fadeIn .1s ease-in forwards;
+    animation-delay: .2s;
 }
 @keyframes fadeIn {
     0% {
@@ -115,21 +115,32 @@ body::-webkit-scrollbar {
         opacity: 1;
     }
 }
+@keyframes pulseGrow {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 .p1 {
     @apply flex opacity-0 items-center font-orbitron text-Bright-Gray mt-[40px] ml-[18px] lg:ml-[4vw] w-[40vw] h-auto font-bold leading-[160%] tracking-[5%] text-left text-shadow-custom2;
-    font-size: clamp(10px, 1.5vw, 24px); /* Minimum 10px, maximum 24px, responsive in between */
-    animation: fadeIn .5s ease-in forwards;
-    animation-delay: 1s;
+    font-size: clamp(10px, 1.5vw, 24px);
+    animation: fadeIn .2s ease-in forwards;
+    animation-delay: .5s;
 }
 .shop-button {
     @apply inline-flex items-center justify-center m-auto opacity-0 w-[205px] md:w-[273px] h-[40px] md:h-[56px] rounded-[120px] bg-Limerick inner-shadow self-center font-orbitron font-medium text-black text-[20px] lg:text-[24px];
-    animation: fadeIn 0.5s linear forwards 3s;
-    transform: scale(1); /* Ensure a base scale to avoid conflicts */
-    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+    animation: fadeIn 0.5s linear forwards 1s, pulseGrow 1s ease-in-out forwards 2s;
 }
 
 .shop-button:hover {
-    transform: scale(1.1); /* Scale up on hover */
+    transform: scale(1.1);
 }
 
 
