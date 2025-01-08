@@ -13,15 +13,17 @@ const Filter = () => {
     return (
         <>
               <div className={`filter ${
-                    isClicked ? (isExpanded ? "hide" : "expand") : ""
+                    isClicked ? (isExpanded ? "expand" : "hide") : ""
                 }`}>
                 <div className={`filter-head ${isExpanded ? "moveOut" : "moveIn"}`}>
                     <p className={`filter-title ${
-                    isClicked ? (isExpanded ? "hidden" : "block") : ""
+                    isClicked ? (isExpanded ? "block" : "hidden") : "hidden"
                 }`}>FILTERS</p>
                     <button
-                        className="filter-button-container"
-                        onClick={toggleFilter} // Toggle the filter on click
+                        className={`filter-button-container ${
+                            isClicked ? (isExpanded ? "" : "moveIn") : ""
+                        }`}
+                        onClick={toggleFilter}
                     >
                         <img
                             src={Icons.sliders.src}
