@@ -9,7 +9,7 @@ import ReviewSlider from '../components/ReviewSlider';
 import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
 import Background from "@/components/Background"
-import BlobImages from '@/components/BlobImages';
+// import BlobImages from '@/components/BlobImages';
 
 
 
