@@ -285,14 +285,14 @@ body::-webkit-scrollbar {
                 }
                 .discounted-price::before {
                     content: '';
-                    @apply absolute bg-white; 
-                    height: 1px; 
-                    width: 90%; 
-                    transform: rotate(-20deg); 
-                    transform-origin: left; 
-                    left: 15%; 
+                    @apply absolute bg-white;
+                    height: 1px;
+                    width: 90%;
+                    transform: rotate(-20deg);
+                    transform-origin: left;
+                    left: 15%;
                     top: 90%;
-                    z-index: 1; 
+                    z-index: 1;
                     margin-top: -1px; 
                 }
                 .discount {
@@ -814,11 +814,8 @@ body::-webkit-scrollbar {
                             @apply flex items-center font-orbitron text-black font-bold text-[13px]
                         }
                 .eye-products {
-                    @apply flex flex-col space-y-[76px]
+                    @apply flex flex-row flex-wrap gap-x-24 gap-y-12;
                 }
-                    .products-row {
-                        @apply flex justify-between
-                    }
                 .listing {
                     @apply flex justify-between py-[87px]
                 }
