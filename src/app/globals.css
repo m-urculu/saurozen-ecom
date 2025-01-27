@@ -495,7 +495,7 @@ body::-webkit-scrollbar {
                     filter: drop-shadow(0px 0px 0.5px rgba(0, 0, 0, 0.75));
                 }
     .footlinks {
-        @apply flex flex-wrap justify-between w-full lg:flex-nowrap
+        @apply flex flex-wrap justify-between w-full lg:flex-nowrap mr-[5vw]
     }
         .footitle {
             @apply flex flex-col font-orbitron text-[16px] font-bold pt-[23px] w-fit

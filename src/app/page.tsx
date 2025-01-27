@@ -335,7 +335,7 @@ Welcome to the future of eyewear: recycled, reimagined, and ready for what&apos;
       </div>
       <Newsletter/>
       <Footer/>
-      <Background/>      
+      <Background/>
     </div>
     );
   }

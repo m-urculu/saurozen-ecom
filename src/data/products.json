@@ -1,0 +1,31 @@
+{
+    "products": [
+      {
+        "productName": "Aqua Aura Half Frames",
+        "images": [
+        "https://byxndnc0mn1ughii.public.blob.vercel-storage.com/Images/sunglasses/image%20130-1m5vsJVMErHZZi7GOyZmmSwn007bAU.png",
+        "https://byxndnc0mn1ughii.public.blob.vercel-storage.com/Images/sunglasses/image%20131-kRdvufUZCNrkOHiLxfq9vz78AxLn0t.png",
+        "https://byxndnc0mn1ughii.public.blob.vercel-storage.com/Images/sunglasses/image%20132-dW54keWDwHxqo5RMpPYJPuBhC2HM6V.png",
+        "https://byxndnc0mn1ughii.public.blob.vercel-storage.com/Images/sunglasses/image%20133-6m9NbWSmYVrm8ADNRBtaRPK1h0zhJP.png"
+        ],
+        "collectionName": "Aqua Aura",
+        "sunglassesModel": "Half-Frames",
+        "userRating": 4.5,
+        "productDescription": "Timeless aviator sunglasses with polarized lenses and a lightweight metal frame.",
+        "price": 120.00,
+        "promotionPercentage": 20,
+        "finalPrice": 96.00
+      },
+      {
+        "productName": "Retro Round Sunglasses",
+        "collectionName": "Vintage Vibes",
+        "sunglassesModel": "Round-Retro",
+        "userRating": 4.8,
+        "productDescription": "Chic round sunglasses with UV400 protection and a bold acetate frame.",
+        "price": 85.00,
+        "promotionPercentage": 15,
+        "finalPrice": 72.25
+      }
+    ]
+  }
+  
