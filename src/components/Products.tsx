@@ -2,12 +2,6 @@ import React from "react";
 import ElementsCalc from '../components/ElementsCalc';
 import productsData from '../data/products.json'; // Adjust the path based on the folder structure
 
-interface Product {
-  price: number;
-  discount?: number; // Optional numeric discount
-}
-
-
 const Products = () => {
   return (
     <div aria-label="products" className="products">
