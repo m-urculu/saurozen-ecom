@@ -14,6 +14,9 @@ const config: Config = {
         'xsm': '480px'
       },
       fontFamily: {
+        robotoflex: ['Roboto_Flex', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+        audiowide: ['Audiowide', 'sans-serif'],
         orbitron: ['Orbitron', 'sans-serif'],
         designer: ['Designer', 'sans-serif'],
         o210ital: ['o210ital', 'sans-serif'],

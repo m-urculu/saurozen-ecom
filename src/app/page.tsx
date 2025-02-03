@@ -9,207 +9,34 @@ import ReviewSlider from '../components/ReviewSlider';
 import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
 import Background from "@/components/Background"
-// import BlobImages from '@/components/BlobImages';
-
-
+import BlobImages from '@/components/BlobImages';
+import Products from '@/components/Products'
 
 export default function Home() {
-
   return (
     <div aria-label="homepage" className="homepage">
+      {/* <BlobImages/> */}
       <PromoBanner/>
       <Navbar/>
       <div aria-label="main-section" className="main-section">
+        <div className="landing-img-wrapper">
           <img src={Images.landingImg.src} alt="Landing Image" className="landing-img" />
+        </div>
           <h1 aria-label="header" className="header">
             Sunglasses Radically Crafted from Ghost Nets
           </h1>
           <p aria-label="paragraph1" className="p1">
             Explore our future with sunglasses made from reclaimed ocean fishing lines. Blending Y2K vibes with cutting-edge eco-innovation. Step into a future where fashion meets sustainability.
           </p>
-          <Link href="/shop/eyewear" arial-label="shop-button" className="shop-button">
-            Shop Now
-          </Link>
+          {/* <Link href="/shop/eyewear" arial-label="shop-button" className="shop-button">
+            Shop Now →
+          </Link> */}
+          <button className="arrivals-sep">
+            <ElementsCalc text="Shop Now →" separatorClass="shop-text" wrapperClass="arrivals-wrapper" />
+          </button>
       </div>
-      <div aria-label="products" className="products">
-        <div aria-label="new-arrivals" className="new-arrivals">
-          <div className="arrivals-sep">
-              <ElementsCalc text="NEW ARRIVALS" separatorClass="arrivals-text" wrapperClass="arrivals-wrapper"/>           
-          </div>
-          <div aria-label="product-items" className="product-items">
-            <button className='sunglasses'>
-              <div className="img-container">
-                <img src={Images.zenith.src} alt="Zenith" className="product-img"/>
-              </div>
-              <p className="product-name">Zenith</p>
-              <div aria-label="rating" className="rating">
-                <div className="star-rating">
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
-                </div>
-                <p className="number-rate">4.5/5</p>
-              </div>
-              <p className="price">129€</p>
-            </button>
-            <button className='sunglasses'>
-              <div className="img-container">
-                <img src={Images.neonReef.src} alt="Neon Reef" className="product-img"/>
-              </div>
-              <p className="product-name">Neon Reef</p>
-              <div aria-label="rating" className="rating">
-                <div className="star-rating">
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                </div>
-                <p className="number-rate">4.0/5</p>
-              </div>
-              <p className="price">160€</p>
-            </button>
-            <button className='sunglasses'>
-              <div className="img-container">
-                <img src={Images.stratos.src} alt="Stratos" className="product-img"/>
-              </div>
-              <p className="product-name">Stratos</p>
-              <div aria-label="rating" className="rating">
-                <div className="star-rating">
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
-                </div>
-                <p className="number-rate">4.5/5</p>
-              </div>
-              <p className="price">145€</p>
-            </button>
-            <button className='sunglasses'>
-              <div className="img-container">
-                <img src={Images.coralRay.src} alt="Coral Ray" className="product-img"/>
-              </div>
-              <p className="product-name">Coral Ray</p>
-              <div aria-label="rating" className="rating">
-                <div className="star-rating">
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
-                </div>
-                <p className="number-rate">4.6/5</p>
-              </div>
-              <div className="price">212€
-                <p className="discounted-price">235€</p>
-                <div className="discount">
-                  <p className="percentage">-20%</p>
-                </div>
-              </div>
-            </button>
-          </div>
-          <div className="btn-container">
-            <Link href="/shop/eyewear" className="view-button">
-              VIEW ALL
-            </Link>
-          </div>
-        </div>
-        <div aria-label="top-products" className='top-products'>
-          <div className="top-sep">
-              <ElementsCalc text="TOP SELLING" separatorClass="top-text" wrapperClass="top-wrapper"/>           
-          </div>
-          <div aria-label="product-items" className="product-items">
-              <button className='sunglasses'>
-                <div className="img-container">
-                  <img src={Images.solstice.src} alt="Solstice" className="product-img"/>
-                </div>
-                <p className="product-name">Solstice</p>
-                <div aria-label="rating" className="rating">
-                  <div className="star-rating">
-                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                    <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
-                  </div>
-                  <p className="number-rate">4.6/5</p>
-                </div>
-                <div className="price">212€
-                  <p className="discounted-price">235€</p>
-                  <div className="discount">
-                    <p className="percentage">-20%</p>
-                  </div>
-                </div>
-              </button>
-              <button className='sunglasses'>
-                <div className="img-container">
-                  <img src={Images.cascade.src} alt="Cascade" className="product-img"/>
-                </div>
-                <p className="product-name">Cascade</p>
-                <div aria-label="rating" className="rating">
-                  <div className="star-rating">
-                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                  </div>
-                  <p className="number-rate">4.0/5</p>
-                </div>
-                <p className="price">145€</p>
-              </button>
-              <button className='sunglasses'>
-                <div className="img-container">
-                  <img src={Images.aquaEdge.src} alt="Aqua Edge" className="product-img"/>
-                </div>
-                <p className="product-name">Aqua Edge</p>
-                <div aria-label="rating" className="rating">
-                  <div className="star-rating">
-                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                    <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
-                  </div>
-                  <p className="number-rate">5/5</p>
-                </div>
-                <p className="price">200€</p>
-              </button>
-              <button className='sunglasses'>
-                <div className="img-container">
-                  <img src={Images.coralEclipse.src} alt="Coral Eclipse" className="product-img"/>
-                </div>
-                <p className="product-name">Coral Eclipse</p>
-                <div aria-label="rating" className="rating">
-                  <div className="star-rating">
-                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                    <img src={Icons.star.src} alt="Star Icon" className="star"/>
-                    <img src={Icons.halfStar.src} alt="Star Icon" className="star"/>
-                  </div>
-                  <p className="number-rate">4.6/5</p>
-                </div>
-                <div className="price">260€
-                  <p className="discounted-price">300€</p>
-                  <div className="discount">
-                    <p className="percentage">-40%</p>
-                  </div>
-                </div>
-              </button>
-          </div>
-          <div className="btn-container">
-            <Link href="/shop/eyewear" className="view-button">
-              VIEW ALL
-            </Link>
-          </div>
-        </div>
-      </div>
+      <Products/>
       <div aria-label="what-we-do" className="what-we-do">
-        <div className="key-sep">
-          <ElementsCalc text="SUSTAINABILITY IS KEY" separatorClass="key-text" wrapperClass="key-wrapper" />
-        </div>
         <div className="what-container">
             <div aria-label="text-window" className="text-window">
               <p className="what-text-title">WHAT WE DO</p>
@@ -221,16 +48,6 @@ Welcome to the future of eyewear: recycled, reimagined, and ready for what&apos;
               <button className='what-learn-btn'>LEARN MORE</button>
             </div>
             <img src={Images.ghostnet.src} alt="Ghost Net Image" className='ghost-net-img' />
-        </div>
-      </div>
-      <div aria-label="ocean-sep" className="ocean-sep">
-        <div className="blk-line-container">
-          <div className='blk-line'/>
-        </div>
-        <ElementsCalc text="FUTURE OCEAN" separatorClass="ocean-text" wrapperClass="ocean-wrapper" />
-        <div className="blk-line-btm"/>
-        <div className="blk-line-container">
-          <div className='blk-line'/>
         </div>
       </div>
       <div aria-label="models" className='models'>
@@ -339,3 +156,4 @@ Welcome to the future of eyewear: recycled, reimagined, and ready for what&apos;
     </div>
     );
   }
+
