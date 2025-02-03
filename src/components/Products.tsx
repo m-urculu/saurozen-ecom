@@ -1,7 +1,5 @@
 import React from "react";
-import * as Icons from '../../public/icons';
 import ElementsCalc from '../components/ElementsCalc';
-import Link from "next/link";
 import productsData from '../data/products.json'; // Adjust the path based on the folder structure
 
 interface Product {
