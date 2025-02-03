@@ -1,5 +1,4 @@
 'use client'
-import Link from "next/link"
 import * as Images from '../../public/images'
 import * as Icons from '../../public/icons'
 import PromoBanner from "@/components/PromoBanner"
@@ -9,13 +8,11 @@ import ReviewSlider from '../components/ReviewSlider';
 import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
 import Background from "@/components/Background"
-import BlobImages from '@/components/BlobImages';
 import Products from '@/components/Products'
 
 export default function Home() {
   return (
     <div aria-label="homepage" className="homepage">
-      {/* <BlobImages/> */}
       <PromoBanner/>
       <Navbar/>
       <div aria-label="main-section" className="main-section">
