@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import productsData from '../data/products.json'; // Adjust the path based on the folder structure
+import productsData from '../../data/products.json'; // Adjust the path based on the folder structure
 
 const ImageGallery = () => {
   const [products, setProducts] = useState([]);

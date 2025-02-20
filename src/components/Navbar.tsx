@@ -16,15 +16,23 @@ const Navbar = () => {
                 <Link href="/" aria-label="logo" className="logo">SAUROZEN</Link>
                 <div aria-label="nav-links" className="nav-links">
                     <button aria-label="shop-dropdown">
-                        <div>Shop ▼</div>
+                        <Link href="/shop/eyewear">Shop Now</Link>
                     </button>
-                    <button aria-label="shop-dropdown">
-                        <Link href="/shop/eyewear">On Sale</Link>
+                    <button aria-label="shop-dropdown"
+                     onClick={() => document.getElementById('new-arrivals')?.scrollIntoView({ behavior: 'smooth' })}
+                    >
+                        <div>New Arrivals</div>
+                        {/* <Link href="/shop/eyewear">New Arrivals</Link> */}
                     </button>
-                    <button aria-label="shop-dropdown">
-                        <Link href="/shop/eyewear">New Arrivals</Link>
+                    <button aria-label="shop-dropdown"
+                     onClick={() => document.getElementById('top-products')?.scrollIntoView({ behavior: 'smooth' })}
+                    >
+                        <div>Top Selling</div>
+                        {/* <Link href="/shop/eyewear">Top Selling</Link> */}
                     </button>
-                    <button aria-label="shop-dropdown">
+                    <button aria-label="shop-dropdown"
+                     onClick={() => document.getElementById('what-we-do')?.scrollIntoView({ behavior: 'smooth' })}
+                    >
                         <div>What We Do</div>
                     </button>
                 </div>

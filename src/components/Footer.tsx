@@ -70,7 +70,7 @@ const Footer = () =>{
                 </div>
                 <div className="line"></div>
                 <div className="bottomfooter">
-                <div className="rights">SAUROZER © 2024, All Rights Reserved</div>
+                <div className="rights">SAUROZER © 2025, All Rights Reserved</div>
                 <div className="payments">
                     <div className="whitebox">
                     <img src={Images.visa.src} alt="Visa" className='payment-icon'/>        

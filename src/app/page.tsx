@@ -28,12 +28,12 @@ export default function Home() {
           {/* <Link href="/shop/eyewear" arial-label="shop-button" className="shop-button">
             Shop Now →
           </Link> */}
-          <button className="arrivals-sep">
+          <button className="shop-sep">
             <ElementsCalc text="Shop Now →" separatorClass="shop-text" wrapperClass="arrivals-wrapper" />
           </button>
       </div>
       <Products/>
-      <div aria-label="what-we-do" className="what-we-do">
+      <div id="what-we-do" aria-label="what-we-do" className="what-we-do">
         <div className="what-container">
             <div aria-label="text-window" className="text-window">
               <p className="what-text-title">WHAT WE DO</p>
@@ -153,4 +153,3 @@ Welcome to the future of eyewear: recycled, reimagined, and ready for what&apos;
     </div>
     );
   }
-

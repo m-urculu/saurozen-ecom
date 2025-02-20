@@ -14,7 +14,7 @@ const Newsletter = () => {
   // };
 
   return (
-    <div aria-label="newsletter" className="newsletter">
+    <div aria-label="newsletter" className="newsletter" id="newsletter">
       <div className="newsletter-container">
         <h1 className="newsletter-title">STAY IN THE LOOP WITH OUR FRESH DROPS</h1>
         <div className="newsletter-input">
